@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html PUBLIC"-//WAPFORUM//DTD XHTML Mobile 1.0//EN""http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="ch">
+	<head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/common.css" rel="stylesheet" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/OrderSettle.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/OrderSettle.js"></script>
+    </head>
+    <body>
+        <div class="navgt_right">
+            <a class="ico shopcat">&#x2741;</a>
+            <a class="ico star">&#x2742;</a>
+            <a class="ico time">&#x273C;</a>
+            <a class="ico go_top">&#x2743;</a>
+        </div>
+		<div class="heade">
+            <div class="center">
+                <div class="SiteNav">
+                    <div class="mapMy">
+                        <span class="title">我在深圳</span>
+                        <ul class="list">
+                            <li>
+                                北京
+                            </li>
+                            <li>
+                                上海
+                            </li>
+                            <li>
+                                广州
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                            <li>
+                                深圳
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="login">您好，欢迎来<font class="colore14041">E万家</font>！<a>登录</a><a>注册</a></div>
+
+                    <div class="right">
+                        <a>购物车 <font class="colore14041">0</font> 件</a>                                                <a>收藏夹</a>                                                <a>我的订单</a>
+                    </div>
+                </div>
+                <div class="SiteBtm">
+                    <a class="logo"></a>
+                    <ul class="shopcat_stup">
+                        <li class="over">
+                            <div class="line"></div>
+                            <div class="radius">1</div>
+                            <span class="title">查看订单</span>
+                        </li>
+                        <li class="active">
+                            <div class="line"></div>
+                            <div class="radius">2</div>
+                            <span class="title">确认订单信息</span>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                            <div class="radius">3</div>
+                            <span class="title">提交订单</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+    
+        <div class="slide"></div>
+        <div class="backededed">
+            <div class="center product">
+                <div class="best">
+                    <div class="title">完善并核对订单信息</div>
+                    <!--收货人信息-->
+                    <div class="panl_order">
+                        <div class="title">
+                            <span class="tt">收货人信息</span>
+                            <span class="tip">保存收货人信息</span>
+                            <a class="but">修改</a>
+                        </div>
+                        <div class="show_od">
+                            <span class="l_mag">支卿  13818653784</span>
+                            <span class="l_mag">广州 深圳市 罗湖区深南东路地王大厦3402</span>
+                        </div>
+                        <div class="table_od">
+                            <ul class="addrs_list">
+                                <li>
+                                    <input class="radio" type="radio"/>
+                                    <table class="right">
+                                        <tr>
+                                            <td>
+                                                姓名：
+                                            </td>
+                                            <td>
+                                                支卿  收
+                                            </td>
+                                            <td>
+                                                <a>编辑</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>                                                详细地址：
+                                            </td>
+                                            <td>                                                上海普陀区光复路581号1号楼101室
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                联系电话：
+                                            </td>
+                                            <td>                                                13818653784
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <input class="radio" type="radio"/>
+                                    <table class="right">
+                                        <tr>
+                                            <td>
+                                                姓名：
+                                            </td>
+                                            <td>
+                                                支卿  收
+                                            </td>
+                                            <td>
+                                                <a>编辑</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>                                                详细地址：
+                                            </td>
+                                            <td>                                                上海普陀区光复路581号1号楼101室
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                联系电话：
+                                            </td>
+                                            <td>                                                13818653784
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                            <div class="new_addrs">
+                                <div class="title">
+                                    <input id="new_addrs_radio" class="radio" type="radio"/>
+                                    <label for="new_addrs_radio">使用新地址</label>
+                                </div>
+                                <ul class="tb">
+                                    <li>
+                                        <span class="title"><font class="colore14041">*</font>收 货 人：</span>
+                                        <input class="text" type="text" />
+                                    </li>
+                                    <li>                                        <span class="title"><font class="colore14041">*</font>所在地区：</span>
+
+                                        <div class="region_list">
+                                            <span class="title">
+                                                <span class="cnt">请选择地区</span>
+                                                <span class="ico">❈</span>
+                                            </span>
+                                            <div class="region_pop">
+                                                <ul class="region_pop_nav">
+                                                    <li class="active">
+                                                        <span class="tt">
+                                                            广东
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tt">
+                                                            深圳市
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tt">
+                                                            南山区
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="region_pop_nav_list">
+                                                    <li class="active">
+                                                        <a>上海</a>
+                                                        <a>深圳</a>
+                                                        <a>广州</a>
+                                                        <a>北京</a>
+                                                    </li>
+                                                    <li>
+                                                        <a>深圳市</a>
+                                                        <a>罗湖区</a>
+                                                    </li>
+                                                    <li>
+                                                        <a>南山区</a>
+                                                        <a>罗湖区</a>
+                                                        <a>福田区</a>
+                                                        <a>宝安区</a>
+                                                        <a>光明新区</a>
+                                                        <a>坪山新区</a>
+                                                        <a>大鹏新区</a>
+                                                        <a>龙岗区</a>
+                                                        <a>盐田区</a>
+                                                        <a>龙华新区</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>                                        <span class="title"><font class="colore14041">*</font>详细地址：</span>
+                                        <input class="text" type="text" style="width:310px;"/>
+                                    </li>
+                                    <li>                                        <span class="title"><font class="colore14041">*</font>手机号码：</span>
+                                        <input class="text" type="text" />
+                                    </li>
+                                    <li>                                        <a class="bute14041">保存收货人信息</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--支付信息-->
+                    <div class="panl_order">
+                        <div class="title">
+                            <span class="tt">支付信息</span>
+                            <span class="tip">保存支付信息</span>
+                            <a class="but">修改</a>
+                        </div>
+                        <div class="show_od">
+                            <span class="l_mag">货到付款  <span class="colore999">送货上门后再收款、支持现金、pos机刷卡、支票支付 查看服务及配送范围</span></span>
+                        </div>
+                        <div class="table_od padding20_0">
+                            <ul class="pay_list">
+                                <li class="active">
+                                    <input class="radio" type="radio"/>
+                                    <label>货到付款</label>
+                                    <span class="colore999">送货上门后再收款、支持现金、pos机刷卡、支票支付 查看服务及配送范围</span>
+                                </li>
+                                <li>
+                                    <input class="radio" type="radio"/>
+                                    <label>在线支付</label>
+                                    <span class="colore999">即时到帐，支持绝大数银行借记卡及部分银行信用卡 查看银行及限额</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--配送信息-->
+                    <div class="panl_order">
+                        <div class="title">
+                            <span class="tt">配送信息</span>
+                            <span class="tip">保存配送信息</span>
+                            <a class="but">修改</a>
+                        </div>
+                        <div class="show_od">
+                            <span class="l_mag">门店自提  深圳市福田站马家庄普陀路1014弄15号102室 021-50605060  12月17日(星期三）</span>
+                            <span class="l_mag peisongT">                                <span class="float_l">温馨提示：</span>                                <span class="tt">                                    您选择的时间可能会因为库存不足等多反面因素导致订单延迟，敬请谅解！                                     我们会在您选定提货日期的前一天处理您的订单，在此之前您的订单处于暂停状态.
+                                </span>
+                            </span>
+                        </div>
+                        <div class="table_od padding20_0">
+                            <ul class="pay_list">
+                                <li>
+                                    <input class="radio" type="radio"/>
+                                    <label>快递送货上门</label>
+                                </li>
+                                <li class="active">
+                                    <input class="radio" type="radio"/>
+                                    <label>门店自提</label>
+                                </li>
+                            </ul>
+                            <table class="peison" cellpadding="5">
+                                <tr>
+                                    <td>
+                                        全部自提点：
+                                    </td>
+                                    <td>
+                                        <div class="region_list">
+                                            <span class="title">
+                                                <span class="cnt">请选择地区</span>
+                                                <span class="ico">❈</span>
+                                            </span>
+                                            <div class="region_pop">
+                                                <ul class="region_pop_nav">
+                                                    <li class="active">
+                                                        <span class="tt">
+                                                            广东
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tt">
+                                                            深圳市
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tt">
+                                                            南山区
+                                                            <span class="ico">❈</span>
+                                                        </span>
+                                                        <div class="line"></div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="region_pop_nav_list">
+                                                    <li class="active">
+                                                        <a>上海</a>
+                                                        <a>深圳</a>
+                                                        <a>广州</a>
+                                                        <a>北京</a>
+                                                    </li>
+                                                    <li>
+                                                        <a>深圳市</a>
+                                                        <a>罗湖区</a>
+                                                    </li>
+                                                    <li>
+                                                        <a>南山区</a>
+                                                        <a>罗湖区</a>
+                                                        <a>福田区</a>
+                                                        <a>宝安区</a>
+                                                        <a>光明新区</a>
+                                                        <a>坪山新区</a>
+                                                        <a>大鹏新区</a>
+                                                        <a>龙岗区</a>
+                                                        <a>盐田区</a>
+                                                        <a>龙华新区</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio"/>福田站
+                                    </td>
+                                    <td>
+                                        地址：深圳市福田站马家庄普陀路1014弄15号102室 021-50605060
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                        <input type="radio"/>南山站
+                                    </td>
+                                    <td>
+                                        地址：深圳市南山区北面与景田路交界西南金色假日酒店1001 0755-25311470
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top">
+                                        提货时间：
+                                    </td>
+                                    <td>
+                                        <select class="sect">
+                                            <option>12月17日(星期三）</option>
+                                            <option>12月17日(星期三）</option>
+                                            <option>12月17日(星期三）</option>
+                                            <option>12月17日(星期三）</option>
+                                        </select><br />
+                                        温馨提示：<br />
+                                        1.您选择的时间可能会因为库存不足等多反面因素导致订单延迟，敬请谅解！<br />                                        2.我们会在您选定提货日期的前一天处理您的订单，在此之前您的订单处于暂停状态.
+                                    </td>
+                                </tr>
+                            </table>
+                            <a class="bute14041 mal">保存收货人信息</a>
+                        </div>
+                    </div>
+                    <!--发票信息-->
+                    <div class="panl_order">
+                        <div class="title">
+                            <span class="tt">发票信息</span>
+                            <span class="tip">保存配送信息</span>
+                            <a class="but">修改</a>
+                        </div>
+                        <div class="show_od">
+                            <span class="l_mag">普通发票（纸质）   个人   明细   </span>
+                            <span class="l_mag peisongT">                                <span class="float_l colore999">温馨提示：</span>                                <span class="tt">                                    发票金额为现金支付金额(扣除礼品卡余额、抵用券、返利金额等) <br />                                    如需增值税发票，请联系客服。400-800-8474
+                                </span>
+                            </span>
+                        </div>
+                        <div class="table_od padding20_0">
+                            <ul class="pay_list">
+                                <li>
+                                    <input class="radio" type="radio"/>
+                                    <label>不需要发票</label>
+                                </li>
+                                <li class="active">
+                                    <input class="radio" type="radio"/>
+                                    <label>需要发票</label>
+                                </li>
+                            </ul>
+                            <table class="peison" cellpadding="5">
+                                <tr>
+                                    <td>
+                                        发票类型：
+                                    </td>
+                                    <td>
+                                        <input type="radio"/>福田站
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        发票抬头：
+                                    </td>
+                                    <td>
+                                        <select class="sect">
+                                            <option>个人</option>
+                                            <option>公司</option>
+                                        </select>
+                                        <input class="txt28" type="text" value="支卿"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                        发票内容：
+                                    </td>
+                                    <td>
+                                        
+                                        <select class="sect">
+                                            <option>日用品</option>
+                                            <option>日用品</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="wxts">
+                                温馨提示：<br />
+                                1.您选择的时间可能会因为库存不足等多反面因素导致订单延迟，敬请谅解！<br />                                2.我们会在您选定提货日期的前一天处理您的订单，在此之前您的订单处于暂停状态.
+                            </div>
+                            <a class="bute14041 mal">保存发票信息</a>
+                        </div>
+                    </div>
+                    <!--商品信息-->
+                    <div class="panl_order">
+                        <div class="title">
+                            <span class="tt">商品信息</span>
+                            <a class="but2">返回购物车修改</a>
+                        </div>
+                        <table class="spxx" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <th align="left">
+                                    商品名称
+                                </th>
+                                <th>
+                                    规格属性
+                                </th>
+                                <th>
+                                    数量
+                                </th>
+                                <th>
+                                    重量
+                                </th>
+                                <th>
+                                    金额(元)
+                                </th>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    雀巢咖啡香滑及饮灌装6连包（6*180ml）
+                                </td>
+                                <td>
+                                    颜色：黑色
+                                </td>
+                                <td>
+                                    5
+                                </td>
+                                <td>
+                                    12.3kg
+                                </td>
+                                <td>
+                                    ￥23.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    冰红茶灌装14灌装
+                                </td>
+                                <td>
+                                    尺寸：5cm
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td>                                    45.5kg
+                                </td>
+                                <td>
+                                    ￥42.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    徽州木榨菜籽油健康有机农家自榨自产纯菜油非转基因食用油
+                                </td>
+                                <td>
+                                    尺寸：32cm
+                                </td>
+                                <td>                                    2
+                                </td>
+                                <td>                                    11.5kg
+                                </td>
+                                <td>
+                                    ￥108.00
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="beizhu">
+                            备注信息：
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <!--商品信息-->
+                    <ul class="list_od">
+                        <li>
+                            <div class="title">
+                                <span class="os_ico"></span>使用积分
+                            </div>
+                            <div class="panle">
+                                <div class="jf_panl">
+                                    <span class="jf_left">当前可使用积分 <b class="colore14041">1120</b></span>
+                                    <span class="jf_right">可使用积分：<input class="text2"/>&nbsp;可减 0 元</span>
+                                </div>
+                                <div class="line"></div>
+                                <a class="bute14041" style="margin-left:30px;">确认</a>
+                                <a class="but25">取消</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <span class="os_ico"></span>使用万家卡
+                            </div>
+                            <div class="panle">
+                                <table style="margin:10px 0 20px 20px;float:left;">
+                                    <tr>
+                                        <td>
+                                            请输入您手中万家卡的卡号：
+                                        </td>
+                                        <td>
+                                            <input class="text2"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            请输入您手中万家卡的密码：
+                                        </td>
+                                        <td>
+                                            <input class="text2"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <a class="bute14041">使用</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="line"></div>
+                                <span class="v_title">可使用的万家卡：</span>
+                                <table class="spxx" cellpadding="5" cellspacing="0">
+                                    <tr>
+                                        <th align="left">
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th>
+                                            卡号
+                                        </th>
+                                        <th>
+                                            面值
+                                        </th>
+                                        <th>
+                                            余额
+                                        </th>
+                                        <th>
+                                            类型
+                                        </th>
+                                        <th>
+                                            有效期
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            565652564156115645
+                                        </td>
+                                        <td>
+                                            ￥500
+                                        </td>
+                                        <td>
+                                            ￥200
+                                        </td>
+                                        <td>
+                                            aaa
+                                        </td>
+                                        <td>
+                                            2014,1,10—2014,12,20
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="float_l clear" style="height: 45px;line-height: 45px;margin-left: 40px;">
+                                    <span class="float_l">共使用了0张万家卡，可以优惠0.00元</span>
+                                    <a class="bute14041" style="margin-left:10px;">确认</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <span class="os_ico"></span>使用优惠券
+                            </div>
+                            <div class="panle">
+                                <table class="spxx" cellpadding="5" cellspacing="0">
+                                    <tr>
+                                        <th align="left">
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th>
+                                            面值
+                                        </th>
+                                        <th>
+                                            所需消费金额
+                                        </th>
+                                        <th>
+                                            类别
+                                        </th>
+                                        <th>
+                                            有效期
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            ￥500
+                                        </td>
+                                        <td>
+                                            ￥200
+                                        </td>
+                                        <td>
+                                            aaa
+                                        </td>
+                                        <td>
+                                            2014,1,10—2014,12,20
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="float_l clear" style="height: 45px;line-height: 45px;margin-left: 40px;">
+                                    <span class="float_l">共使用了0张优惠券，可以优惠0.00元</span>
+                                    <a class="bute14041" style="margin-left:10px;">确认</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="qut">
+                        <span class="t1">商品金额：￥198.00元</span>
+                        <span class="t2">优惠：-￥20.00元</span>                        <span class="t2">使用积分：-￥20.00元</span>                        <span class="t2">使用万家卡：-￥20.00元</span>
+                        <span class="t2" style="margin-top:10px;">配送费用10元（总重在5kg以内）<a class="but">运费说明</a></span>
+                    </div>
+                    <div class="qut2">
+                        <span class="t1">您需要为订单支付:<span class="colore14041">￥138.00</span>元</span>
+                        <span class="t2" style="margin-top:10px;">支卿 广州 深圳市 罗湖区深南东路地王大厦3402  13818655553 <a class="but">运费说明</a></span>
+                    </div>
+                    <a class="bute14041 pay">提交订单</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="record">
+                <p>
+                    北京市公安局朝阳分局备案编号110105014669     京ICP证070359号   互联网药品信息服务资格证编号（京）-经营性-2014-0008  新出发京零  字第大120007号
+                </p>
+                <p>音像制品经营许可苏宿批005号    出版物经营许可编号新出发（苏）批字第N-012号     互联网出版许可证编号新出网证（京）字150号</p>
+                <p>网络文化经营许可证京网文[2001]0168-061号     违法和不良信息举报电话：4006561155 Copyright      2004-2014   ewj.com  版权所有</p>
+            </div>
+        </div>
+    </body>
+</html>

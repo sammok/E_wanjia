@@ -1,0 +1,1033 @@
+body {
+    min-height:1920px;
+    background-color:#ededed;
+}
+.heade {
+    background-image:none;
+}
+.badge_bao,
+.badge_re {
+    width: 71px;
+    height: 71px;
+    background: url(../images/badge/bao.png) no-repeat;
+}
+.badge_re {
+    background-image:url(../images/badge/re.png)
+}
+.news {
+    width: 37px;
+    height: 44px;
+    line-height: 38px;
+    text-align:center;
+    color:#ededed;
+    font-size:14px;
+    font-weight:bold;
+    background: url(../images/badge/new.png) no-repeat;
+}
+.border_b_ededed{
+    border-bottom: 1px solid #ededed;
+}
+/*Ê×Ò³¶¥²¿»ÃµÆÆ¬¡ª¡ª¿ªÊ¼*/
+.index_banner_group {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+    .index_banner_group .banner_list {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .index_banner_group .banner_list > li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            text-align: center;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+            .index_banner_group .banner_list > li > a {
+                height: 100%;
+                width:100%;
+                background:no-repeat center 0;
+                line-height: 415px;
+                display: inline-block;
+            }
+            .index_banner_group .banner_list > li.active {
+                display: block;
+                opacity: 1;
+            }
+
+    .index_banner_group .banner_nav {
+        position: absolute;
+        right: 50%;
+        bottom: 10px;
+        margin-right: -570px;
+        height: 10px;
+    }
+
+        .index_banner_group .banner_nav > li {
+            width: 10px;
+            height: 10px;
+            margin-left:10px;
+            position: relative;
+            float: left;
+            overflow: hidden;
+            background-color:rgba(225,225,225,.7);
+        }
+            .index_banner_group .banner_nav > li.active {
+                background-color: #ff2c2c;
+            }
+/*Ê×Ò³¶¥²¿»ÃµÆÆ¬¡ª¡ª½áÊø*/
+.slide {
+    height:440px;
+    border:0;
+}
+.slide .silde_nav {
+    height: 100%;
+    display:block;
+}
+    .slide .silde_nav_menu {
+        box-shadow:0 2px 2px #000;
+    }
+.baner1,
+.baner2,
+.baner3,
+.baner4,
+.baner5,
+.baner6 {
+    width: 1190px;
+    float:left;
+    margin-top:15px;
+}
+
+    .baner1 .left {
+        width:795px;
+        float:left;
+    }
+        .baner1 .left > .title,
+        .baner1 .right > .title {
+            font-size:14px;
+            color:#666;
+            display:inline-block;
+            width:100%;
+        }
+        .baner1 .left > .list > li > .mask {
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            border: 2px solid #f3484a;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            transition: all 0.5s ease;
+        }
+        .baner1 .left > .list > li:hover > .mask {
+            opacity:1;
+            filter: alpha(opacity=100);
+        }
+        /*index_baner1_line*/
+            .baner1 .left > .title > .t1,
+            .baner1 .right > .title > .t1 {
+                font-size:24px;
+                font-weight:bold;
+                margin-right:15px;
+            }
+        .baner1 .left > .list {
+            width:100%;
+            float:left;
+            margin-top:15px;
+        }
+            .baner1 .left > .list > li {
+                width:250px;
+                height:350px;
+                float:left;
+                margin-right:15px;
+                position:relative;
+            }
+                .baner1 .left > .list > li .country {
+                    position:absolute;
+                    z-index:2;
+                    left:20px;
+                    top:20px;
+                }
+                    .baner1 .left > .list > li .country > img {
+                        float:left;
+                        margin-right:20px;
+                    }
+                    .baner1 .left > .list > li .country .tip {
+                        float:left;
+                        font-size:12px;
+                        color:#666;
+                    }
+                .baner1 .left > .list > li .img_view {
+                    position:relative;
+                    width:250px;
+                    height:228px;
+                    line-height:228px;
+                    float:left;
+                    padding-bottom:6px;
+                    background:url(../images/index_baner1_line.png) no-repeat 0 bottom #fff;
+                    text-align:center;
+                }
+                    .baner1 .left > .list > li .img_view > img {
+                        vertical-align:middle;
+                    }
+                .baner1 .left > .list > li .bottom {
+                    background-color: #fff;
+                    float: left;
+                    height: 95px;
+                    padding: 10px 20px;
+                    width: 210px;
+                    position:relative;
+                }
+                    .baner1 .left > .list > li .bottom .name {
+                        color: #333;
+                        float: left;
+                        font-size: 14px;
+                        height: 40px;
+                        line-height: 19px;
+                        overflow: hidden;
+                        width: 100%;
+                    }
+                    .baner1 .left > .list > li .bottom .price {
+                        float:left;
+                        font-size:18px;
+                        color:#e14041;
+                    }
+                    .baner1 .left > .list > li .bottom .stock {
+                        float:left;
+                        clear:both;
+                    }
+                        .baner1 .left > .list > li .bottom .stock .title {
+                            font-size:12px;
+                            color:#666;
+                            margin-right:5px;
+                        }
+                            .baner1 .left > .list > li .bottom .stock .line {
+                                width:50px;
+                                height:7px;
+                                display:inline-block;
+                                background-color:#d9d9d9;
+                                border-radius:7px;
+                                overflow:hidden;
+                            }
+                                .baner1 .left > .list > li .bottom .stock .line .now {
+                                    height:100%;
+                                    float:left;
+                                    background-color:#f3484a;
+                                }
+                    .baner1 .left > .list > li .bottom .buy {
+                        background-color:#e14041;
+                        line-height:40px;
+                        width:90px;
+                        text-align:center;
+                        color:#fff;
+                        border-bottom:1px solid #a42f30;
+                        font-size:18px;
+                        font-weight:bold;
+                        float:right;
+                        cursor:pointer;
+                        transition:all 0.5s ease;
+                    }
+                        .baner1 .left > .list > li .bottom .buy:hover {
+                            background-color:#fe7171;
+                        }
+
+    .baner1 .right {
+        width: 395px;
+        float: left;
+    }
+        .baner1 .right > .title > .t1 {
+            margin-left:10px;
+        }
+        .baner1 .right > .title > .over_time {
+            font-size:12px;
+            color:#666;
+        }
+            .baner1 .right > .title > .over_time .ico {
+                margin-right:5px;
+            }
+        .baner1 .right .cont {
+            width:100%;
+            margin-top:15px;
+            float:left;
+            position:relative;
+        }
+            .baner1 .right .cont .badge_bao {
+                position:absolute;
+                top:20px;
+                right:20px;
+                z-index:2;
+            }
+            .baner1 .right .cont .img_view {
+                width:100%;
+                height:230px;
+                text-align:center;
+                overflow:hidden;
+                float:left;
+                background-color:#fff;
+            }
+                .baner1 .right .cont .img_view img {
+                    max-width:100%;
+                    max-height:100%;
+                    vertical-align:middle;
+                }
+            .baner1 .right .cont .bottom {
+                float:left;
+                width:355px;
+                padding:13px 20px 0 20px;
+                font-size:14px;
+                height:106px;
+                background-color:#fff;
+            }
+                .baner1 .right .cont .bottom .name {
+                    color:#333;
+                    float:left;
+                }
+                .baner1 .right .cont .bottom .price {
+                    float:left;
+                    color:#8c8c8c;
+                }
+                .baner1 .right .cont .bottom .quantity {
+                    color:#666;
+                    float:right;
+                }
+                .baner1 .right .cont .bottom .b_b {
+                    width:100%;
+                    float:left;
+                    margin-top:22px;
+                }
+                    .baner1 .right .cont .bottom .b_b .tg {
+                        font-size:14px;
+                        color:#666;
+                    }
+                        .baner1 .right .cont .bottom .b_b .tg .t1 {
+                            font-size:18px;
+                            color:#e14041;
+                        }
+                    .baner1 .right .cont .bottom .b_b .scj {
+                        font-size:12px;
+                        color:#999;
+                        display:block;
+                    }
+                    .baner1 .right .cont .bottom .b_b .buy {
+                        line-height:40px;
+                        color:#fff;
+                        background-color:#e14041;
+                        border-bottom:1px solid #a42f30;
+                        font-size:18px;
+                        font-weight:bold;
+                        width:195px;
+                        text-align:center;
+                        float:right;
+                        cursor:pointer;
+                        transition:all 0.5s ease;
+                    }
+                        .baner1 .right .cont .bottom .b_b .buy:hover {
+                            background-color:#fe7171;
+                        }
+                        .baner1 .right .cont .bottom .b_b .buy .people {
+                            padding-left:15px;
+                            margin-left:15px;
+                            font-size:12px;
+                            font-weight:200;
+                            border-left:1px solid #fff;
+                            line-height:25px;
+                            display:inline-block;
+                            vertical-align:middle;
+                        }
+
+.baner2 {
+    height:120px;
+    background-color:#fff;
+}
+    .baner2 .title {
+        width:250px;
+        height:120px;
+        line-height:120px;
+        font-size:24px;
+        color:#f6f6f6;
+        font-weight:bold;
+        background-color:#f3484a;
+        text-align:center;
+        float:left;
+    }
+        .baner2 .title .ico {
+            font-size: 50px;
+            font-weight: 200;
+            margin-right: 15px;
+        }
+    .baner2 .ico_list {
+        float:left;
+        font-size:14px;
+        color:#333;
+        width:890px;
+    }
+        .baner2 .ico_list > li {
+            margin:20px 0 0 69px;
+            float:left;
+        }
+            .baner2 .ico_list > li:hover,
+            .baner2 .ico_list > li:hover .ico {
+                color:#e14041;
+            } 
+            .baner2 .ico_list > li .ico {
+                display: inline-block;
+                font-size: 21px;
+                margin-right: 10px;
+                text-align: center;
+                width: 35px;
+                color:#ccc;
+            }
+
+.baner3 {
+    height:390px;
+}
+    .baner3 > li {
+        width:587px;
+        height:390px;
+        overflow:hidden;
+        background-color:#FFF;
+    }
+        .baner3 > li > .left {
+            position:relative;
+            width:390px;
+            height:390px;
+            line-height:390px;
+            overflow:hidden;
+            float:left;
+            margin-left:-1px;
+            border-right:1px solid #ededed;
+        }
+            .baner3 > li > .left > .news {
+                position: absolute;
+                z-index: 2;
+                left: 30px;
+                top: 0;
+            }
+            .baner3 > li > .left > img {
+                /*vertical-align:middle;*/
+            }
+            .baner3 > li > .left > .pop {
+                line-height:20px;
+                position:absolute;
+                bottom:-100%;
+                left:0;
+                width:100%;
+                padding:15px 0 0;
+                background-color:rgba(255,255,255,0.7);
+                transition:all 0.4s ease-in-out;
+                opacity:0;
+            }
+            .baner3 > li > .left:hover .pop{
+                transition:all 0.2s ease-out;
+                opacity:1;
+                bottom:0;
+            }
+                .baner3 > li > .left > .pop .badge_re {
+                    position:absolute;
+                    z-index:2;
+                    right:25px;
+                    top:20px;
+                }
+                .baner3 > li > .left > .pop .name {
+                    display:block;
+                    color:#333;
+                    margin:0 130px 0 20px;
+                    font-size:14px;
+                }
+                .baner3 > li > .left > .pop .price {
+                    font-size:24px;
+                    color:#e14041;
+                    display:block;
+                    margin:10px 20px 15px;
+                }
+                .baner3 > li > .left > .pop .tip {
+                    display:block;
+                    padding:15px 20px;
+                    font-size:14px;
+                    color:#666;
+                    position:relative;
+                    border-top:1px solid #ededed;
+                }
+                    .baner3 > li > .left > .pop .tip b {
+                        display:block;
+                    }
+                    .baner3 > li > .left > .pop .tip .ico {
+                        color: #d9d9d9;
+                        font-size: 32px;
+                        position: absolute;
+                        right: 50px;
+                        top: 25px;
+                    }
+        .baner3 > li > .right {
+            width:197px;
+            float:right;
+            overflow:hidden;
+        }
+            .baner3 > li > .right .tt1 {
+                height: 195px;
+                line-height: 195px;
+                position: relative;
+                border-bottom: 1px solid #ededed;
+                
+            }
+                .baner3 > li > .right .tt1 > .i_view img {
+                    /*max-width: 100%;
+                    max-height: 100%;*/
+                    width:100%;
+                    vertical-align: middle;
+                }
+                .baner3 > li > .right .tt1 > .pop {
+                    position:absolute;
+                    width:157px;
+                    padding:0 20px;
+                    height:100%;
+                    left:0;
+                    top:-100%;
+                    opacity:0;
+                    filter:alpha(opacity=0);
+                    transition:opacity 0.5s ease;
+                    background-color:#fff;
+                    display:none;
+                }
+                .baner3 > li > .right .tt1 > .pop1 {
+                    top:196px;
+                }
+                .baner3 > li > .right .tt1 > .pop2 {
+                    top:-196px;
+                }
+                .baner3 > li > .right .tt1:hover {
+                    z-index:2;
+                }
+                .baner3 > li > .right .tt1:hover > .pop {
+                    display:block;
+                    filter:alpha(opacity=100);
+                    opacity:1;
+                }
+                    .baner3 > li > .right .tt1 > .pop .name {
+                        line-height:20px;
+                        display:inline-block;
+                        vertical-align:middle;
+                        font-size:14px;
+                        color:#000;
+                        cursor:pointer;
+                    }
+                    .baner3 > li > .right .tt1 > .pop .price {
+                        font-size:24px;
+                        color:#e14041;
+                        line-height:20px;
+                        display:block;
+                        margin-top:10px;
+                    }
+.baner4 {
+}
+    .baner4 > .list {
+        width:1210px;
+        float:left;
+    }
+        .baner4 > .list > li,
+        .baner5 > .right > .bgll {
+            width: 286px;
+            float: left;
+            margin-right: 15px;
+            background-color: #fff;
+            position: relative;
+        }
+        .baner4 > .list > li {
+            height:411px;
+        }
+            .baner4 > .list > li > .mask,
+            .baner5 > .right > .bgll > .mask {
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                border: 2px solid #f3484a;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 0.5s ease;
+                filter: alpha(opacity=0);
+            }
+            .baner4 > .list > li:hover > .mask,
+            .baner5 > .right > .bgll:hover > .mask {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+            .baner4 > .list > li > .img_view {
+                width:100%;
+                height:282px;
+                line-height:282px;
+                text-align:center;
+                overflow:hidden;
+                float:left;
+                border-bottom:1px solid #ededed;
+                position:relative;
+            }
+                .baner4 > .list > li > .img_view img {
+                    /*vertical-align:middle;*/
+                    width:100%;
+                }
+            .baner4 > .list > li > .bottom {
+                float: left;
+                padding: 15px 20px;
+                width: 246px;
+                position:relative;
+            }
+                .baner4 > .list > li > .bottom .name,
+                .baner4 > .list > li > .bottom .present {
+                    color: #333;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 10px;
+                    overflow: hidden;
+                    font-weight:bold;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                }
+                .baner4 > .list > li > .bottom .present {
+                    font-weight:200;
+                    margin-top:5px;
+                }
+                .baner4 > .list > li > .bottom .price {
+                    font-size:24px;
+                    color:#e14041;
+                    display:block;
+                    margin-top:10px;
+                }
+.baner5 {
+}
+    .baner5 > .left {
+        width:260px;
+        height:855px;
+        float:left;
+        background-color:#fff;
+    }
+        .baner5 > .left > .title {
+            background-color:#e14041;
+            height:120px;
+            line-height:120px;
+            font-size:24px;
+            font-weight:bold;
+            color:#fff;
+            text-align:center;
+            float:left;
+            width:100%;
+        }
+            .baner5 > .left > .title > .ico {
+                margin-right:15px;
+                font-size:36px;
+            }
+        .baner5 > .left > .list {
+            width:100%;
+            text-align:center;
+            float:left;
+            padding:10px 0 35px;
+            background:url(../images/index_baner1_line.png) repeat-x 0 bottom;
+        }
+            .baner5 > .left > .list > a {
+                color: #333;
+                display: block;
+                font-size: 14px;
+                line-height: 25px;
+                margin-top: 14px;
+                text-align: left;
+            }
+                .baner5 > .left > .list > a > .ico {
+                    color: #ccc;
+                    display: inline-block;
+                    font-size: 20px;
+                    margin-left: 50px;
+                    margin-right: 15px;
+                    text-align: center;
+                    width: 50px;
+                }
+                .baner5 > .left > .list > a:hover,
+                .baner5 > .left > .list > a:hover .ico {
+                    color:#e14041;
+                }
+        .baner5 > .left > .tip {
+            width:210px;
+            margin:0 20px;
+            float:left;
+            font-size:12px;
+            color:#333;
+            padding:10px 0 20px;
+        }
+            .baner5 > .left > .tip > .tt {
+                font-size: 14px;
+                display: block;
+                padding: 10px 0;
+            }
+
+    .baner5 .right {
+        float: right;
+        width: 930px;
+        height:855px;
+        margin-right:-14px;
+    }
+
+        .baner5 .right > .bgtt {
+            background-color: #fff;
+            height: 420px;
+            overflow: hidden;
+            width: 605px;
+            float:left;
+            margin:0 15px 15px 0;
+        }
+
+            .baner5 .right > .bgtt > .left {
+                border-right: 1px solid #ededed;
+                float: left;
+                height: 100%;
+                line-height: 420px;
+                margin-left: -1px;
+                overflow: hidden;
+                position: relative;
+                width: 396px;
+            }
+
+                .baner5 .right > .bgtt > .left > .news {
+                    left: 30px;
+                    position: absolute;
+                    top: 0;
+                    z-index: 2;
+                }
+
+                .baner5 .right > .bgtt > .left > img {
+                    /*vertical-align: middle;*/
+                }
+
+                .baner5 .right > .bgtt > .left > .pop {
+                    background-color: rgba(255, 255, 255, 0.7);
+                    bottom: -100%;
+                    left: 0;
+                    line-height: 20px;
+                    opacity: 0;
+                    padding: 15px 0 0;
+                    position: absolute;
+                    transition: all 0.4s ease-in-out 0s;
+                    width: 100%;
+                }
+
+                .baner5 .right > .bgtt > .left:hover .pop {
+                    bottom: 0;
+                    opacity: 1;
+                    transition: all 0.2s ease-out 0s;
+                }
+
+                .baner5 .right > .bgtt > .left > .pop .badge_re {
+                    position: absolute;
+                    right: 25px;
+                    top: 20px;
+                    z-index: 2;
+                }
+
+                .baner5 .right > .bgtt > .left > .pop .name {
+                    color: #333;
+                    display: block;
+                    font-size: 14px;
+                    margin: 0 130px 0 20px;
+                }
+
+                .baner5 .right > .bgtt > .left > .pop .price {
+                    color: #e14041;
+                    display: block;
+                    font-size: 24px;
+                    margin: 10px 20px 15px;
+                }
+
+                .baner5 .right > .bgtt > .left > .pop .tip {
+                    border-top: 1px solid #ededed;
+                    color: #666;
+                    display: block;
+                    font-size: 14px;
+                    padding: 15px 20px;
+                    position: relative;
+                }
+
+                    .baner5 .right > .bgtt > .left > .pop .tip b {
+                        display: block;
+                    }
+
+                    .baner5 .right > .bgtt > .left > .pop .tip .ico {
+                        color: #d9d9d9;
+                        font-size: 32px;
+                        position: absolute;
+                        right: 50px;
+                        top: 25px;
+                    }
+
+            .baner5 .right > .bgtt > .right {
+                float: right;
+                overflow: hidden;
+                width: 209px;
+                margin-right:0;
+            }
+
+                .baner5 .right > .bgtt > .right .tt1 {
+                    border-bottom: 1px solid #ededed;
+                    height: 210px;
+                    line-height: 210px;
+                    position: relative;
+                }
+
+                    .baner5 .right > .bgtt > .right .tt1 > .i_view img {
+                        /*max-height: 100%;
+                        max-width: 100%;
+                        vertical-align: middle;*/
+                        width:100%;
+                        height:100%;
+                    }
+
+                    .baner5 .right > .bgtt > .right .tt1 > .pop {
+                        position: absolute;
+                        width: 169px;
+                        padding: 0 20px;
+                        height: 100%;
+                        left: 0;
+                        top: -100%;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        transition: opacity 0.5s ease;
+                        background-color: #fff;
+                        display: none;
+                    }
+                    .baner5 .right > .bgtt > .right .tt1 > .pop1 {
+                        top: 211px;
+                    }
+                    .baner5 .right > .bgtt > .right .tt1 > .pop2 {
+                        top: -211px;
+                    }
+                    .baner5 .right > .bgtt > .right .tt1:hover {
+                        z-index: 2;
+                    }
+                        .baner5 .right > .bgtt > .right .tt1:hover .pop {
+                            display: block;
+                            filter: alpha(opacity=100);
+                            opacity: 1;
+                        }
+
+                    .baner5 .right > .bgtt > .right .tt1 > .pop .name {
+                        color: #000;
+                        cursor: pointer;
+                        display: inline-block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        vertical-align: middle;
+                    }
+
+                    .baner5 .right > .bgtt > .right .tt1 > .pop .price {
+                        color: #e14041;
+                        display: block;
+                        font-size: 24px;
+                        line-height: 20px;
+                        margin-top: 10px;
+                    }
+
+    .baner5 > .right > .bgll {
+        background-color: #fff;
+        float: left;
+        margin:0 15px 15px 0;
+        width: 295px;
+        height:420px;
+    }
+
+        .baner5 > .right > .bgll > .img_view {
+            border-bottom: 1px solid #ededed;
+            float: left;
+            height: 300px;
+            line-height: 300px;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            position:relative;
+        }
+
+            .baner5 > .right > .bgll > .img_view img {
+                vertical-align: middle;
+            }
+
+        .baner5 > .right > .bgll > .bottom {
+            float: left;
+            padding: 15px 20px;
+            width: 260px;
+            position:relative;
+        }
+
+            .baner5 > .right > .bgll > .bottom .name,
+            .baner5 > .right > .bgll > .bottom .present {
+                color: #333;
+                cursor: pointer;
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 20px;
+                margin-top: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .baner5 > .right > .bgll > .bottom .present {
+                font-weight: 200;
+                margin-top: 5px;
+            }
+            .baner5 > .right > .bgll > .bottom .price {
+                color: #e14041;
+                display: block;
+                font-size: 24px;
+                margin-top: 10px;
+            }
+
+
+
+
+
+
+
+
+
+.baner6 .left {
+    float: left;
+    width: 844px;
+}
+
+    .baner6 .left > .title, .baner6 .right > .title {
+        color: #666;
+        display: inline-block;
+        width: 100%;
+        font-size: 24px;
+        font-weight:bold;
+        height:30px;
+    }
+        .baner6 .left > .title .more {
+            float:right;
+            font-size:14px;
+            color:#666;
+            margin-top:11px;
+            font-weight:200;
+        }
+    .baner6 .left > .list {
+        display: inline-block;
+        margin-top: 21px;
+        width: 100%;
+    }
+
+        .baner6 .left > .list > li {
+            float: left;
+            height: 341px;
+            margin:0 2px 2px 0;
+            position: relative;
+            width: 279px;
+            background-color: #fff;
+        }
+            .baner6 .left > .list > li .img_view {
+                float: left;
+                height: 245px;
+                line-height: 228px;
+                padding-bottom: 6px;
+                text-align: center;
+                width: 100%;
+            }
+
+                .baner6 .left > .list > li .img_view > img {
+                    vertical-align: middle;
+                }
+
+            .baner6 .left > .list > li .bottom {
+                float: left;
+                padding: 10px 20px;
+                width: 239px;
+            }
+
+                .baner6 .left > .list > li .bottom .name {
+                    color: #333;
+                    float: left;
+                    font-size: 14px;
+                    height: 40px;
+                    line-height: 19px;
+                    overflow: hidden;
+                    width: 100%;
+                }
+
+                .baner6 .left > .list > li .bottom .price {
+                    color: #e14041;
+                    float: left;
+                    font-size: 18px;
+                }
+.baner6 .right {
+    float: right;
+    width: 335px;
+}
+
+    .baner6 .right > .title {
+        color: #666;
+        font-size: 24px;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+    .baner6 .right .cont {
+        float: left;
+        height: 343px;
+        padding: 0 30px;
+        position: relative;
+        width: 270px;
+        background-color:#fff;
+    }
+
+        .baner6 .right .cont .title {
+            float:left;
+            font-size:18px;
+            color:#666;
+            margin:18px 0 10px 0;
+        }
+        .baner6 .right .cont .img_view {
+            clear:both;
+            background-color: #fff;
+            float: left;
+            height: 197px;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            margin-bottom:10px;
+        }
+
+            .baner6 .right .cont .img_view img {
+                max-height: 100%;
+                max-width: 100%;
+                vertical-align: middle;
+            }
+        .baner6 .right .cont .name,
+        .baner6 .right .cont .more {
+            font-size:14px;
+            color:#666;
+            float:left;
+            width:100%;
+        }
+        .baner6 .right .cont .more {
+            width:auto;
+            float:right;
+            margin-top:10px;
+            cursor:pointer;
+        }
+
+.i_view {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
