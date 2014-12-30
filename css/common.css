@@ -6,7 +6,7 @@ a {
     text-decoration:none;
 }
 
-/*¹«¹²ÑùÊ½--¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½--ï¿½ï¿½Ê¼*/
 .colore14041 {
     color:#e14041;
 }
@@ -32,8 +32,8 @@ a {
     font-family: fp-font;
     src: url(../font/ico.eot);
     src: url('../font/ico.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/ico.woff') format('woff'), /* chrome¡¢firefox */
-         url('../font/ico.ttf')  format('truetype'), /* chrome¡¢firefox¡¢opera¡¢Safari, Android, iOS 4.2+*/
+         url('../font/ico.woff') format('woff'), /* chromeï¿½ï¿½firefox */
+         url('../font/ico.ttf')  format('truetype'), /* chromeï¿½ï¿½firefoxï¿½ï¿½operaï¿½ï¿½Safari, Android, iOS 4.2+*/
          url('../font/ico.svg#svgFontName') format('svg');   /*iOS 4.1- */
 }
 .ico {
@@ -94,7 +94,7 @@ a {
 .font32 {
     font-size:32px;
 }
-/*¹«¹²ÑùÊ½--½áÊø*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½--ï¿½ï¿½ï¿½ï¿½*/
 
 .center {
     width:1190px;
@@ -107,7 +107,7 @@ a {
     .heade .center {
         position:relative;
         height:180px;
-        z-index:3;
+        z-index:1000;
     }
     .heade .SiteNav {
         display:inline-block;
