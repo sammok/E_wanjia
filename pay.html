@@ -8,19 +8,20 @@
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/pay.js"></script>
 </head>
-<body>
+<body class="payBg">
 
 <header class="header">
-    <a class="headerLogo float_l" href="">
-        <img src="images/headerLogo.jpg" alt=""/>
-    </a>
-    <nav class="headerNav float_r">
-        大爷就是，欢迎来E万家&nbsp;|&nbsp;<a href="javascript:void(0)">退出</a>&nbsp;&nbsp;|&nbsp;&nbsp;我的订单&nbsp;&nbsp;|&nbsp;&nbsp;服务中心
-    </nav>
-    <div class="clear"></div>
+    <div class="headerInner center">
+        <a class="headerLogo float_l" href="">
+        </a>
+        <nav class="headerNav float_r">
+            大爷就是，欢迎来E万家！<a href="javascript:void(0)" class="primary">退出</a><span class="tube1"></span><a href="javascript:void(0)">我的订单</a><span class="tube2"></span><a href="javascript:void(0)">服务中心</a>
+        </nav>
+        <div class="clear"></div>
+    </div>
 </header>
 
-<div class="screenBody">
+<div class="center">
     <div class="panel">
         <div class="panelHd">
             <h1>收银台</h1>
@@ -32,46 +33,47 @@
                     <small>请您在订单提交后24小时内完成支付，否则订单会自动取消</small>
                 </div>
                 <div class="orderStatueTotal float_r">
-                    <h2>应付金额<span>￥<strong>80</strong>.50</span>元</h2>
+                    <h2>应付金额<span>￥<strong>80</strong><strong class="s2">.50</strong></span>元</h2>
                     <a href="javascript:void(0)" target="_blank">订单详情</a>
                 </div>
-                <div class="cb"></div>
+                <div class="clear"></div>
             </div>
 
             <div class="payPanel">
                 <form action="">
+                    <input name="bankChoose" type="hidden" class="bankChooseValue"/>
+                    <input name="costTotal" type="hidden"/>
                     <div class="payPanelHd">
                         <div class="payWay">
-                            <div class="payWayItem">
-                                <input name="" type="hidden"/>
+                            <div class="payWayItem active">
                                 <div class="payTotal float_r">
-                                    <h3>支付<span>￥<strong>80</strong>.50</span>元</h3>
+                                    <h3>支付<span>￥<strong>80</strong><strong class="s2">.50</strong></span>元</h3>
                                 </div>
-                                <div class="formRadio float_l">
+                                <div class="formRadio float_l" data-bank="huarun">
                                     <span class="formRadioInner"></span>
                                 </div>
                                 <div class="payBank float_l">
-                                    <img src="images/" alt=""/>
+                                    <img src="images/bank_huarun.jpg" alt="" width="140" height="40"/>
                                 </div>
-                                <div class="cb"></div>
+                                <div class="clear"></div>
                             </div>
                             <div class="payWayItem">
                                 <input name="" type="hidden"/>
                                 <div class="payTotal float_r">
-                                    <h3>支付<span>￥<strong>80</strong>.50</span>元</h3>
+                                    <h3>支付<span>￥<strong>80</strong><strong class="s2">.50</strong></span>元</h3>
                                 </div>
-                                <div class="formRadio float_l">
+                                <div class="formRadio float_l" data-bank="yinlian">
                                     <span class="formRadioInner"></span>
                                 </div>
                                 <div class="payBank float_l">
-                                    <img src="images/" alt=""/>
+                                    <img src="images/bank_yinlian.jpg" alt="" width="140" height="40"/>
                                 </div>
-                                <div class="cb"></div>
+                                <div class="clear"></div>
                             </div>
                         </div>
                     </div>
                     <div class="payPanelBd">
-                        <button type="submit">确认支付</button>
+                        <button type="submit" class="paySubmitBtn">确认支付</button>
                     </div>
                 </form>
             </div>
