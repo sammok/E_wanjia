@@ -62,10 +62,35 @@ $(function () {
         $("html,body").animate({ "scrollTop": 0 }, 200);
     });
 
+
+    /* Table components */
+    function components_Table() {
+        $('.table .tableThumb').each(function (){
+            var thumbs = $(this).find('a');
+
+            if (thumbs.length > 3) {
+                $(this).find('.tableThumbSwitch').show();
+            }
+
+            // bind switch btn
+            $(this).find('.tableThumbSwitch').click(function (){
+
+                if (!$(this).prop('data-collapse')) {
+                    $(this).siblings('.tableThumbBd').animate({ 'width': (50+8) * thumbs.length + 'px'});
+                    $(this).prop('data-collapse', true);
+                } else {
+                    $(this).siblings('.tableThumbBd').animate({ 'width': 170 + 'px'});
+                    $(this).prop('data-collapse', false);
+                }
+            });
+        });
+    }
+
+    components_Table();
     
 });
 
-//µ¹¼ÆÊ±
+//ï¿½ï¿½ï¿½ï¿½Ê±
 $.fn.extend({
     Countdown: function (options) {
         var that = this,
@@ -91,11 +116,11 @@ $.fn.extend({
             nMS = getDate(el.attr("data-time")).getTime() - startTime.getTime();
         var setIntv = setInterval(function () {
             var nH = (Math.floor(nMS / (1000 * 60 * 60)) % 24) % 60;
-            //¶¨Òå»ñµÃÐ¡Ê±
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Ê±
             var nM = (Math.floor(nMS / (1000 * 60)) % 60) % 60;
-            //¶¨Òå»ñµÃ·ÖÖÓ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
             var nS = (Math.floor(nMS / 1000) % 60) % 60;
-            //¶¨Òå»ñµÃÃë
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
             opt.second.html(nS);
             opt.minute.html(nM);
