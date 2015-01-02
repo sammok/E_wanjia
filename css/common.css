@@ -1,6 +1,7 @@
 html,body ,ul,p{padding:0;margin:0;list-style:none;font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;}
 body {
    min-width:1190px;
+   background: #ededed;
 }
 a {
     text-decoration:none;
