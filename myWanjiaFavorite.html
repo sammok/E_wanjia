@@ -106,7 +106,7 @@
         <!-- main -->
         <div class="center">
             <!-- sidebar -->
-            <div class="sidebar float_l">
+            <div class="sidebar float_l enableSelect">
                 <div class="slide">
                     <div class="silde_nav_menu">
                         <span class="ico">✻</span>商品分类
@@ -835,10 +835,10 @@
                 <!-- user info -->
                 <div class="panel myFavorite">
                     <div class="panelHd">
-                        <h2 class="panelHdTitle">我的收藏</h2>
+                        <h2 class="panelHdTitle enableSelect">我的收藏</h2>
                     </div>
                     <div class="panelBd">
-                        <div class="myFavoriteFilter clearfix">
+                        <div class="myFavoriteFilter clearfix enableSelect">
                             <div class="float_r">
                                 <div class="select enableSelect">
                                     <div class="selectHd">
@@ -859,15 +859,15 @@
                         <!-- favorite table -->
                         <table class="table myFavoriteTable enableSelect">
                             <div class="myFavoriteTableOperate">
-                                <span>
+                                <span class="operateCheckbox">
                                     <div class="checkbox enableSelect" id="myFavoriteSelectAll">
                                         <input type="hidden"/>
                                         <i></i>
                                     </div>
                                     <span>全选</span>
                                 </span>
-                                <span class="operate">加入购物车</span>
-                                <span class="operate">取消收藏</span>
+                                <a class="operate" href="javascript:void(0);">加入购物车</a>
+                                <a class="operate" href="javascript:void(0);">取消收藏</a>
                             </div>
 
                             <tr class="tableHd enableSelect">

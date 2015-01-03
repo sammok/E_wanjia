@@ -755,10 +755,14 @@ input{
 }
 
 .sidebar .slide {
-    height: 40px;
+    height: 36px;
+    border-top: none;
+    background: #fff url("../images/sidebarGoodCategoryHd_bg.png") repeat-x;
 }
 
 .sidebar .silde_nav_menu {
+    height: 36px;
+    line-height: 36px;
     margin-left: 0;
     left: 0;
 }
@@ -804,10 +808,6 @@ input{
 
 .sidebarMainBd {}
 
-.sidebarMainBd h3:first-child{
-    border-top: none;
-}
-
 .sidebarMainBd h3 {
     height: 45px;
     line-height: 45px;
@@ -820,17 +820,24 @@ input{
     border-top: 1px solid #e1e1e1;
 }
 
+.sidebarMainBd h3:first-child{
+    border-top: none;
+}
+
 .sidebarMainBd ul {
     background: #fff;
 }
 
-.sidebarMainBd .active {
+.sidebarMainBd .active,
+.sidebarMainBd li:hover
+{
     margin-left: -4px;
     background: #e14041;
     border-left: 4px solid #e14041;
 }
 
-.sidebarMainBd .active a {
+.sidebarMainBd .active a,
+.sidebarMainBd li:hover a{
     color: #fff;
 }
 
@@ -894,6 +901,11 @@ input{
     font-size: 12px;
     background: url("../images/btnBg.png") repeat-x;
     border: 1px solid #d1d1d1;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 
 .btnDefault {
@@ -903,7 +915,8 @@ input{
 }
 
 .btnDefault:hover {
-    border-color: #999;
+    color: #e04040;
+    border-color: #e04040;
 }
 
 /* panel  */
@@ -1003,18 +1016,20 @@ input{
     color: #555;
     text-align: center;
     border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .tableHd {
-    height: 34px;
-    line-height: 34px;
-    color: #555;
     background: #fafafa;
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
 }
 
 .tableHd th {
+    height: 33px;
+    line-height: 33px;
+    vertical-align: baseline;
+    color: #555;
     font-weight: normal;
 }
 
@@ -1032,7 +1047,7 @@ input{
 }
 
 .tableBd a:hover {
-    color: #1e589c;
+    color: #e04040;
 }
 
 .tableDetail {}
@@ -1102,11 +1117,7 @@ input{
 }
 
 .tableGoodInfoThumb:hover img {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -mo-transform: scale(1.05);
+    opacity: .8;
 }
 
 
@@ -1150,10 +1161,16 @@ input{
     background: url("../images/tableBtnDefaultBg.png") repeat-x;
     border: 1px solid #d1d1d1;
     cursor: pointer;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 
 .tableBtn:hover {
-    border-color: #999;
+    color: #e14041;
+    border-color: #e14041;
 }
 
 /* goodRecommendList */
@@ -1213,7 +1230,7 @@ input{
 }
 
 .goodRecommendListItem .name:hover {
-    color: #1e589c;
+    color: #e04040;
 }
 
 .goodRecommendListItem .info {

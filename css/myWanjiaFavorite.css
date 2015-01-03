@@ -32,7 +32,8 @@
     color: #616161;
 }
 
-.myFavoriteFilterNav li.active a {
+.myFavoriteFilterNav li.active a,
+.myFavoriteFilterNav li:hover a{
     color: #e14041;
 }
 
@@ -45,10 +46,12 @@
     padding: 22px 0;
 }
 
-#myFavoriteSelectAll {
-    display: inline-block;
+.operateCheckbox {
     margin-right: 22px;
-    color: #333;
+}
+
+.operateCheckbox .checkbox i {
+    margin-top: -1px;
 }
 
 .myFavoriteTableOperate .operate {
@@ -57,9 +60,14 @@
     cursor: pointer;
 }
 
+.myFavoriteTableOperate .operate:hover {
+    color: #e14041;
+}
+
 .myFavorite .tableGoodInfo .checkbox {
     margin: 0 25px;
 }
+
 
 
 

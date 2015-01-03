@@ -9,7 +9,7 @@
 }
 
 .userInfoAvatar {
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .userInfoAvatar img {
@@ -17,7 +17,7 @@
 }
 
 .userInfoList {
-    width: 256px;
+    width: 255px;
     margin-top: -7px;
 }
 
