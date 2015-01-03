@@ -12,6 +12,12 @@
     margin: 3px 10px 0 0 ;
 }
 
+.myFavoriteFilter .selectBd{
+    width: 200%;
+    left: auto;
+    right: 0;
+}
+
 .myFavoriteFilterNav {
     padding: 7px 0;
 }
@@ -68,6 +74,9 @@
     margin: 0 25px;
 }
 
+.myFavorite .tableBd td {
+    height: 130px;
+}
 
 
 
