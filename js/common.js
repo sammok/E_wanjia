@@ -87,6 +87,17 @@ $(function () {
     }
 
     components_Table();
+
+    function components_Checkbox(){
+        $('.checkbox').click(function (){
+            if ($(this).attr('data-checked') != 'true') {
+                $(this).attr('data-checked', true).addClass('active');
+            } else {
+                $(this).attr('data-checked', false).removeClass('active');
+            }
+        });
+    }
+    components_Checkbox();
     
 });
 

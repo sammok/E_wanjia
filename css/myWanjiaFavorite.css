@@ -1,6 +1,91 @@
 /* Created by Qianglong Mo 2015 */
 
+/* my favorite */
+.myFavorite {}
 
+/* favorite filter */
+.myFavoriteFilter {
+    border: 1px solid #ddd;
+}
+
+.myFavoriteFilterMore {
+
+}
+
+.myFavoriteFilterNav {
+    padding: 7px 0;
+}
+
+.myFavoriteFilterNav li {
+    float: left;
+    line-height: 16px;
+    padding: 0 16px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.myFavoriteFilterNav li:last-child {
+    border-right: none;
+}
+
+.myFavoriteFilterNav li a {
+    font-size: 14px;
+    color: #616161;
+}
+
+.myFavoriteFilterNav li.active a {
+    color: #e14041;
+}
+
+.myFavoriteFilterMore {
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 18px 0 10px;
+    margin: 3px 10px 0 0 ;
+    color: #555;
+    font-size: 12px;
+    border: 1px solid #ededed;
+}
+
+.myFavoriteFilterMore .split {
+    margin-left: 12px;
+    color: #eee;
+}
+
+.myFavoriteFilterMore .arrow {
+    width:0;height:0;
+    line-height:0;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #aaa transparent transparent transparent;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+/* table operate */
+.myFavoriteTableOperate {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 22px 0;
+}
+
+#myFavoriteSelectAll {
+    display: inline-block;
+    margin-right: 22px;
+    color: #333;
+}
+
+.myFavoriteTableOperate .operate {
+    color: #555;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.myFavorite .tableGoodInfo .checkbox {
+    margin: 0 25px;
+}
 
 
 
