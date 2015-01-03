@@ -754,21 +754,18 @@ input{
     margin-right: 15px;
 }
 
-.sidebarGoodCategory {
-    position: relative;
+.sidebar .slide {
+    height: 40px;
 }
 
-.sideBarGoodCategoryHd {
-    height: 36px;
-    line-height: 36px;
-    background: url("../images/sidebarGoodCategoryHd_bg.png") repeat-x;
+.sidebar .silde_nav_menu {
+    margin-left: 0;
+    left: 0;
 }
 
-.sideBarGoodCategoryHd p{
-    padding: 0 0 0 55px;
-    font-size: 18px;
-    color: #666;
-    background: url("../images/sideBarGoodCategoryHd_icon.png") no-repeat 20px 10px;
+.sidebar .silde_nav {
+    margin-left: 0;
+    left: 0;
 }
 
 .crumb {
@@ -844,162 +841,7 @@ input{
     color: #5b5b5b;
 }
 
-.sideBarGoodCategoryBd {
-    position: absolute;
-    top: 36px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-}
 
-.sideBarGoodCategoryMainNav {
-    display: none;
-    width:254px;
-    position:relative;
-    left:-4px;
-    margin-top:3px;
-}
-.sideBarGoodCategoryMainNav li {
-    width:50%;
-    line-height:35px;
-    height:40px;
-    margin-bottom:7px;
-    float: left;
-    color:#333;
-    font-size:14px;
-    white-space:nowrap;
-    cursor:pointer;
-}
-.sideBarGoodCategoryMainNav li:hover,
-.sideBarGoodCategoryMainNav li.active {
-    color:#fff;
-    background-color:#f3484a;
-}
-.sideBarGoodCategoryMainNav li .ico {
-    color: #ccc;
-    display: inline-block;
-    font-size: 23px;
-    margin: 0 0 0 15px;
-    text-align: center;
-    width: 35px;
-}
-.sideBarGoodCategoryMainNav li:hover .ico,
-.sideBarGoodCategoryMainNav li.active .ico {
-    color:#fff;
-}
-
-.sideBarGoodCategorySubNav {
-    display:none;
-    width: 935px;
-    height: 440px;
-    line-height:395px;
-    background-color:#fff;
-    border-left: 5px solid #f3494b;
-    position: absolute;
-    left: 250px;
-    top: 5px;
-}
-.sideBarGoodCategorySubNavContent > li {
-    display: none;
-    width:100%;
-    height:100%;
-    float:left;
-    position:absolute;
-    top:0;
-    left:0;
-}
-.sideBarGoodCategorySubNavContent .list {
-    display:inline-block;
-    vertical-align:middle;
-    line-height:30px;
-    margin-left:30px;
-    width:580px;
-}
-.sideBarGoodCategorySubNavContent .list > li {
-    display:block;
-    margin-bottom: 15px;
-    min-height: 30px;
-}
-.sideBarGoodCategorySubNavContent .list .title {
-    background: url("../images/sanjiao_right.png") no-repeat right center #fff;
-    color: #333;
-    font-size: 14px;
-    margin-right: 0;
-    padding-right: 10px;
-    position: relative;
-}
-.sideBarGoodCategorySubNavContent .list > li a {
-    border-left: 1px solid #333;
-    color: #333;
-    cursor: pointer;
-    font-size: 12px;
-    margin-left: -1px;
-    margin-right: 10px;
-    padding-left: 10px;
-    white-space: nowrap;
-}
-.sideBarGoodCategorySubNavContent .list > li a:hover,
-.sideBarGoodCategorySubNavContent .list > li a.active {
-    color:#f3484a;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend {
-    border-left: 1px solid #eee;
-    height: 100%;
-    line-height: 20px;
-    padding: 0 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 228px;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .title {
-    border-bottom: 1px solid #eee;
-    color: #666;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 58px;
-    width: 100%;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .img_view {
-    width:100%;
-    height:210px;
-    line-height:210px;
-    text-align:center;
-    float:left;
-    overflow:hidden;
-    margin:10px 0;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .img_view > img {
-    vertical-align:middle;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .title2 {
-    color: #333;
-    float: left;
-    font-size: 18px;
-    margin:20px 0 13px;
-    width: 100%;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .cont {
-    color: #666;
-    float: left;
-    font-size: 14px;
-    height: 40px;
-    overflow: hidden;
-    width: 100%;
-    word-break: break-all;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .moer {
-    float:right;
-    color:#339933;
-    font-size:14px;
-    cursor:pointer;
-    margin-top:15px;
-    transition:all 0.5s ease;
-}
-.sideBarGoodCategorySubNavContent > li > .recommend > .moer:hover {
-    color:#4ac84a;
-}
 
 /* ---------------------------------------------------------------------------
  *      inner page Main
