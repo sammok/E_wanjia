@@ -3,10 +3,10 @@
 	<head>
         <title></title>
         <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="css/myWanjiaFavorite.css" />
+        <link rel="stylesheet" type="text/css" href="css/myWanjiaOrder.css"/>
         <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/myWanjiaFavorite.js"></script>
+        <script type="text/javascript" src="js/myWanjiaOrder.js"></script>
     </head>
     <body>
         <div class="navgt_right">
@@ -793,8 +793,8 @@
                     <div class="sidebarMainBd">
                         <h3>交易管理</h3>
                         <ul>
-                            <li><a href="javascript:void(0);" target="_blank">我的订单</a></li>
-                            <li class="active"><a href="javascript:void(0);" target="_blank">我的收藏</a></li>
+                            <li class="active"><a href="javascript:void(0);" target="_blank">我的订单</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">我的收藏</a></li>
                         </ul>
 
                         <h3>账户信息</h3>
@@ -822,299 +822,22 @@
 
             <!-- main -->
             <div class="main float_r">
-                <!-- user info -->
-                <div class="panel myFavorite">
+                <!-- my order -->
+                <div class="panel myOrder">
                     <div class="panelHd">
-                        <h2 class="panelHdTitle">我的收藏</h2>
+                        <div class="panelHdSearch float_r">
+                            <form action="">
+                                <input class="panelHdSearchTxt" type="text" placeholder="输入您的订单号"/>
+                                <button class="panelHdSearchBtn" type="submit">搜索</button>
+                            </form>
+                        </div>
+                        <h2 class="panelHdTitle">我的订单</h2>
                     </div>
                     <div class="panelBd">
-                        <div class="myFavoriteFilter clearfix">
-                            <div class="float_r">
-                                <div class="select enableSelect">
-                                    <div class="selectHd">
-                                        更多<span class="split">|</span>
-                                        <i class="arrow"></i>
-                                    </div>
-                                    <div class="selectBd"></div>
-                                </div>
-                            </div>
-                            <ul class="myFavoriteFilterNav float_l">
-                                <li><a href="">全部(10)</a></li>
-                                <li class="active"><a href="">生鲜食品(5)</a></li>
-                                <li><a href="">家居家纺(3)</a></li>
-                                <li><a href="">手机数码(2)</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- favorite table -->
-                        <table class="table myFavoriteTable enableSelect">
-                            <div class="myFavoriteTableOperate">
-                                <span>
-                                    <div class="checkbox enableSelect" id="myFavoriteSelectAll">
-                                        <input type="hidden"/>
-                                        <i></i>
-                                    </div>
-                                    <span>全选</span>
-                                </span>
-                                <span class="operate">加入购物车</span>
-                                <span class="operate">取消收藏</span>
-                            </div>
-
-                            <tr class="tableHd enableSelect">
-                                <th width="442">
-                                    <p style="margin-left: -100px;">商品信息</p>
-                                </th>
-                                <th width="88">收藏日期</th>
-                                <th>价格</th>
-                                <th width="108">操作</th>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/1.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/2.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/3.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/4.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/5.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/6.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/7.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="tableBd">
-                                <td>
-                                    <div class="tableGoodInfo">
-                                        <div class="checkbox enableSelect">
-                                            <input type="hidden"/>
-                                            <i></i>
-                                        </div>
-                                        <a href="" target="_blank"><img src="img/8.png" alt="" width="90" height="90"/></a>
-                                        <span class="tableGoodInfoName">
-                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
-                                        </span>
-                                    </div>
-                                </td>
-                                <td>
-                                    2014-8-12
-                                </td>
-                                <td>
-                                    <p class="textPrimary">
-                                        ￥<strong>139</strong>.00
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="tableOperate">
-                                        <p><button class="tableBtn tableBtnDefault">加入购物车</button></p>
-                                        <p><a href="">取消收藏</a></p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table><!-- end favorite table -->
-
-                        <!-- pagination-->
-                        <div class="pagination">
-                            <p class="paginationTotal">
-                                共&nbsp;<span>984</span>&nbsp;件商品
-                            </p>
-                            <ul>
-                                <li><a href="">上一页</a></li>
-                                <li><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
-                                <li><a href="">4</a></li>
-                                <li><a href="">5</a></li>
-                                <li><a href="">6</a></li>
-                                <li>...</li>
-                                <li><a href="">12</a></li>
-                                <li><a href="">下一页</a></li>
-                            </ul>
-                        </div><!-- end pagination-->
+                        
                     </div>
-                </div><!-- end user info -->
-            </div><!-- end main -->
+                </div><!-- end my order -->
+            </div><!--end main -->
         </div><!-- end main -->
         <div class="clear"></div>
 

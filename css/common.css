@@ -1091,6 +1091,55 @@ input{
     text-decoration: underline;
 }
 
+.panelHdSearch {
+    margin: 10px 0 0 0;
+    *zoom: 1;
+}
+
+.panelHdSearch:before,
+.panelHdSearch:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.panelHdSearch:after {
+    clear: both;
+}
+
+.panelHdSearchTxt {
+    float: left;
+    width: 166px;
+    line-height: 16px;
+    padding: 3px 10px;
+    color: #d4d4d4;
+    border: 1px solid #ededed;
+    border-right: none;
+}
+
+.panelHdSearchTxt:focus,
+.panelHdSearch.active .panelHdSearchTxt {
+    color: #555;
+    border-color: #ccc;
+}
+
+.panelHdSearchBtn {
+    float: left;
+    width: 64px;
+    line-height: 16px;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    background: url("../images/btnBg.png") repeat-x;
+    border: 1px solid #ededed;
+    cursor: pointer;
+}
+
+.panelHdSearchBtn:hover {
+    border-color: #999;
+}
+
 .panelBd {
     padding: 20px 25px;
     background: #fff url("../images/panelBdBgMask.png") repeat-x;
