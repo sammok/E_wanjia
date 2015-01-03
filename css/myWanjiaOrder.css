@@ -29,6 +29,10 @@
     padding: 0 0 0 10px;
 }
 
+.myOrderTable .tableHd .date{
+    margin-right: 22px;
+}
+
 .tableBdColumn {
     width: 134px;
     user-select: none;
@@ -93,17 +97,6 @@
 
 .myOrderTable .tableOperate .tableBtn{
     margin: 0 0 3px 0;
-}
-
-.myOrderTable.enableCancel .tableOperate .tableBtn{
-    width: 51px;
-    height: 22px;
-    line-height: 22px;
-    padding:0;
-    color: #fff;
-    text-align: center;
-    border: none;
-    background: url("../images/orderBtnPrimaryBg.png") no-repeat;
 }
 
 .myOrderTable.enableCancel .tableOperate .tableOperateCancel a{
