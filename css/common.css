@@ -1033,6 +1033,15 @@ input{
     font-size: 15px;
 }
 
+.textNormaal {
+    color: #555;
+}
+
+.textNormaal strong {
+    font-weight: normal;
+    font-size: 20px;
+}
+
 /* btn */
 .btn {
     display: inline-block;
@@ -1163,6 +1172,10 @@ input{
     border-bottom: 1px solid #ededed;
 }
 
+.tableHd th {
+    font-weight: normal;
+}
+
 .tableBd{
     border-bottom: 1px dashed #d8d8d8;
 }
@@ -1180,6 +1193,10 @@ input{
     color: #1e589c;
 }
 
+.tableDetail {}
+.tableDetail .tableBd td {
+    height: 130px;
+}
 /* table thumb */
 .tableThumb {
     height: 50px;
@@ -1237,6 +1254,28 @@ input{
     font-size: 0;
 }
 
+.tableGoodInfoThumb{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.tableGoodInfoThumb:hover img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -mo-transform: scale(1.05);
+}
+
+
+.tableGoodInfoThumb img{
+    -webkit-transition: all .45s;
+    -moz-transition: all .45s;
+    -ms-transition: all .45s;
+    -o-transition: all .45s;
+    transition: all .45s;
+}
+
 .tableGoodInfoName {
     display: inline-block;
     width: 224px;
@@ -1260,9 +1299,8 @@ input{
 /* table btn */
 .tableBtn {
     display: inline-block;
-    width: 78px;
     line-height: 20px;
-    padding: 0;
+    padding: 0 12px;
     margin: 6px 0;
     color: #333;
     font-size: 12px;

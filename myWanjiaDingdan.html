@@ -834,7 +834,259 @@
                         <h2 class="panelHdTitle">我的订单</h2>
                     </div>
                     <div class="panelBd">
-                        
+                        <!-- order header -->
+                        <div class="myOrderHeader">
+                            <table>
+                                <th width="280">商品</th>
+                                <th width="92">单价</th>
+                                <th width="92">数量</th>
+                                <th width="92">总价</th>
+                                <th width="205">
+                                    <div class="select enableSelect">
+                                        <div class="selectHd">
+                                            更多<span class="split">|</span>
+                                            <i class="arrow"></i>
+                                        </div>
+                                        <div class="selectBd"></div>
+                                    </div>
+                                </th>
+                                <th>订单操作</th>
+                            </table>
+                        </div><!-- end order header -->
+
+                        <!-- order body -->
+                        <!-- 已完成 状态-->
+                        <table class="table tableDetail myOrderTable mt20">
+                            <tr class="tableHd">
+                                <th>
+                                    <p>2014-11-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号：87745465888117</p>
+                                </th>
+                                <th colspan="5"></th>
+                            </tr>
+                            <tr class="tableBd">
+                                <td>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/13.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/14.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/15.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <p class="textPrimary orderTotal">
+                                        ￥<strong>139</strong>.00
+                                    </p>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="orderStatue">
+                                        已完成
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="tableOperate">
+                                        <p><button class="tableBtn tableBtnDefault">评价晒单</button></p>
+                                        <p class="tableOperateDetail"><a href="">查看订单</a></p>
+                                        <p class="tableOperateBuyAgain"><a href="">再次购买</a></p>
+                                        <p class="tableOperateChange"><a href="">申请退换货</a></p>
+                                        <p class="tableOperateDelete"><a href="">删除记录</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end 已完成 状态-->
+
+                        <!-- 待支付 状态 -->
+                        <table class="table tableDetail myOrderTable mt20 enableCancel">
+                            <tr class="tableHd">
+                                <th>
+                                    <p>2014-11-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号：87745465888117</p>
+                                </th>
+                                <th colspan="5"></th>
+                            </tr>
+                            <tr class="tableBd">
+                                <td>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/18.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <p class="textPrimary orderTotal">
+                                        ￥<strong>139</strong>.00
+                                    </p>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="orderStatue">
+                                        待支付
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="tableOperate">
+                                        <p><button class="tableBtn tableBtnDefault">支付</button></p>
+                                        <p class="tableOperateDetail"><a href="">查看订单</a></p>
+                                        <p class="tableOperateCancel"><a href="javascript:void(0);">取消订单</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end 待支付 状态 -->
+
+                        <!-- 配送中 状态 -->
+                        <table class="table tableDetail myOrderTable mt20">
+                            <tr class="tableHd">
+                                <th>
+                                    <p>2014-11-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号：87745465888117</p>
+                                </th>
+                                <th colspan="5"></th>
+                            </tr>
+                            <tr class="tableBd">
+                                <td>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <p class="textPrimary orderTotal">
+                                        ￥<strong>139</strong>.00
+                                    </p>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="orderStatue">
+                                        配送中
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="tableOperate">
+                                        <p><button class="tableBtn tableBtnDefault">签收</button></p>
+                                        <p class="tableOperateDetail"><a href="">详情</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end 配送中 状态 -->
+
+                        <!-- 已取消 状态 -->
+                        <table class="table tableDetail myOrderTable mt20">
+                            <tr class="tableHd">
+                                <th>
+                                    <p>2014-11-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号：87745465888117</p>
+                                </th>
+                                <th colspan="5"></th>
+                            </tr>
+                            <tr class="tableBd">
+                                <td>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <p class="textPrimary orderTotal">
+                                        ￥<strong>139</strong>.00
+                                    </p>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="orderStatue">
+                                        已取消
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="tableOperate">
+                                        <p class="tableOperateDetail"><a href="">查看详情</a></p>
+                                        <p class="tableOperateDelete"><a href="">删除记录</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end 已取消 状态 -->
+
+                        <!-- 已取消 状态 -->
+                        <table class="table tableDetail myOrderTable mt20 enableCancel">
+                            <tr class="tableHd">
+                                <th>
+                                    <p>2014-11-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号：87745465888117</p>
+                                </th>
+                                <th colspan="5"></th>
+                            </tr>
+                            <tr class="tableBd">
+                                <td>
+                                    <div class="tableGoodInfo">
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <span class="tableGoodInfoName">
+                                            <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
+                                        </span>
+                                        <span class="textNormaal orderGoodPrice">￥<strong>108</strong>.00</span>
+                                        <span class="orderGoodCount">3</span>
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <p class="textPrimary orderTotal">
+                                        ￥<strong>139</strong>.00
+                                    </p>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="orderStatue">
+                                        审核中
+                                    </div>
+                                </td>
+                                <td class="tableBdColumn">
+                                    <div class="tableOperate">
+                                        <p class="tableOperateDetail"><a href="">查看详情</a></p>
+                                        <p class="tableOperateCancel"><a href="javascript:void(0);">取消订单</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end 已取消 状态 -->
+
+                        <!-- end order body -->
+
+                        <!-- pagination -->
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="">上一页</a></li>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href="">6</a></li>
+                                <li>...</li>
+                                <li><a href="">12</a></li>
+                                <li><a href="">下一页</a></li>
+                            </ul>
+                        </div><!-- end pagination -->
                     </div>
                 </div><!-- end my order -->
             </div><!--end main -->
