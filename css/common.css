@@ -1372,3 +1372,33 @@ input{
     border-color: #e14041;
 }
 
+/* select */
+.select {
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 18px 0 10px;
+    margin: 5px 0;
+    color: #555;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #ededed;
+    cursor: pointer;
+}
+
+.selectHd .split {
+    margin-left: 12px;
+    color: #eee;
+}
+
+.selectHd .arrow {
+    width:0;height:0;
+    line-height:0;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #aaa transparent transparent transparent;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
