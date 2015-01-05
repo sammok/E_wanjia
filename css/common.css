@@ -30,6 +30,10 @@ a {
     text-decoration:none;
 }
 
+a img {
+    outline: none;
+}
+
 table {
     border-collapse: collapse;
 }
