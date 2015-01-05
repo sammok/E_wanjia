@@ -784,6 +784,7 @@ input{
     line-height: 36px;
     margin-left: 0;
     left: 0;
+    background: none;
 }
 
 .sidebar .silde_nav {
