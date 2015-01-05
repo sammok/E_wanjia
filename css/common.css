@@ -330,8 +330,8 @@ input{
             }
                 .heade .SiteBtm .Search .text input {
                     height: 39px;
-                    width: 350px;
-                    padding:0 10px;
+                    width: 315px;
+                    padding:0 45px 0 10px;
                     border: 1px solid #ccc;
                 }
                 .heade .SiteBtm .Search .text .search_but {
@@ -358,7 +358,7 @@ input{
                 }
         .heade .SiteBtm .Slogan {
             float:left;
-            margin:10px 0 0 124px;
+            margin:10px 0 0 112px;
         }
             .heade .SiteBtm .Slogan .ico {
                 background: url(../images/SiteBtm_ico.png) no-repeat 0 -148px;
