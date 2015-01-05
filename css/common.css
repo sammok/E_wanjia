@@ -1041,6 +1041,7 @@ input{
 .panelHdSearchBtn {
     float: left;
     width: 64px;
+    height: 24px;
     line-height: 16px;
     padding: 3px 0;
     text-align: center;
