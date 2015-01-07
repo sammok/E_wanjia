@@ -211,31 +211,7 @@
 }
 
 .payWayItem .formRadio {
-    width: 14px;
-    height: 14px;
     margin-top: 23px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #aaa;
-    border-radius: 14px;
-    cursor: pointer;
-}
-
-.payWayItem .formRadioInner{
-    display: block;
-    width: 6px;
-    height: 6px;
-    margin: 4px auto 0 auto;
-    font-size: 0;
-    border-radius: 6px;
-}
-
-.payWayItem .formRadio.active {
-
-}
-
-.payWayItem.active .formRadio .formRadioInner{
-    background: #c8151a;
 }
 
 .payWayItem .payBank {

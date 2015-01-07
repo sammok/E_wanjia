@@ -17,6 +17,18 @@
     -o-user-select: text;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.textCenter {
+    text-align: center;
+}
+
 /* ---------------------------------------------------------------------------
  *      global
    --------------------------------------------------------------------------- */
@@ -60,6 +72,7 @@ th, td {
 }
 
 /* preset margin */
+.mt8 {margin-top: 8px;}
 .mt10 {margin-top: 10px;}
 .mt15 {margin-top: 15px;}
 .mt20 {margin-top: 20px;}
@@ -880,24 +893,27 @@ input{
 }
 
 .sidebarMainBd ul {
+    padding-top: 4px;
     background: #fff;
 }
 
-.sidebarMainBd .active,
-.sidebarMainBd li:hover
+.sidebarMainBd li {
+    padding-bottom: 5px;
+}
+
+.sidebarMainBd .active a,
+.sidebarMainBd li:hover a
 {
     margin-left: -4px;
+    color: #fff;
     background: #e14041;
     border-left: 4px solid #e14041;
 }
 
-.sidebarMainBd .active a,
-.sidebarMainBd li:hover a{
-    color: #fff;
-}
-
 .sidebarMainBd li a{
     display: block;
+    height: 18px;
+    line-height: 18px;
     padding: 10px 0 10px 25px;
     font-size: 14px;
     color: #5b5b5b;
@@ -961,6 +977,7 @@ input{
     -ms-transition: all .25s;
     -o-transition: all .25s;
     transition: all .25s;
+    cursor: pointer;
 }
 
 .btnDefault {
@@ -972,6 +989,170 @@ input{
 .btnDefault:hover {
     color: #e04040;
     border-color: #e04040;
+}
+
+.btn.disabled {
+    color: #999;
+    border: 1px solid #ccc;
+}
+
+.btn.disabled:hover {
+    color: #999;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+
+.btnMd {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btnDefault.btnMd {
+    background: url("../images/btnDefaultMdBg.png") repeat-x;
+}
+
+.btnLg {
+    width: 198px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btnDefault.btnLg {
+    background: url("../images/btnDefaultLgBg.png") repeat-x;
+    background-color: #ebebeb;
+}
+
+.btnPrimary {
+    height: 22px;
+    line-height: 22px;
+    padding:0 12px;
+    color: #fff;
+    background: #e14041;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #f0a0a0;
+    border-bottom: 1px solid #c21f1f;
+
+}
+
+.btnPrimary:hover {
+    color: #fff;
+    background: #ff5758;
+    border-top: 1px solid #f0a0a0;
+    border-bottom: 1px solid #c21f1f;
+}
+
+/* form */
+.formGroup{
+    margin-bottom: 10px;
+}
+
+.formError {
+    display: none;
+    color: #e14041;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.textInput {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 17px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.textInput:focus {
+    color: #666;
+    border-color: #e04040;
+}
+
+.formRadio {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.formRadioInner{
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 4px auto 0 auto;
+    font-size: 0;
+    border-radius: 6px;
+}
+
+.active .formRadio .formRadioInner{
+    background: #c8151a;
+}
+
+/* form select */
+.formSelect {
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 18px 0 10px;
+    margin: 5px 0;
+    color: #555;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #ededed;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.formSelectCurrent .split {
+    margin-left: 12px;
+    color: #eee;
+}
+
+.formSelectCurrent .arrow {
+    width:0;height:0;
+    line-height:0;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #aaa transparent transparent transparent;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+.formSelectOptions {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    min-width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 /* panel  */
