@@ -2,791 +2,1209 @@
 <html lang="ch">
 	<head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="css/common.css" charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="css/myWanjiaOrder.css"/>
-        <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-        <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/myWanjiaOrder.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/common.css" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/myWanjiaOrder.css"/>
+        <script type="text/javascript" src="assets/scripts/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/common.js"></script>
+        <script type="text/javascript" src="assets/scripts/myWanjiaOrder.js"></script>
     </head>
     <body>
-        <div class="navgt_right">
-            <a class="ico shopcat">&#x2741;</a>
-            <a class="ico star">&#x2742;</a>
-            <a class="ico time">&#x273C;</a>
-            <a class="ico go_top">&#x2743;</a>
-        </div>
-		<div class="heade innerPageHeader">
-            <div class="center">
-                <div class="SiteNav">
-                    <div class="mapMy">
-                        <span class="title">我在深圳</span>
-                        <ul class="list">
-                            <li>
-                                北京
-                            </li>
-                            <li>
-                                上海
-                            </li>
-                            <li>
-                                广州
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                            <li>
-                                深圳
-                            </li>
-                        </ul>
+    <!-- side float nav  -->
+    <div class="navgt_right">
+        <a class="ico shopcat">&#x2741;</a>
+        <a class="ico star">&#x2742;</a>
+        <a class="ico time">&#x273C;</a>
+        <a class="ico go_top">&#x2743;</a>
+    </div>
+    <!-- end side float nav  -->
+
+    <!-- header -->
+    <div class="header">
+        <div class="center">
+            <div class="siteNav">
+                <div class="siteNavCityChoose">
+                    <span class="title">我在深圳</span>
+                    <ul class="list">
+                        <li>
+                            <a href="">北京</a>
+                        </li>
+                        <li>
+                            <a href="">上海</a>
+                        </li>
+                        <li>
+                            <a href="">广州</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                        <li>
+                            <a href="">深圳</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="siteNavLogin">您好，欢迎来<font class="colore14041">e万家</font>！<a>登录</a><a>注册</a></div>
+
+                <div class="siteNavEntry">
+                    <a>购物车 <font class="colore14041">0</font> 件</a>
+
+                    <a>收藏夹</a>
+
+                    <a>我的订单</a>
+                </div>
+            </div>
+            <div class="headerBody">
+                <a class="headerLogo"></a>
+                <ul class="headerScrollNav">
+                    <li><a>生鲜食品</a></li>
+                    <li><a>主食厨房</a></li>
+                    <li><a>零食酒饮</a></li>
+                    <li><a>母婴呵护</a></li>
+                    <li><a>个护美妆</a></li>
+                    <li><a>家居厨具</a></li>
+                    <li><a>文具五金</a></li>
+                    <li><a>内衣袜子</a></li>
+                    <li><a>3C电器</a></li>
+                </ul>
+                <div class="headerSearch">
+                    <div class="text">
+                        <input type="text"/>
+                        <a class="headerSearchBtn"></a>
                     </div>
-                    <div class="login">您好，欢迎来<font class="colore14041">e万家</font>！<a>登录</a><a>注册</a></div>
-
-                    <div class="right">
-                        <a>购物车 <font class="colore14041">0</font> 件</a>
-
-                        <a>收藏夹</a>
-
-                        <a>我的订单</a>
+                    <div class="headerSearchHotkey">
+                        <span>热门：</span>
+                        <a href="" target="_blank">素食主义</a>
+                        <a href="" target="_blank">养生达人</a>
+                        <a href="" target="_blank">深夜食堂</a>
                     </div>
                 </div>
-                <div class="SiteBtm">
-                    <div class="bottom_box" style="display: none;"></div>
-                    <div class="bottom_back" style="display: none;"></div>
-                    <a class="logo"></a>
-                    <ul class="silde_nav_Scroll">
-                        <li><a>生鲜食品</a></li>
-                        <li><a>主食厨房</a></li>
-                        <li><a>零食酒饮</a></li>
-                        <li><a>母婴呵护</a></li>
-                        <li><a>个护美妆</a></li>
-                        <li><a>家居厨具</a></li>
-                        <li><a>文具五金</a></li>
-                        <li><a>内衣袜子</a></li>
-                        <li><a>3C电器</a></li>
-                    </ul>
-                    <div class="Search">
-                        <div class="text">
-                            <input type="text"/>
-                            <a class="search_but"></a>
-                        </div>
-                        <div class="search_top">
-                            <span>热门：</span>
-                            <a>素食主义</a>
-                            <a>养生达人</a>
-                            <a>深夜食堂</a>
-                        </div>
-                    </div>
-                    <div class="Slogan">
-                        <span class="ico"></span>
+                <div class="headerBiaoyu">
+                    <span class="ico"></span>
                         <span class="title">
                             每天空运深圳
                             <br />
                             全程冷链到家
                         </span>
-                    </div>
                 </div>
             </div>
-		</div>
-        <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- end header -->
 
         <!-- main -->
         <div class="center">
             <!-- sidebar -->
             <div class="sidebar float_l enableSelect">
-                <div class="slide">
-                    <div class="silde_nav_menu">
+                <div class="sideGoodCategories">
+                    <div class="sideGoodCategoriesHd">
                         <span class="ico">✻</span>商品分类
                     </div>
-                    <div class="silde_nav">
-                        <div class="left">
+                    <div class="sideGoodCategoriesBd">
+                        <div class="sideGoodCategoriesMenu">
                             <div class="title">
                                 <i class="ico"> ✻ </i>
                                 商品分类
                             </div>
-                            <ul class="left_nav">
-                                <li class="">
+                            <ul class="list">
+                                <li>
                                     <i class="ico">✁</i>
                                     生鲜食品
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">❄</i>
                                     主食厨房
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✂</i>
                                     零食酒饮
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✄</i>
                                     母婴呵护
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">☎</i>
                                     日用清洁
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✆</i>
                                     个护美妆
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✝</i>
                                     家居厨具
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✞</i>
                                     文具五金
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✟</i>
                                     内衣袜子
                                 </li>
-                                <li class="">
+                                <li>
                                     <i class="ico">✠</i>
                                     3C电器
                                 </li>
                             </ul>
                             <div class="bottom">
-                        <span class="tt1">
-                            7X24小时营业
-                            <br>
-                            全年无休
-                        </span>
-                        <span class="tt2">
-                            全国免费热线
-                            <br>
-                            4008 888 888
-                        </span>
+                                <span class="tt1">
+                                    7X24小时营业
+                                    <br>
+                                    全年无休
+                                </span>
+                                <span class="tt2">
+                                    全国免费热线
+                                    <br>
+                                    4008 888 888
+                                </span>
                             </div>
                         </div>
-                        <ul class="slide_right">
-                            <li>
+
+                        <ul class="sideGoodCategoriesDetail">
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="xianAd">
+                                    <a href="">
+                                        <img src="assets/images/sideAd01.jpg" alt="" width="268" height="440"/>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <ul class="list">
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="recommend">
-                            <span class="title">
-                                买手推荐
-                            </span>
-                                    <div class="img_view">
-                                        <img src="img/index2.jpg">
-                                    </div>
-                                    <span class="title2">褚橙的世界</span>
-                                    <span class="cont">食物的品质可以大大提升幸福感，让我们走进最新鲜的果蔬世界</span>
-                                    <a class="moer">阅读全文</a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="list">
-                                    <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="recommend">
-                            <span class="title">
-                                买手推荐
-                            </span>
-                                    <div class="img_view">
-                                        <img src="img/index2.jpg">
-                                    </div>
-                                    <span class="title2">褚橙的世界</span>
-                                    <span class="cont">食物的品质可以大大提升幸福感，让我们走进最新鲜的果蔬世界</span>
-                                    <a class="moer">阅读全文</a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="list">
-                                    <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="recommend">
-                            <span class="title">
-                                买手推荐
-                            </span>
-                                    <div class="img_view">
-                                        <img src="img/index2.jpg">
-                                    </div>
-                                    <span class="title2">褚橙的世界</span>
-                                    <span class="cont">食物的品质可以大大提升幸福感，让我们走进最新鲜的果蔬世界</span>
-                                    <a class="moer">阅读全文</a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="list">
-                                    <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="recommend">
-                            <span class="title">
-                                买手推荐
-                            </span>
-                                    <div class="img_view">
-                                        <img src="img/index2.jpg">
-                                    </div>
-                                    <span class="title2">褚橙的世界</span>
-                                    <span class="cont">食物的品质可以大大提升幸福感，让我们走进最新鲜的果蔬世界</span>
-                                    <a class="moer">阅读全文</a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="list">
-                                    <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
-                                    </li>
-                                    <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="recommend">
-                            <span class="title">
-                                买手推荐
-                            </span>
-                                    <div class="img_view">
-                                        <img src="img/index2.jpg">
-                                    </div>
-                                    <span class="title2">褚橙的世界</span>
-                                    <span class="cont">食物的品质可以大大提升幸福感，让我们走进最新鲜的果蔬世界</span>
-                                    <a class="moer">阅读全文</a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+                            <li class="item">
                                 <ul class="list">
                                     <li>
-                                <span class="title">
-                                    新鲜水果
-                                </span>
-                                        <a>苹果 / 梨</a>
-                                        <a>热带水果</a>
-                                        <a>葡萄 / 提子</a>
-                                        <a>猴桃 / 樱桃 / 莓类</a>
-                                        <a>瓜类</a>
-                                        <a>枣</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    时令蔬菜
-                                </span>
-                                        <a>叶菜</a>
-                                        <a>根茎瓜果</a>
-                                        <a>调味菜</a>
-                                        <a>新鲜菌菇</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    肉蛋水产
-                                </span>
-                                        <a>猪肉</a>
-                                        <a>牛羊肉</a>
-                                        <a>海鲜 / 贝类</a>
-                                        <a>禽 / 蛋类</a>
-                                        <a>培根 / 肉肠 / 火腿</a>
-                                        <a>肉丸</a>
-                                        <a>三文鱼</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    面食点心
-                                </span>
-                                        <a>水饺汤圆</a>
-                                        <a>主食面点</a>
-                                        <a>速冻点心</a>
-                                        <a>风味小菜</a>
-                                        <a>新鲜面条</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
                                     </li>
                                     <li>
-                                <span class="title">
-                                    鲜乳果汁
-                                </span>
-                                        <a>鲜奶</a>
-                                        <a>酸奶</a>
-                                        <a>鲜果汁</a>
-                                        <a>黄油芝士</a>
-                                        <a>甜点</a>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
                                     </li>
                                 </ul>
+                                <div class="recommend">
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <ul class="list">
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="recommend">
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <ul class="list">
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="recommend">
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <ul class="list">
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">新鲜水果</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >苹果 / 梨</a>
+                                            <a href="" >热带水果</a>
+                                            <a href="" >葡萄 / 提子</a>
+                                            <a href="" >猴桃 / 樱桃 / 莓类</a>
+                                            <a href="" >瓜类</a>
+                                            <a href="" >枣</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">时令蔬菜</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >叶菜</a>
+                                            <a href="" >根茎瓜果</a>
+                                            <a href="" >调味菜</a>
+                                            <a href="" >新鲜菌菇</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">肉蛋水产</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >猪肉</a>
+                                            <a href="" >牛羊肉</a>
+                                            <a href="" >海鲜 / 贝类</a>
+                                            <a href="" >禽 / 蛋类</a>
+                                            <a href="" >培根 / 肉肠 / 火腿</a>
+                                            <a href="" >肉丸</a>
+                                            <a href="" >三文鱼</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">面食点心</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >水饺汤圆</a>
+                                            <a href="" >主食面点</a>
+                                            <a href="" >速冻点心</a>
+                                            <a href="" >风味小菜</a>
+                                            <a href="" >新鲜面条</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="title">
+                                            <a href="javascript:void(0);">鲜乳果汁</a>
+                                        </span>
+                                        <span class="itemGroup">
+                                            <a href="" >鲜奶</a>
+                                            <a href="" >酸奶</a>
+                                            <a href="" >鲜果汁</a>
+                                            <a href="" >黄油芝士</a>
+                                            <a href="" >甜点</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div class="recommend">
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                    <a class="recommendItem" href="">
+                                        <img src="assets/images/sidebarCategoriesAdDemo.jpg" alt="" width="226" height="120"/>
+                                        <div class="recommendTitle">开袋即食</div>
+                                        <p class="desc">新春第一波鲜枣</p>
+                                        <p class="textPrimary price">
+                                            ￥<strong>139</strong>.00
+                                        </p>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -828,7 +1246,8 @@
                         </ul>
                     </div>
                 </div>
-            </div><!-- sidebar -->
+            </div>
+            <!-- sidebar -->
 
             <!-- main -->
             <div class="main float_r">
@@ -882,7 +1301,7 @@
                             <tr class="tableBd">
                                 <td>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/13.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/13.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -890,7 +1309,7 @@
                                         <span class="orderGoodCount">3</span>
                                     </div>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/14.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/14.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -898,7 +1317,7 @@
                                         <span class="orderGoodCount">3</span>
                                     </div>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/15.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/15.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -940,7 +1359,7 @@
                             <tr class="tableBd">
                                 <td>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/18.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/18.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -980,7 +1399,7 @@
                             <tr class="tableBd">
                                 <td>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/4.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -1019,7 +1438,7 @@
                             <tr class="tableBd">
                                 <td>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/4.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>
@@ -1058,7 +1477,7 @@
                             <tr class="tableBd">
                                 <td>
                                     <div class="tableGoodInfo">
-                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="img/4.png" alt="" width="90" height="90"/></a>
+                                        <a href="" target="_blank" class="tableGoodInfoThumb"><img src="assets/img/4.png" alt="" width="90" height="90"/></a>
                                         <span class="tableGoodInfoName">
                                             <a href="">智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</a>
                                         </span>

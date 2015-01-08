@@ -49,17 +49,18 @@ $(function () {
     }
     
     
-    var over_time = $(".baner1 .right > .title > .over_time");
-    over_time.Countdown({
-        "hour": over_time.find(".hour"),
-        "minute": over_time.find(".minute"),
-        "second": over_time.find(".second"),
-        "callback": function () {
-        }
-    });
+    //var over_time = $(".baner1 .right > .title > .over_time");
+    //over_time.Countdown({
+    //    "hour": over_time.find(".hour"),
+    //    "minute": over_time.find(".minute"),
+    //    "second": over_time.find(".second"),
+    //    "callback": function () {
+    //    }
+    //});
 
     var scroll_Now = $(".scroll_Now"),
-        SiteBtm = $(".heade .SiteBtm");
+        SiteBtm = $(".headerBody");
+
     $(window).scroll(function () {
         var that = $(this);
         if (that.scrollTop() >= scroll_Now.offset().top) {

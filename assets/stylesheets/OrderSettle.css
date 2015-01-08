@@ -1,14 +1,14 @@
-.shopcat_stup {
+.headerShoppingStep {
     position: relative;
     float: right;
     margin-top: 28px;
 }
-    .shopcat_stup > li {
+    .headerShoppingStep > li {
         float:left;
         white-space:nowrap;
         position:relative;
     }
-        .shopcat_stup > li > .line {
+        .headerShoppingStep > li > .line {
             position:absolute;
             top:0;
             left:0;
@@ -16,7 +16,7 @@
             height:4px;
             background-color:#d1d1d1;
         }
-        .shopcat_stup > li > .radius {
+        .headerShoppingStep > li > .radius {
             position:absolute;
             width:28px;
             height:28px;
@@ -29,7 +29,7 @@
             text-align:center;
             line-height:28px;
         }
-        .shopcat_stup > li > .title {
+        .headerShoppingStep > li > .title {
             margin-top:20px;
             font-size:14px;
             color:#333;
@@ -37,23 +37,23 @@
             float:left;
             text-align:center;
         }
-        .shopcat_stup > li.active .line{
+        .headerShoppingStep > li.active .line{
             background-color:#79b235;
         }
-        .shopcat_stup > li.active .radius{
+        .headerShoppingStep > li.active .radius{
             background-position:0 0;
         }
-        .shopcat_stup > li.active .title{
+        .headerShoppingStep > li.active .title{
             color:#79b235;
             font-weight:bold;
         }
-        .shopcat_stup > li.over .line{
+        .headerShoppingStep > li.over .line{
             background-color:#d2e5bb;
         }
-        .shopcat_stup > li.over .radius{
+        .headerShoppingStep > li.over .radius{
             background-position:0 -57px;
         }
-        .shopcat_stup > li.over .title{
+        .headerShoppingStep > li.over .title{
         }
 
     .product > .best{
@@ -141,15 +141,15 @@
                             float:left;
                             margin:10px 10px 0px 0;
                         }
-                        .product > .best > .panl_order > .table_od > .addrs_list > li > .right {
+                        .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry {
                             float:left;
                             font-size:14px;
                             color:#555;
                         }
-                            .product > .best > .panl_order > .table_od > .addrs_list > li > .right td {
+                            .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry td {
                                 padding:5px 0;
                             }
-                                .product > .best > .panl_order > .table_od > .addrs_list > li > .right td a {
+                                .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry td a {
                                     color: #1e589c;
                                     cursor: pointer;
                                     font-size: 12px;

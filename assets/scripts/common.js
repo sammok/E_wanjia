@@ -1,63 +1,86 @@
 $(function () {
-    var silde_nav=$(".slide .silde_nav"),
-        slide_right = silde_nav.find(".slide_right"),
-        left_nav_Li = silde_nav.find(">.left .left_nav > li"),
-        silde_nav_menu = $(".silde_nav_menu"),
-        timeOver,
-        silde_navTimeOver;
-    $("body").click(function () {
-        slide_right.fadeOut();
-        slide_right.find(">li").fadeOut();
-        left_nav_Li.removeClass("active");
-    });
-    silde_nav.hover(function () {
-        clearTimeout(silde_navTimeOver);
-        silde_nav.show();
-    }, function () {
-        hoverOversilde_nav();
-    });
+    /* sidebar */
+    function sidebar(){
+        var sidebar = $('.sideGoodCategories'),
+            sidebarHd = sidebar.find('.sideGoodCategoriesHd'),
+            sidebarBd = sidebar.find('.sideGoodCategoriesBd'),
+            bdTimer = null,
+            menu = $('.sideGoodCategoriesMenu'),
+            detail = $('.sideGoodCategoriesDetail'),
+            menuItems = menu.find('li'),
+            detailItems = detail.find('.item'),
+            menuTimer = null,
+            detailTimer = null,
+            isSelected = false;
 
-    silde_nav_menu.hover(function () {
-        clearTimeout(silde_navTimeOver);
-        silde_nav.show();
-    }, function () {
-        hoverOversilde_nav();
-    });
-    function hoverOversilde_nav() {
-        clearTimeout(silde_navTimeOver);
-        silde_navTimeOver = setTimeout(function () {
-            if (silde_nav_menu.length >= 1) { 
-                silde_nav.hide();
+        sidebarHd.hover(function (){
+            sidebarBd.show();
+        }, function (){
+            bdTimer = setTimeout(function (){
+                sidebarBd.hide();
+            }, 200);
+        });
+
+        sidebarBd.hover(function (){
+            sidebarBd.show();
+            clearTimeout(bdTimer);
+        }, function (){
+            bdTimer = setTimeout(function (){
+                sidebarBd.hide();
+                detail.hide();
+                detailItems.hide();
+                $('.sideGoodCategoriesMenu .list li').removeClass('active');
+                clearTimeout(detailTimer);
+                isSelected = false;
+            }, 200);
+        });
+
+        menuItems.hover(function (){
+            var that = $(this);
+
+            if (isSelected == false){
+                if (that.index() != -1) {
+                    clearTimeout(detailTimer);
+                    detail.show();
+
+                    menuItems.removeClass('active');
+                    that.addClass('active');
+
+                    detailItems.hide();
+                    detailItems.eq(that.index()).show();
+                    isSelected = true;
+                }
+            } else {
+                if (that.index() != -1) {
+                    clearTimeout(detailTimer);
+                    detail.show();
+
+                    detailTimer = setTimeout(function (){
+                        menuItems.removeClass('active');
+                        that.addClass('active');
+
+                        detailItems.hide();
+                        detailItems.eq(that.index()).show();
+                    }, 200)
+                }
+                isSelected = true;
             }
-        }, 200);
+
+        }, function (){
+
+        });
+
+        detailItems.hover(function (){
+            clearTimeout(detailTimer);
+        }, function (){
+
+        });
+
     }
-    left_nav_Li.each(function (i) {
-        var that = $(this),
-            slide_right_li = slide_right.find(">li").eq(i);
-        slide_right_li.hover(function () {
-            clearTimeout(timeOver);
-        }, function () {
-            hoverOver();
-        });
-        that.hover(function () {
-            clearTimeout(timeOver);
-            timeOver = setTimeout(function () {
-                that.addClass("active").siblings("li").removeClass("active");
-                slide_right.show();
-                slide_right_li.show().siblings("li").hide();
-            }, 200);
-        }, function () {
-            hoverOver();
-        });
-        function hoverOver() {
-            clearTimeout(timeOver);
-            timeOver = setTimeout(function () {
-                that.removeClass("active");
-                slide_right.hide();
-                slide_right_li.hide();
-            }, 200);
-        }
-    });
+
+    sidebar();
+
+    // go top
     $(".go_top").click(function () {
         $("html,body").animate({ "scrollTop": 0 }, 200);
     });
