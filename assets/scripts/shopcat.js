@@ -21,4 +21,24 @@ $(function () {
         });
 
     });
+
+    function messagePanel(){
+        // button
+        $('.messagePanel .closeBtn').click(function (){
+            $(this).parents('.messagePanel').fadeOut();
+        });
+
+        $('.messagePanel .continue').click(function (){
+            $(this).parents('.messagePanel').fadeOut();
+        });
+
+        $('.messagePanel .cancel').click(function (){
+            $(this).parents('.messagePanel').fadeOut();
+        });
+
+        $('.exchangeBtn').click(function (){
+            $('.jiaJiaGetGood').fadeIn();
+        });
+    }
+    messagePanel();
 })
