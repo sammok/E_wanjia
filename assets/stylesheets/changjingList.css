@@ -1,0 +1,27 @@
+/* Created by Qianglong Mo 2015 */
+
+/* changjing List */
+.sceneListHd li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px;
+    background: #fff;
+}
+
+.sceneListHd li a,
+.sceneListHd li a{
+    color: #333;
+}
+
+.sceneListHd li.active a,
+.sceneListHd li:hovera a{
+    color: #fff;
+    font-size: 16px;
+    background: #e14041;
+}
+
+.sceneListBd .row1{
+    height: 370px;
+    background: url("../images/sceneListRow1Bg.png");
+}
