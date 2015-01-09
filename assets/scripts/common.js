@@ -21,10 +21,12 @@ $(function () {
             }, 200);
         });
 
-        sidebarBd.hover(function (){
+        sidebarBd.mouseover(function (){
             sidebarBd.show();
             clearTimeout(bdTimer);
-        }, function (){
+        });
+
+        sidebarBd.mouseout(function (){
             bdTimer = setTimeout(function (){
                 sidebarBd.hide();
                 detail.hide();
@@ -35,7 +37,7 @@ $(function () {
             }, 200);
         });
 
-        menuItems.hover(function (){
+        menuItems.mouseover(function (){
             var that = $(this);
 
             if (isSelected == false){
@@ -66,14 +68,10 @@ $(function () {
                 isSelected = true;
             }
 
-        }, function (){
-
         });
 
-        detailItems.hover(function (){
+        detailItems.mouseover(function (){
             clearTimeout(detailTimer);
-        }, function (){
-
         });
 
     }
