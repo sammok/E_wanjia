@@ -110,6 +110,16 @@ body {
     box-shadow: 0 2px 2px #000;
 }
 
+.sideGoodCategories .sideGoodCategoriesMenu {
+    height: 100%;
+    display: block !important;
+    box-shadow: 3px 2px 2px #ccc;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail{
+    box-shadow: 3px 2px 2px #ccc;
+}
+
 .baner1,
 .baner2,
 .baner3,
@@ -967,12 +977,11 @@ body {
     display: inline-block;
     margin-top: 7px;
     width: 100%;
-    background: #fff;
 }
 
 .baner6 .left > .list > li {
     float: left;
-    height: 341px;
+    height: 360px;
     margin:0 1px 0 0;
     position: relative;
     width: 291px;
@@ -988,14 +997,17 @@ body {
 }
 .baner6 .left > .list > li .img_view {
     float: left;
-    height: 245px;
-    line-height: 228px;
-    padding-bottom: 6px;
+    height: 217px;
+    line-height: 217px;
+    padding: 16px 0 24px 0;
     text-align: center;
     width: 100%;
+    background: url("../images/baner6BG1.jpg") repeat-x 0 bottom;
 }
 
 .baner6 .left > .list > li .img_view > img {
+    width: 217px;
+    height: 217px;
     vertical-align: middle;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
@@ -1011,11 +1023,11 @@ body {
 }
 
 .baner6 .left > .list > li .bottom .name {
-    color: #333;
+    color: #666;
     float: left;
     font-size: 14px;
     height: 40px;
-    line-height: 19px;
+    line-height: 20px;
     overflow: hidden;
     width: 100%;
 }
@@ -1024,6 +1036,7 @@ body {
     color: #e14041;
     float: left;
     font-size: 18px;
+    margin-top: 16px;
 }
 .baner6 .right {
     float: right;
@@ -1038,8 +1051,8 @@ body {
 }
 .baner6 .right .cont {
     float: left;
-    height: 341px;
-    padding: 0 30px;
+    height: 360px;
+    padding: 0 20px;
     position: relative;
     background-color:#fff;
 }
@@ -1048,23 +1061,27 @@ body {
     float:left;
     font-size:18px;
     color:#666;
-    margin:18px 0 10px 0;
+    margin:18px 0 6px 0;
 }
 .baner6 .right .cont .img_view {
     clear:both;
     background-color: #fff;
     float: left;
-    height: 197px;
+    width: 263px;
+    height: 200px;
     overflow: hidden;
     text-align: center;
-    width: 100%;
     margin-bottom:10px;
 }
 
 .baner6 .right .cont .img_view img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     vertical-align: middle;
+}
+.baner6 .right .cont .name {
+    margin-top: 7px;
+    line-height: 20px;
 }
 .baner6 .right .cont .name,
 .baner6 .right .cont .more {
@@ -1072,6 +1089,7 @@ body {
     color:#666;
     float:left;
     width:100%;
+
 }
 .baner6 .right .cont .more {
     width:auto;
