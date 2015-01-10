@@ -71,5 +71,11 @@ $(function () {
         }
     });
 
+
+    function brandSlide(){
+        jQuery(".brandSlide01").slide({ titleCell:".brandSlideHd i", mainCell:".brandSlideBd ul",autoPlay:true});
+        jQuery(".brandSlide02").slide({ titleCell:".brandSlideHd i", mainCell:".brandSlideBd ul",autoPlay:true});
+    }
+    brandSlide();
     
 });
