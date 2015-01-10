@@ -5,6 +5,7 @@ body {
 
 .badge_bao,
 .badge_re {
+    display: none;
     width: 71px;
     height: 71px;
     background: url(../images/badge/bao.png) no-repeat;
@@ -287,6 +288,7 @@ body {
     position:relative;
 }
 .baner1 .right .cont .badge_bao {
+    display: none;
     position:absolute;
     top:20px;
     right:20px;
@@ -304,7 +306,22 @@ body {
     max-width:100%;
     max-height:100%;
     vertical-align:middle;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
+
+.baner1 .right .cont .img_view img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    margin: -2px 0 0 -2px;
+}
+
 .baner1 .right .cont .bottom {
     float:left;
     width: 370px;
@@ -928,7 +945,7 @@ body {
 
 .baner6 .left {
     float: left;
-    width: 877px;
+    width: 876px;
 }
 
 .baner6 .left > .title, .baner6 .right > .title {
@@ -950,15 +967,20 @@ body {
     display: inline-block;
     margin-top: 7px;
     width: 100%;
+    background: #fff;
 }
 
 .baner6 .left > .list > li {
     float: left;
     height: 341px;
-    margin:0 2px 2px 0;
+    margin:0 1px 0 0;
     position: relative;
-    width: 279px;
+    width: 291px;
     background-color: #fff;
+}
+
+.baner6 .left > .list > li:last-child{
+    margin-right: 0;
 }
 
 .baner6 .left > .list > li:hover .img_view img{
@@ -1005,7 +1027,7 @@ body {
 }
 .baner6 .right {
     float: right;
-    width: 303px;
+    width: 304px;
 }
 
 .baner6 .right > .title {
@@ -1016,7 +1038,7 @@ body {
 }
 .baner6 .right .cont {
     float: left;
-    height: 343px;
+    height: 341px;
     padding: 0 30px;
     position: relative;
     background-color:#fff;
@@ -1201,6 +1223,4 @@ body {
 .sideRecommend .thumb:hover {
     opacity: .8;
 } 
-
-
 
