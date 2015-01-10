@@ -1,27 +1,273 @@
 /* Created by Qianglong Mo 2015 */
 
 /* changjing List */
+.sceneListHd {
+    background: #fff;
+
+}
+
 .sceneListHd li {
     float: left;
     height: 45px;
     line-height: 45px;
-    padding: 0 40px;
-    background: #fff;
 }
 
 .sceneListHd li a,
 .sceneListHd li a{
+    display: block;
+    padding: 0 40px;
     color: #333;
+    background: url("../images/sceneListHdSplit.png") no-repeat right center;
 }
 
 .sceneListHd li.active a,
-.sceneListHd li:hovera a{
+.sceneListHd li:hover a{
     color: #fff;
     font-size: 16px;
     background: #e14041;
 }
 
-.sceneListBd .row1{
-    height: 370px;
+
+.row img {
+    vertical-align: top;
+}
+
+/* row 1 recommend */
+.row1{
+    padding-top: 52px;
     background: url("../images/sceneListRow1Bg.png");
 }
+
+.row1 .rowContent{
+    height: 370px;
+    padding: 30px;
+    background: #fff;
+}
+
+.row1 .list .item{
+    float:left;
+    width: 192px;
+    margin-right: 45px;
+}
+
+.row1 .list .item:last-child {
+    margin-right: 0;
+}
+
+.row1 .list .item a {
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.row1 .list .item .info {
+    margin-top: 35px;
+}
+
+.row1 .textPrimary {
+    font-size: 22px;
+}
+
+.row1 .textPrimary strong {
+    font-size: 28px;
+    margin-left: -6px;
+}
+
+.row1 .list .item .btn{
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/* row module */
+.rowModA {
+    background: #fff;
+}
+
+.rowModA.active {
+    position: relative;
+    z-index: 10;
+}
+
+.rowModA .rowSide a {
+    position: relative;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.rowModA .rowSide a:after {
+    content:".";
+    overflow: hidden;
+    width: 10px;
+    height: 35px;
+    text-indent: -5em;
+    background: url("../images/rowSideArrow.png") no-repeat;
+    position: absolute;
+    right: -10px;
+    top: 112px;
+}
+
+.rowModA .rowSide dl {
+    position: absolute;
+    left: 17px;
+    top: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.rowModA .rowSide dt {
+
+    font-size: 24px;
+    font-weight: normal;
+    color: #535353;
+}
+
+.rowModA .rowSide dd {
+    padding: 0;
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #a1a1a1;
+}
+
+.rowModA .rowSide a:hover {
+    opacity: .9;
+}
+
+.rowModA .rowMain {
+    position: relative;
+}
+
+.rowModA .productListMore {
+    position: absolute;
+    top: 355px;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    background: #fff url("../images/sceneListItemShowMore.png") no-repeat center bottom;
+    cursor: pointer;
+}
+
+.rowModA .productListMore.active{
+    bottom: 0;
+    top: auto;
+}
+
+/* row 2 breakfast */
+.product_list {
+    width: 930px;
+    height: 326px;
+    padding: 30px;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product_list.active {
+    height: 660px;
+    box-shadow: 2px 3px 5px #ccc;
+}
+.product_list > li {
+    float: left;
+    width: 200px;
+    height: 325px;
+    word-break: break-all;
+    position:relative;
+    margin:0 40px 0 0;
+    background-color:#fff;
+}
+
+.product_list > li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.product_list > li .img_view {
+    cursor: pointer;
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    border-bottom:1px solid #ededed;
+    position:relative;
+}
+.product_list > li .img_view img {
+    height: 100%;
+    width: 100%;
+}
+.product_list > li .name {
+    color: #333;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 35px;
+    margin: 5px 0;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+    position:relative;
+}
+.product_list > li .name:hover {
+    color: #e14041;
+}
+.product_list > li .price {
+    color: #e14041;
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    width: 90px;
+    margin:3px 0 0 0;
+    position:relative;
+}
+.product_list > li .price span span {
+    font-size: 24px;
+}
+.product_list > li .price s {
+    color: #bbb;
+    display: block;
+    font-size: 15px;
+}
+.product_list > li .but25 {
+    position:relative;
+}
+.product_list > li > .label {
+    margin:5px 0;
+    float:left;
+    height:17px;
+    position:relative;
+}
+.product_list > li > .label > span {
+    border-radius: 17px;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    height: 17px;
+    line-height: 17px;
+    margin-right: 3px;
+    padding: 0 5px;
+}
+.product_list > li > .label > span.red {
+    background-color:#e14041;
+}
+.product_list > li > .label > span.blue {
+    background-color:#1e589c;
+}
+.product_list > li > .label > span.gray {
+    background-color:#78b235;
+}
+.product_list > li > .mask {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+/* row 3 lunch */
+
