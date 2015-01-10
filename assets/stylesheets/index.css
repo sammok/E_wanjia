@@ -1065,7 +1065,7 @@ body {
 
 .baner6 .left > .list > li .bottom .price {
     float: left;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 .baner6 .right {
     float: right;
@@ -1107,7 +1107,17 @@ body {
     height: 100%;
     width: 100%;
     vertical-align: middle;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
+
+.baner6 .right .cont:hover .img_view img {
+    opacity: .8;
+}
+
 .baner6 .right .cont .name {
     margin-top: 7px;
     line-height: 20px;
@@ -1129,6 +1139,14 @@ body {
 
 .baner6 {
     margin-top: 35px;
+}
+
+.baner6 .textPrimary.price {
+    font-size: 18px;
+}
+
+.baner6 .textPrimary.price strong {
+    font-size: 24px;
 }
 
 .i_view {
