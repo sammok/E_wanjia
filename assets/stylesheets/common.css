@@ -257,6 +257,7 @@ input {
     height: 173px;
     box-shadow: 0 0 10px rgba(9, 2, 4, .12);
     position: relative;
+    z-index: 100;
 }
 
 .header .center {
@@ -513,7 +514,7 @@ input {
     left: 50%;
     top: 0;
     margin-left: -595px;
-    background-color: rgba(255, 255, 255, 0.86);
+    background: url("../images/whiteOpacity92.png");
     z-index: 10;
     padding: 10px 0;
     box-shadow: 0 3px 3px rgba(9, 2, 4, 0.2);
@@ -607,7 +608,7 @@ input {
 }
 
 .web_map > li a {
-    color: #333;
+    color: #848484;
     display: block;
     cursor: pointer;
 }
@@ -996,11 +997,11 @@ input {
 .sidebar .sideGoodCategoriesBd {
     margin-left: 0;
     left: 0;
-    box-shadow: 3px 5px 5px #eee;
+    box-shadow: 3px 2px 2px #f1f1f1;
 }
 
 .sidebar .sideGoodCategoriesDetail {
-    box-shadow: 3px 5px 5px #eee;
+    box-shadow: 3px 2px 2px #f1f1f1;
 }
 
 .crumb {

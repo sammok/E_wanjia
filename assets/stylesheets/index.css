@@ -15,6 +15,7 @@ body {
 }
 
 .news {
+    display: none;
     width: 37px;
     height: 44px;
     line-height: 38px;
@@ -116,11 +117,11 @@ body {
 .baner6 {
     width: 1190px;
     float:left;
-    margin-top:15px;
+    margin-top:25px;
 }
 
 .baner1 .left {
-    width:795px;
+    width:770px;
     float:left;
 }
 .baner1 .left > .title,
@@ -129,6 +130,10 @@ body {
     color:#666;
     display:inline-block;
     width:100%;
+}
+
+.baner1 .right > .title *{
+    vertical-align: middle;
 }
 .baner1 .left > .list > li > .mask {
     position: absolute;
@@ -162,8 +167,16 @@ body {
     width:250px;
     height:350px;
     float:left;
-    margin-right:15px;
+    margin-right:10px;
     position:relative;
+}
+
+.baner1 .left > .list > li:last-child {
+    margin-right: 0;
+}
+
+.baner1 .left > .list > li:hover {
+
 }
 .baner1 .left > .list > li .country {
     position:absolute;
@@ -255,11 +268,10 @@ body {
 }
 
 .baner1 .right {
-    width: 395px;
-    float: left;
+    width: 410px;
+    float: right;
 }
 .baner1 .right > .title > .t1 {
-    margin-left:10px;
 }
 .baner1 .right > .title > .over_time {
     font-size:12px;
@@ -295,7 +307,7 @@ body {
 }
 .baner1 .right .cont .bottom {
     float:left;
-    width:355px;
+    width: 370px;
     padding:13px 20px 0 20px;
     font-size:14px;
     height:106px;
@@ -405,14 +417,14 @@ body {
     height:390px;
 }
 .baner3 > li {
-    width:587px;
+    width:590px;
     height:390px;
     overflow:hidden;
     background-color:#FFF;
 }
 .baner3 > li > .left {
     position:relative;
-    width:390px;
+    width:393px;
     height:390px;
     line-height:390px;
     overflow:hidden;
@@ -428,15 +440,17 @@ body {
 }
 .baner3 > li > .left > img {
     /*vertical-align:middle;*/
+    display: block;
+    width: 100%;
+    height: 393px;
 }
 .baner3 > li > .left > .pop {
     line-height:20px;
-    position:absolute;
     bottom:-100%;
     left:0;
     width:100%;
     padding:15px 0 0;
-    background-color:rgba(255,255,255,0.7);
+    background: url("../images/whiteOpacity90.png");
     transition:all 0.4s ease-in-out;
     opacity:0;
 }
@@ -446,6 +460,7 @@ body {
     bottom:0;
 }
 .baner3 > li > .left > .pop .badge_re {
+    display: none;
     position:absolute;
     z-index:2;
     right:25px;
@@ -467,7 +482,7 @@ body {
     display:block;
     padding:15px 20px;
     font-size:14px;
-    color:#666;
+    color:#999;
     position:relative;
     border-top:1px solid #ededed;
 }
@@ -482,13 +497,13 @@ body {
     top: 25px;
 }
 .baner3 > li > .right {
-    width:197px;
+    width:196px;
     float:right;
     overflow:hidden;
 }
 .baner3 > li > .right .tt1 {
-    height: 195px;
-    line-height: 195px;
+    height: 196px;
+    line-height: 196px;
     position: relative;
     border-bottom: 1px solid #ededed;
 
@@ -549,9 +564,9 @@ body {
 }
 .baner4 > .list > li,
 .baner5 > .right > .bgll {
-    width: 286px;
+    width: 290px;
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
     background-color: #fff;
     position: relative;
 }
@@ -610,6 +625,7 @@ body {
     text-overflow:ellipsis;
 }
 .baner4 > .list > li > .bottom .present {
+    color: #999;
     font-weight:200;
     margin-top:5px;
 }
@@ -622,8 +638,8 @@ body {
 .baner5 {
 }
 .baner5 > .left {
-    width:260px;
-    height:855px;
+    width:250px;
+    height:830px;
     float:left;
     background-color:#fff;
 }
@@ -686,29 +702,35 @@ body {
 
 .baner5 .right {
     float: right;
-    width: 930px;
+    width: 940px;
     height:855px;
-    margin-right:-14px;
+    margin: 0 -10px -25px 0;
 }
 
 .baner5 .right > .bgtt {
     background-color: #fff;
-    height: 420px;
+    height: 410px;
     overflow: hidden;
-    width: 605px;
+    width: 617px;
     float:left;
-    margin:0 15px 15px 0;
+    margin:0 10px 10px 0;
 }
 
 .baner5 .right > .bgtt > .left {
     border-right: 1px solid #ededed;
     float: left;
     height: 100%;
-    line-height: 420px;
+    line-height: 410px;
     margin-left: -1px;
     overflow: hidden;
     position: relative;
-    width: 396px;
+    width: 410px;
+}
+
+.baner5 .right > .bgtt > .left img {
+    display: block;
+    width: 410px;
+    height: 410px;
 }
 
 .baner5 .right > .bgtt > .left > .news {
@@ -723,7 +745,7 @@ body {
 }
 
 .baner5 .right > .bgtt > .left > .pop {
-    background-color: rgba(255, 255, 255, 0.7);
+    background: url("../images/whiteOpacity90.png");
     bottom: -100%;
     left: 0;
     line-height: 20px;
@@ -741,6 +763,7 @@ body {
 }
 
 .baner5 .right > .bgtt > .left > .pop .badge_re {
+    display: none;
     position: absolute;
     right: 25px;
     top: 20px;
@@ -785,13 +808,13 @@ body {
 .baner5 .right > .bgtt > .right {
     float: right;
     overflow: hidden;
-    width: 209px;
+    width: 205px;
     margin-right:0;
 }
 
 .baner5 .right > .bgtt > .right .tt1 {
     border-bottom: 1px solid #ededed;
-    height: 210px;
+    height: 205px;
     line-height: 210px;
     position: relative;
 }
@@ -807,8 +830,8 @@ body {
 .baner5 .right > .bgtt > .right .tt1 > .pop {
     position: absolute;
     width: 169px;
+    height: 211px;
     padding: 0 20px;
-    height: 100%;
     left: 0;
     top: -100%;
     opacity: 0;
@@ -852,9 +875,9 @@ body {
 .baner5 > .right > .bgll {
     background-color: #fff;
     float: left;
-    margin:0 15px 15px 0;
-    width: 295px;
-    height:420px;
+    margin:0 10px 10px 0;
+    width: 303px;
+    height:410px;
 }
 
 .baner5 > .right > .bgll > .img_view {
@@ -874,14 +897,14 @@ body {
 
 .baner5 > .right > .bgll > .bottom {
     float: left;
-    padding: 15px 20px;
+    padding: 0 20px 15px 20px;
     width: 260px;
     position:relative;
 }
 
 .baner5 > .right > .bgll > .bottom .name,
 .baner5 > .right > .bgll > .bottom .present {
-    color: #333;
+    color: #666;
     cursor: pointer;
     display: block;
     font-size: 14px;
@@ -893,6 +916,7 @@ body {
     white-space: nowrap;
 }
 .baner5 > .right > .bgll > .bottom .present {
+    color: #999;
     font-weight: 200;
     margin-top: 5px;
 }
@@ -905,11 +929,11 @@ body {
 
 .baner6 .left {
     float: left;
-    width: 844px;
+    width: 877px;
 }
 
 .baner6 .left > .title, .baner6 .right > .title {
-    color: #666;
+    color: #555;
     display: inline-block;
     width: 100%;
     font-size: 24px;
@@ -925,7 +949,7 @@ body {
 }
 .baner6 .left > .list {
     display: inline-block;
-    margin-top: 21px;
+    margin-top: 7px;
     width: 100%;
 }
 
@@ -936,6 +960,10 @@ body {
     position: relative;
     width: 279px;
     background-color: #fff;
+}
+
+.baner6 .left > .list > li:hover .img_view img{
+    opacity: .80;
 }
 .baner6 .left > .list > li .img_view {
     float: left;
@@ -948,6 +976,11 @@ body {
 
 .baner6 .left > .list > li .img_view > img {
     vertical-align: middle;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 
 .baner6 .left > .list > li .bottom {
@@ -973,21 +1006,20 @@ body {
 }
 .baner6 .right {
     float: right;
-    width: 335px;
+    width: 303px;
 }
 
 .baner6 .right > .title {
     color: #666;
     font-size: 24px;
     font-weight:bold;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 .baner6 .right .cont {
     float: left;
     height: 343px;
     padding: 0 30px;
     position: relative;
-    width: 270px;
     background-color:#fff;
 }
 
@@ -1027,8 +1059,22 @@ body {
     cursor:pointer;
 }
 
+.baner6 {
+    margin-top: 35px;
+}
+
 .i_view {
     width:100%;
     height:100%;
     overflow:hidden;
 }
+
+.i_view img {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+
