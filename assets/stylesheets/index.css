@@ -169,7 +169,7 @@ body {
 .baner1 .left > .title > .t1,
 .baner1 .right > .title > .t1 {
     font-size:24px;
-    font-weight:bold;
+    font-weight:normal;
     margin-right:15px;
 }
 .baner1 .left > .list {
@@ -272,7 +272,6 @@ body {
     color:#fff;
     border-bottom:1px solid #a42f30;
     font-size:18px;
-    font-weight:bold;
     float:right;
     cursor:pointer;
     transition:all 0.5s ease;
@@ -676,13 +675,12 @@ body {
     line-height: 20px;
     margin-top: 10px;
     overflow: hidden;
-    font-weight:bold;
+    font-weight:normal;
     white-space:nowrap;
     text-overflow:ellipsis;
 }
 .baner4 > .list > li > .bottom .present {
     color: #999;
-    font-weight:200;
     margin-top:5px;
 }
 .baner4 > .list > li > .bottom .price {
@@ -969,11 +967,10 @@ body {
 
 .baner5 > .right > .bgll > .bottom .name,
 .baner5 > .right > .bgll > .bottom .present {
-    color: #666;
+    color: #333;
     cursor: pointer;
     display: block;
     font-size: 14px;
-    font-weight: bold;
     line-height: 20px;
     margin-top: 10px;
     overflow: hidden;
@@ -982,7 +979,6 @@ body {
 }
 .baner5 > .right > .bgll > .bottom .present {
     color: #999;
-    font-weight: 200;
     margin-top: 0;
 }
 .baner5 > .right > .bgll > .bottom .price {
