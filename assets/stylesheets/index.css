@@ -240,11 +240,6 @@ body {
 }
 .baner1 .left > .list > li .bottom .price {
     float:left;
-    font-size: 20px;
-}
-
-.baner1 .left > .list > li .bottom .price strong {
-    font-size: 30px;
 }
 .baner1 .left > .list > li .bottom .stock {
     float:left;

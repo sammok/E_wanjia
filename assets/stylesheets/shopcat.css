@@ -520,7 +520,7 @@
     top: 50%;
     margin: -300px 0 0 -345px;
     width: 600px;
-    height: 690px;
+    height: 585px;
     background: #fff;
     border: 1px solid #dedede;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
@@ -667,3 +667,13 @@
 .xiugaiYouhui .messagePanelBd {
     padding-bottom: 25px;
 }
+
+/* ---------------------------------------------------------------------------
+ *      responsitory
+   --------------------------------------------------------------------------- */
+@media screen and (max-height: 769px){
+    .messagePanelBd .tableWrap {
+        height: 420px
+    }
+}
+
