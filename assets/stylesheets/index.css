@@ -75,23 +75,28 @@ body {
 .index_banner_group .banner_nav {
     position: absolute;
     right: 50%;
-    bottom: 10px;
+    bottom: 16px;
     margin-right: -570px;
     height: 10px;
 }
 
 .index_banner_group .banner_nav > li {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin-left: 10px;
     position: relative;
     float: left;
     overflow: hidden;
-    background-color: rgba(225, 225, 225, .7);
+    border: 2px solid #fff;
+    border-radius: 83px;
+    opacity: .57;
+    cursor: pointer;
 }
 
 .index_banner_group .banner_nav > li.active {
-    background-color: #ff2c2c;
+    background: #e14041;
+    border-color: #e14041;
+    opacity: 1;
 }
 
 /*��ҳ�����õ�Ƭ��������*/
@@ -284,16 +289,16 @@ body {
 .baner1 .right > .title > .t1 {
 }
 .baner1 .right > .title > .over_time {
-    font-size:12px;
+    font-size:14px;
     color:#666;
     position: relative;
-    top: 4px;
+    top: 2px;
 
 }
-.baner1 .right > .title > .over_time .ico {
+.baner1 .right > .title > .over_time .clockIcon {
     margin-right:5px;
     position: relative;
-    top: -2px;
+    top: -1px;
 }
 .baner1 .right .cont {
     width:100%;
