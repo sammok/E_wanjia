@@ -1298,7 +1298,11 @@ input {
     border-left: none;
     border-top: 1px solid #f0a0a0;
     border-bottom: 1px solid #c21f1f;
-
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 
 .btnPrimary:hover {

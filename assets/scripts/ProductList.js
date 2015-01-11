@@ -49,4 +49,13 @@ $(function () {
             }, 500);
         }
     }
-})
+
+    function productFilter(){
+        $('.filter_nav .item').click(function (){
+            $('.filter_nav .item').removeClass('active');
+            $(this).addClass('active').toggleClass('toggle')
+                .siblings('.item').removeClass('toggle');
+        });
+    }
+    productFilter();
+});

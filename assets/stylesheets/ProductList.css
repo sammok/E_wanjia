@@ -224,10 +224,16 @@
                 }
                 .product > .right > .filter > .list > li a {
                     cursor: pointer;
-                    transition: all 0.5s ease;
+                    transition: all 0s ease;
                 }
-                    .product > .right > .filter > .list > li a:hover {
+                    .product > .right > .filter > .list > li a:hover,
+                    .product > .right > .filter > .list > li > .active{
                         color: #e14041;
+                        border-color: #e14041 !important;
+                    }
+                    .product > .right > .filter > .list > li a:hover i,
+                    .product > .right > .filter > .list > li a.active i{
+                        background-image: url("../images/jiaOn.png");
                     }
 
                 .product > .right > .filter > .list > li> .a_list {
@@ -303,31 +309,68 @@
         margin:15px 0;
         font-size:14px;
     }
-        .product > .right .filter_nav > a:hover {
-            color:#e14041;
-            cursor:pointer;
-        }
         .product > .right .filter_nav > .deft {
             float:left;
             color:#333;
             padding:0 20px;
         }
-        .product > .right .filter_nav > .price ,
-        .product > .right .filter_nav > .sales ,
-        .product > .right .filter_nav > .news {
-            float:left;
-            color:#333;
-            line-height:20px;
-            margin:12px 0;
-            padding:0 20px;
-            border-right:1px solid #d3d3d3;
-            transition:all 0.5s ease;
+
+        .filter_nav{
+
         }
-        .product > .right .filter_nav > .price {
-            background: url(../images/select.png) no-repeat 47px center;
-            margin-right: 5px;
-            padding: 0 20px 0 15px;
-        }
+.filter_nav .item{
+    float:left;
+    height: 45px;
+    line-height: 45px;
+}
+
+.filter_nav .item:hover{
+    color: #fff;
+    background: #e14041;
+}
+
+.filter_nav .item.active{
+    color: #fff;
+    background: #e14041;
+}
+
+.filter_nav .item span {
+    display: block;
+}
+
+.filter_nav .item i{
+    display: block;
+    height: 100%;
+    padding: 0 38px 0 20px;
+    font-style: normal;
+    background: url("../images/filterSplit.png") no-repeat right center;
+}
+
+.filter_nav .item:hover i,
+.filter_nav .item.active i{
+    background: none;
+}
+
+.filter_nav .item.price span,
+.filter_nav .item.count span{
+    background: url("../images/verticalArrowIcon.png") no-repeat 55px center;
+}
+
+.filter_nav .item.price.toggle span,
+.filter_nav .item.count.toggle span{
+    background: url("../images/verticalArrowIconOn.png") no-repeat 55px center;
+}
+
+.filter_nav .item.default i {
+    padding: 0 20px;
+}
+
+.filter_nav .item.new i {
+    padding: 0 20px;
+}
+
+
+
         .product > .right .filter_nav > .sales {
             background: url(../images/top_down.png) no-repeat 47px 5px;
             margin-right: 5px;
@@ -337,13 +380,6 @@
             .product > .right .filter_nav > .sales.top {
                 background-position:right -24px;
             }
-        .product > .right .filter_nav > .news {
-            padding:0 15px;
-        }
-        .product > .right .filter_nav .active {
-            background-color: #e14041;
-            color: #fff;
-        }
         .product > .right .filter_nav .check {
             float:left;
         }
