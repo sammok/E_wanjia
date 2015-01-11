@@ -1207,10 +1207,12 @@
         </div>
     </div>
     <!-- end side categories menu -->
+
     <div class="backededed">
         <div class="center product">
-            <div class="nav_poistion">首页 > 生鲜食品 > 肉蛋水产 > 海鲜 / 贝类 >  <span class="active">阿根廷红虾(L1)2kg 进口海鲜 大礼包 礼盒 大号虾 </span></div>
-
+            <div class="crumb">
+                <a href="/" target="_blank">首页</a><span class="arrow"></span><a href="" target="_blank">我的万家</a><span class="arrow"></span><a href="" target="_blank" class="active">我的订单</a>
+            </div>
             <div class="detail_meta">
                 <div class="preview gallery">
                     <div id="vertical" class="bigImg">
@@ -1257,21 +1259,21 @@
                 </div>
 
                 <div class="detail_right">
+                        <!-- description -->
                         <span class="name">
                             阿根廷红虾(L1)2kg 进口海鲜 大礼包 礼盒 大号虾
                         </span>
                         <span class="introduce">
                             纯净北冰洋和大西洋的野生虾，解冻即食，鲜咸甜。新鲜到港，超大个头，肉质鲜嫩Q弹，连续两年天猫销量NO.1 大号 8-10尾/斤
                         </span>
+                        <!-- end description -->
                     <div class="money">
-                        价格
-                            <span class="price">
-                                ¥<span>286.00</span>
-                            </span>
-                        参考价
+                        价格<p class="textPrimary">
+                            ￥<strong>139</strong>.00
+                        </p>参考价
                         <s class="cankao">¥ 439.00</s>
                     </div>
-                    <div class="dt_lins">
+                    <div class="dt_lins sale">
                         <span class="title">促销</span>
                         <ul class="list">
                             <li>
@@ -1357,19 +1359,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="dt_lins buyOperate">
+                        <a class="btnAddToCart"></a>
+                        <a class="but25 addFavorite"><i></i><span>收藏</span></a>
+                    </div>
                     <div class="dt_lins region">
                         <img src="assets/images/service.png"/>
                     </div>
-                    <div class="dt_lins">
+                    <div class="dt_lins tips">
                         <span class="title">提示</span>
                             <span style="color:#6f6f6f;float:left;">
                                 白虾冷冻冰层很薄，食用前轻轻一摔，冻上的虾即可分开，吃多少取多少。不必全部化冻。
                             </span>
                     </div>
-                    <div class="dt_lins">
-                        <a class="bute14041">加入购物车</a>
-                        <a class="but25">加入购物车</a>
-                    </div>
+
                 </div>
             </div>
 
@@ -1453,58 +1456,121 @@
             </div>
             <div class="right">
                 <div class="hot_offers combination">
-                    <div class="title">热门推荐</div>
-                    <div class="over">
-                        <ul class="list">
-                            <li>
-                                <a class="img_view">
-                                    <img src="assets/img/p1.png" alt=""/>
-                                </a>
-                                <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <input class="check" type="checkbox"/>
-                                <label class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </label>
-                            </li>
-                            <li>
-                                <a class="img_view">
-                                    <img src="assets/img/p1.png" alt=""/>
-                                </a>
-                                <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <input class="check" type="checkbox"/>
-                                <label class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </label>
-                            </li>
-                            <li>
-                                <a class="img_view">
-                                    <img src="assets/img/p1.png" alt=""/>
-                                </a>
-                                <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <input class="check" type="checkbox"/>
-                                <label class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </label>
-                            </li>
-                            <li>
-                                <a class="img_view">
-                                    <img src="assets/img/p1.png" alt=""/>
-                                </a>
-                                <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <input class="check" type="checkbox"/>
-                                <label class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </label>
-                            </li>
+                    <div class="groupTabHd">
+                        <ul class="clearfix">
+                            <li class="active">推荐搭配</li>
+                            <li class="last">促销组合</li>
                         </ul>
                     </div>
-                    <div class="total">
-                        <span class="name">已选择3个商品</span>
+                    <div class="groupTabBd clearfix">
+                        <div class="item active">
+                            <div class="over">
+                                <ul class="list">
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="total">
+                                <span class="name">已选择3个商品</span>
                             <span class="price">
                                 总价：<span>¥<span>128</span>.00</span>
                                 <span class="cankao">参考价：<s>¥148.00</s></span>
                             </span>
-                        <a class="bute14041">购买组合</a>
+                                <a class="bute14041">购买组合</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="over">
+                                <ul class="list">
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                        <input class="check" type="checkbox"/>
+                                        <label class="price">
+                                            <span>¥<span>128</span>.00</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="total">
+                                <span class="name">已选择3个商品</span>
+                            <span class="price">
+                                总价：<span>¥<span>128</span>.00</span>
+                                <span class="cankao">参考价：<s>¥148.00</s></span>
+                            </span>
+                                <a class="bute14041">购买组合</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1516,135 +1582,341 @@
                         <a href="#appraisal">评价（586）</a>
                         <a>商品问答</a>
                     </div>
-                    <table id="jianjie" class="jianjie">
-                        <tr>
-                            <td>商品编号  1096006</td>
-                        </tr>
-                        <tr>
-                            <td>产地：巴西</td>
-                            <td>进口 / 国产：进口</td>
-                            <td>包装：袋装</td>
-                        </tr>
-                        <tr>
-                            <td>配送范围：北京 / 江苏 / 浙江 / 广东</td>
-                            <td>单位规格：1kg 及 1kg以上</td>
-                            <td>分类：海鲜 / 贝类</td>
-                        </tr>
-                        <tr>
-                            <td>保存条件：冷冻</td>
-                            <td>单位规格：1kg 及 1kg以上</td>
-                            <td>净重（g）: 500</td>
-                        </tr>
-                    </table>
-                    <div id="center_html" class="center_html">
-                        <img src="assets/img/detals1.jpg"/>
-                    </div>
-                    <div id="appraisal" class="appraisal">
-                        <span class="title">累计评价 <span>2937</span></span>
-                        <ul class="list">
-                            <li>
+                    <div class="clear"></div>
+
+                    <!-- tab content -->
+                    <div class="tabContent">
+                        <!-- 商品介绍 -->
+                        <div class="tabItem">
+                            <div class="goodIntroSummary clearfix">
+                                <table id="jianjie" class="jianjie">
+                                    <tr>
+                                        <td>商品编号  1096006</td>
+                                    </tr>
+                                    <tr>
+                                        <td>产地：巴西</td>
+                                        <td>进口 / 国产：进口</td>
+                                        <td>包装：袋装</td>
+                                    </tr>
+                                    <tr>
+                                        <td>配送范围：北京 / 江苏 / 浙江 / 广东</td>
+                                        <td>单位规格：1kg 及 1kg以上</td>
+                                        <td>分类：海鲜 / 贝类</td>
+                                    </tr>
+                                    <tr>
+                                        <td>保存条件：冷冻</td>
+                                        <td>单位规格：1kg 及 1kg以上</td>
+                                        <td>净重（g）: 500</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="center_html" class="center_html">
+                                <img src="assets/img/detals1.jpg"/>
+                            </div>
+                            <div id="appraisal" class="appraisal">
+                                <span class="title">累计评价 <span>2937</span></span>
+                                <ul class="list">
+                                    <li>
                                     <span class="name">
-                                        梦***子
+                                        <a href="">梦***子</a>
                                         <span class="starts">（匿名）</span>
                                         <br />
                                         <img src="assets/images/rating.jpg"/>
                                         <img src="assets/images/rating.jpg"/>
                                         <img src="assets/images/rating.jpg"/>
                                     </span>
-                                <div class="right">
+                                        <div class="right">
                                         <span class="aps_one">
                                             一袋去壳后好少，只有三四两不到吧。味道还行，微甜。
                                             <span class="time">今天</span>
                                         </span>
-                                    <ul class="find_list">
-                                        <li>
+                                            <ul class="find_list">
+                                                <li>
                                                 <span class="name">
-                                                    t***5
+                                                    <a href="">梦***子</a>
                                                     <span class="starts">（匿名）</span>
                                                 </span>
                                                 <span class="repy">
                                                     不错，打算在买点
                                                 </span>
-                                        </li>
-                                        <li>
+                                                </li>
+                                                <li>
                                                 <span class="name">
-                                                    澜***w
+                                                    <a href="">梦***子</a>
                                                     <span class="starts">（匿名）</span>
                                                 </span>
                                                 <span class="repy">
                                                     有籽，分量足，个头稍小
                                                 </span>
-                                        </li>
-                                    </ul>
-                                    <div class="tip_hf">
-                                        <img src="assets/images/din.png"/>&nbsp;(0)&nbsp;&nbsp;&nbsp;
-                                        <img src="assets/images/hf.png"/>&nbsp;(0)
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                                                </li>
+                                            </ul>
+                                            <div class="tip_hf">
+                                                <img src="assets/images/din.png"/>&nbsp;(0)&nbsp;&nbsp;&nbsp;
+                                                <img src="assets/images/hf.png"/>&nbsp;(0)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
                                     <span class="name">
-                                        梦***子
+                                        <a href="">梦***子</a>
                                         <span class="starts">（匿名）</span>
                                         <br />
                                         <img src="assets/images/like.png"/>
                                     </span>
-                                <div class="right">
+                                        <div class="right">
                                         <span class="aps_one">
                                             一袋去壳后好少，只有三四两不到吧。味道还行，微甜。
                                             <span class="time">今天</span>
                                         </span>
-                                    <div class="tip_hf">
-                                        <img src="assets/images/din.png"/>&nbsp;(0)&nbsp;&nbsp;&nbsp;
-                                        <img src="assets/images/hf.png"/>&nbsp;(0)
+                                            <div class="tip_hf">
+                                                <img src="assets/images/din.png"/>&nbsp;(0)&nbsp;&nbsp;&nbsp;
+                                                <img src="assets/images/hf.png"/>&nbsp;(0)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="more">展开更多...</a>
+                        </div>
+                        <!-- end 商品介绍 -->
+
+                        <!-- 规格与包装-->
+                        <div class="tabItem model">
+                            <div class="modelTableWrap">
+                                <table class="modelTable" border="1" width="870">
+                                    <tr>
+                                        <td class="title" width="130"><p>商品编号：</p></td>
+                                        <td class="desc">1096006</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>产地：</p></td>
+                                        <td class="desc">巴西</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>配送范围：</p></td>
+                                        <td class="desc">北京 / 江苏 / 浙江 / 广东</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>保存条件：</p></td>
+                                        <td class="desc">冷冻</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>进口 / 国产：</p></td>
+                                        <td class="desc">进口</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>单位规格：</p></td>
+                                        <td class="desc">1kg 及 1kg以上</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" width="130"><p>配送方式：</p></td>
+                                        <td class="desc">新鲜直达</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end 规格与包装-->
+
+                        <!-- 售后服务 -->
+                        <div class="tabItem service">
+                            <div class="serviceContent">
+                                <div class="summary">
+                                    <p>本产品全国联保，享受三包服务，质保期为：一年质保</p>
+                                    <p>本产品提供上门安装调试、提供上门检测和维修等售后服务，自收到商品之日起，如您所购买家电商品出现质量问题，请先联系</p>
+                                    <p>厂家进行检测 ，凭厂商提供的故障检测证明，将有专业售后人员提供服务。180天内无需修理直接换货，超过180天按国家三包</p>
+                                    <p>规定享受服务。您可以查询本品牌在各地售后服务中心的联系方式，请点击这儿查询......</p>
+                                </div>
+
+                                <div class="serviceList">
+                                    <div class="item clearfix">
+                                        <img class="fl" src="assets/images/pdDetailServiceicon01.png" alt="" width="105" height="105"/>
+                                        <dl class="fl desc">
+                                            <dt>同城送货服务</dt>
+                                            <dd>副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里
+                                                输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="item clearfix">
+                                        <img class="fl" src="assets/images/pdDetailServiceicon02.png" alt="" width="105" height="105"/>
+                                        <dl class="fl desc">
+                                            <dt>同城送货服务</dt>
+                                            <dd>副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里
+                                                输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="item clearfix">
+                                        <img class="fl" src="assets/images/pdDetailServiceicon03.png" alt="" width="105" height="105"/>
+                                        <dl class="fl desc">
+                                            <dt>同城送货服务</dt>
+                                            <dd>副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里
+                                                输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="item clearfix">
+                                        <img class="fl" src="assets/images/pdDetailServiceicon04.png" alt="" width="105" height="105"/>
+                                        <dl class="fl desc">
+                                            <dt>同城送货服务</dt>
+                                            <dd>副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里
+                                                输入副标题副标题这里输入副标题副标题这里输入副标题副标题这里输入副标题</dd>
+                                        </dl>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="more">展开更多...</a>
-                </div>
+                            </div>
+                        </div>
+                        <!-- end 售后服务 -->
 
-                <div class="hot_offers">
-                    <div class="title">浏览记录</div>
-                    <ul class="list">
-                        <li>
-                            <a class="img_view">
-                                <img src="assets/img/p1.png" alt=""/>
-                            </a>
-                            <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <span class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </span>
-                        </li>
-                        <li>
-                            <a class="img_view">
-                                <img src="assets/img/p1.png" alt=""/>
-                            </a>
-                            <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <span class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </span>
-                        </li>
-                        <li>
-                            <a class="img_view">
-                                <img src="assets/img/p1.png" alt=""/>
-                            </a>
-                            <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <span class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </span>
-                        </li>
-                        <li>
-                            <a class="img_view">
-                                <img src="assets/img/p1.png" alt=""/>
-                            </a>
-                            <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
-                                <span class="price">
-                                    <span>¥<span>128</span>.00</span>
-                                </span>
-                        </li>
-                    </ul>
+                        <!-- comment -->
+                        <div class="tabItem comment">
+                            <div class="appraisal">
+                                <ul class="list">
+                                    <li>
+                                    <span class="name">
+                                        <a href="">梦***子</a><span class="starts">（匿名）</span>
+                                        <br>
+                                        <img src="assets/images/rating.jpg">
+                                        <img src="assets/images/rating.jpg">
+                                        <img src="assets/images/rating.jpg">
+                                    </span>
+                                        <div class="right">
+                                        <span class="aps_one">
+                                            一袋去壳后好少，只有三四两不到吧。味道还行，微甜。
+                                            <span class="time">今天</span>
+                                        </span>
+                                            <ul class="find_list">
+                                                <li>
+                                                <span class="name">
+                                                    <a href="">t***5</a>
+                                                    <span class="starts">（匿名）</span>
+                                                </span>
+                                                <span class="repy">
+                                                    不错，打算在买点
+                                                </span>
+                                                </li>
+                                                <li>
+                                                <span class="name">
+                                                    <a href="">澜***w</a>
+                                                    <span class="starts">（匿名）</span>
+                                                </span>
+                                                <span class="repy">
+                                                    有籽，分量足，个头稍小
+                                                </span>
+                                                </li>
+                                            </ul>
+                                            <div class="tip_hf">
+                                                <img src="assets/images/din.png">&nbsp;(0)&nbsp;&nbsp;&nbsp;
+                                                <img src="assets/images/hf.png">&nbsp;(0)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    <span class="name">
+                                        <a href="">梦***子</a>
+                                        <span class="starts">（匿名）</span>
+                                        <br>
+                                        <img src="assets/images/like.png">
+                                    </span>
+                                        <div class="right">
+                                        <span class="aps_one">
+                                            一袋去壳后好少，只有三四两不到吧。味道还行，微甜。
+                                            <span class="time">今天</span>
+                                        </span>
+                                            <div class="tip_hf">
+                                                <img src="assets/images/din.png">&nbsp;(0)&nbsp;&nbsp;&nbsp;
+                                                <img src="assets/images/hf.png">&nbsp;(0)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <!-- pagination-->
+                                <div class="pagination">
+                                    <p class="paginationTotal">
+                                        共&nbsp;<span>984</span>&nbsp;件商品
+                                    </p>
+                                    <ul>
+                                        <li><a href="">上一页</a></li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li>...</li>
+                                        <li><a href="">12</a></li>
+                                        <li><a href="">下一页</a></li>
+                                    </ul>
+                                </div><!-- end pagination-->
+                            </div>
+                        </div>
+                        <!-- end comment -->
+
+                        <!-- consult -->
+                        <div class="item consult"  style="display: block;">
+                            <div class="consultContent">
+                                <!-- comment 商品问答 -->
+                                <div class="commentMod">
+                                    <div class="item clearfix">
+                                        <div class="user">
+                                            <a class="thumb show" href=""><img src="assets/images/myWanjia_avatar.jpg" alt="" width="78" height="78"/></a>
+                                            <a class="name show" href="">梦***子<span>（匿名）</span></a>
+                                            <p class="rank show"><img src="assets/images/rating.jpg" alt="" width="11" height="9"/><img src="assets/images/rating.jpg" alt="" width="11" height="9"/><img src="assets/images/rating.jpg" alt="" width="11" height="9"/></p>
+                                        </div>
+                                        <div class="article">
+                                            <div class="postDate">商品咨询：<span>2014-08-12  18:45</span></div>
+                                            <p class="para">一袋去壳后好少，只有三四两不到吧。味道还行，微甜。</p>
+                                            <div class="reply">
+                                                <div class="replyHd">e万家回复：</div>
+                                                <div class="replyBd">
+                                                    <p>甜虾肉质很好，肉够饱满，90%头部带籽，稍许腹部带籽，虾籽也满满。黑头占20%左右，不影响食用， 吃了两袋只有5个坏掉的。会再</p>
+                                                </div>
+                                            </div>
+                                            <div class="replyDate">2014-08-12  18:45</div>
+                                        </div>
+                                    </div>
+                                    <div class="item clearfix">
+                                        <div class="user">
+                                            <a class="thumb show" href=""><img src="assets/images/myWanjia_avatar.jpg" alt="" width="78" height="78"/></a>
+                                            <a class="name show" href="">梦***子<span>（匿名）</span></a>
+                                            <p class="rank show"><img src="assets/images/rating.jpg" alt="" width="11" height="9"/><img src="assets/images/rating.jpg" alt="" width="11" height="9"/><img src="assets/images/rating.jpg" alt="" width="11" height="9"/></p>
+                                        </div>
+                                        <div class="article">
+                                            <div class="postDate">商品咨询：<span>2014-08-12  18:45</span></div>
+                                            <p class="para">一袋去壳后好少，只有三四两不到吧。味道还行，微甜。</p>
+                                            <div class="reply">
+                                                <div class="replyHd">e万家回复：</div>
+                                                <div class="replyBd">
+                                                    <p>甜虾肉质很好，肉够饱满，90%头部带籽，稍许腹部带籽，虾籽也满满。黑头占20%左右，不影响食用， 吃了两袋只有5个坏掉的。会再</p>
+                                                </div>
+                                            </div>
+                                            <div class="replyDate">2014-08-12  18:45</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end comment 商品问答 -->
+
+                                <!-- pagination-->
+                                <div class="pagination">
+                                    <p class="paginationTotal">
+                                        共&nbsp;<span>984</span>&nbsp;件商品
+                                    </p>
+                                    <ul>
+                                        <li><a href="">上一页</a></li>
+                                        <li><a href="">1</a></li>
+                                        <li class="active"><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li>...</li>
+                                        <li><a href="">12</a></li>
+                                        <li><a href="">下一页</a></li>
+                                    </ul>
+                                </div><!-- end pagination-->
+                            </div>
+                        </div>
+                        <!-- end consult -->
+                    </div>
+                    <!-- end tab content -->
                 </div>
 
             </div>

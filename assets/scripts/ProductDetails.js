@@ -24,39 +24,8 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Í¼Æ¬ÉÏÏÂ¹ö¶¯
-    var count = $("#imageMenu li").length - 5; /* ÏÔÊ¾ 6 ¸ö li±êÇ©ÄÚÈÝ */
+    // Í¼Æ¬ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½
+    var count = $("#imageMenu li").length - 5; /* ï¿½ï¿½Ê¾ 6 ï¿½ï¿½ liï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ */
     var interval = $("#imageMenu li:first").width();
     var curIndex = 0;
 
@@ -72,13 +41,13 @@ $(function () {
 
         $("#imageMenu ul").stop(false, true).animate({ "marginLeft": -curIndex * interval + "px" }, 600);
     });
-    // ½â¾ö ie6 select¿ò ÎÊÌâ
+    // ï¿½ï¿½ï¿½ ie6 selectï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     $.fn.decorateIframe = function (options) {
         if ($.browser.msie && $.browser.version < 7) {
             var opts = $.extend({}, $.fn.decorateIframe.defaults, options);
             $(this).each(function () {
                 var $myThis = $(this);
-                //´´½¨Ò»¸öIFRAME
+                //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½IFRAME
                 var divIframe = $("<iframe />");
                 divIframe.attr("id", opts.iframeId);
                 divIframe.css("position", "absolute");
@@ -105,9 +74,9 @@ $(function () {
         width: 0,
         height: 0
     }
-    //·Å´ó¾µÊÓ´°
+    //ï¿½Å´ï¿½ï¿½Ó´ï¿½
     $("#bigView").decorateIframe();
-    //µã»÷µ½ÖÐÍ¼
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 
     $("#imageMenu li img").bind("click", function () {
         if ($(this).attr("id") != "onlickImg") {
@@ -143,7 +112,7 @@ $(function () {
             changeViewImg();
         });
     }
-    //´óÊÓ´°¿´Í¼
+    //ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½Í¼
     function mouseover(e) {
         if ($("#winSelector").css("display") == "none") {
             $("#winSelector,#bigView").show();
@@ -157,14 +126,14 @@ $(function () {
         }
         e.stopPropagation();
     }
-    $("#midimg").mouseover(mouseover); //ÖÐÍ¼ÊÂ¼þ
-    $("#midimg,#winSelector").mousemove(mouseover).mouseout(mouseOut); //Ñ¡ÔñÆ÷ÊÂ¼þ
+    $("#midimg").mouseover(mouseover); //ï¿½ï¿½Í¼ï¿½Â¼ï¿½
+    $("#midimg,#winSelector").mousemove(mouseover).mouseout(mouseOut); //Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 
-    var $divWidth = $("#winSelector").width(); //Ñ¡ÔñÆ÷¿í¶È
-    var $divHeight = $("#winSelector").height(); //Ñ¡ÔñÆ÷¸ß¶È
-    var $imgWidth = $("#midimg").width(); //ÖÐÍ¼¿í¶È
-    var $imgHeight = $("#midimg").height(); //ÖÐÍ¼¸ß¶È
-    var $viewImgWidth = $viewImgHeight = $height = null; //IE¼ÓÔØºó²ÅÄÜµÃµ½ ´óÍ¼¿í¶È ´óÍ¼¸ß¶È ´óÍ¼ÊÓ´°¸ß¶È
+    var $divWidth = $("#winSelector").width(); //Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    var $divHeight = $("#winSelector").height(); //Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
+    var $imgWidth = $("#midimg").width(); //ï¿½ï¿½Í¼ï¿½ï¿½ï¿½
+    var $imgHeight = $("#midimg").height(); //ï¿½ï¿½Í¼ï¿½ß¶ï¿½
+    var $viewImgWidth = $viewImgHeight = $height = null; //IEï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½ÜµÃµï¿½ ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ ï¿½ï¿½Í¼ï¿½ß¶ï¿½ ï¿½ï¿½Í¼ï¿½Ó´ï¿½ï¿½ß¶ï¿½
 
     function changeViewImg() {
         $("#bigView img").attr("src", $("#midimg").attr("src").replace("mid", "big"));
@@ -175,10 +144,10 @@ $(function () {
         if (e == null) {
             return;
         }
-        var $imgLeft = $("#midimg").offset().left; //ÖÐÍ¼×ó±ß¾à
-        var $imgTop = $("#midimg").offset().top; //ÖÐÍ¼ÉÏ±ß¾à
-        X = e.pageX - $imgLeft - $divWidth / 2; //selector¶¥µã×ø±ê X
-        Y = e.pageY - $imgTop - $divHeight / 2; //selector¶¥µã×ø±ê Y
+        var $imgLeft = $("#midimg").offset().left; //ï¿½ï¿½Í¼ï¿½ï¿½ß¾ï¿½
+        var $imgTop = $("#midimg").offset().top; //ï¿½ï¿½Í¼ï¿½Ï±ß¾ï¿½
+        X = e.pageX - $imgLeft - $divWidth / 2; //selectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ X
+        Y = e.pageY - $imgTop - $divHeight / 2; //selectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Y
         X = X < 0 ? 0 : X;
         Y = Y < 0 ? 0 : Y;
         X = X + $divWidth > $imgWidth ? $imgWidth - $divWidth : X;
@@ -198,4 +167,14 @@ $(function () {
 
         return { left: X, top: Y };
     }
+
+
+    // recommend  tab;
+    function recommendGroupTab(){
+        $('.combination .groupTabHd li').click(function (){
+            $('.combination .groupTabBd .item').eq($(this).index())
+                .fadeIn().siblings('.item').hide();
+        });
+    }
+    recommendGroupTab();
 });

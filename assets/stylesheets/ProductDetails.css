@@ -143,15 +143,16 @@
         color:#333;
     }
 .detail_meta .detail_right {
-    width:735px;
+    width:733px;
     float:right;
 }
     .detail_meta .detail_right .name {
         color:#333;
         font-size:22px;
         width:100%;
+        line-height: 26px;
         float:left;
-        margin-bottom:5px;
+        margin: 5px 0 5px 0;
     }
     .detail_meta .detail_right .introduce {
         color: #555;
@@ -166,15 +167,18 @@
         border-bottom:1px solid #b3b3b3;
         font-size:14px;
         color:#333;
-        margin-top:15px;
         line-height:60px;
+        margin-top: 2px;
     }
-        .detail_meta .detail_right .money .price {
-            font-size: 24px;
+        .detail_meta .detail_right .money .textPrimary {
+            display: inline-block;
+            font-size: 26px;
             color: #e14041;
-            margin:0 10px;
+            margin:0 20px;
+            position: relative;
+            top: 7px;
         }
-            .detail_meta .detail_right .money .price span {
+            .detail_meta .detail_right .money .textPrimary strong {
                 font-size:38px;
             }
         .detail_meta .detail_right .money .cankao {
@@ -188,8 +192,16 @@
         color:#333;
         margin-top:20px;
     }
+
+.detail_meta .detail_right .dt_lins.sale {
+    margin-top:26px;
+}
+
+.detail_meta .detail_right .dt_lins.norm {
+    margin-top:35px;
+}
         .detail_meta .detail_right .dt_lins > .title {
-            width: 40px;
+            width: 50px;
             float: left;
         }
         .detail_meta .detail_right .dt_lins > .list {
@@ -198,7 +210,7 @@
             .detail_meta .detail_right .dt_lins  > .list > li {
                 clear: both;
                 float: left;
-                margin-bottom:7px;
+                margin-bottom:11px;
             }
                 .detail_meta .detail_right .dt_lins  > .list > li:last-child {
                     margin:0;
@@ -208,8 +220,8 @@
                     color: #fff;
                     float: left;
                     font-size: 12px;
-                    height: 17px;
-                    line-height: 17px;
+                    height: 18px;
+                    line-height: 18px;
                     margin-right: 10px;
                     padding: 0 5px;
                 }
@@ -225,8 +237,12 @@
         .detail_meta .detail_right .dt_lins.norm {
             line-height:35px;
         }
+
+.detail_meta .detail_right .dt_lins.tips {
+    margin-top: 15px;
+}
         .detail_meta .detail_right .dt_lins .norm_list {
-            width:695px;
+            width:681px;
             float:left;
         }
 
@@ -248,8 +264,8 @@
                 .detail_meta .detail_right .dt_lins .norm_list > a:hover {
                     border:2px solid #e14041;
                     margin:0 9px 0 -1px;
-                    height:33px;
-                    line-height:33px;
+                    height:32px;
+                    line-height:32px;
                 }
         .detail_meta .detail_right .dt_lins.quantity {
             line-height:30px;
@@ -281,9 +297,11 @@
                 width:50px;
                 text-align:center;
                 margin:0 10px;
+                padding: 0;
             }
         .detail_meta .detail_right .dt_lins.region {
             line-height: 30px;
+            margin-top: 25px;
         }
         .detail_meta .detail_right .dt_lins.region .region_list {
             float:left;
@@ -388,9 +406,11 @@
 
 .detail_meta .bute14041,
  .detail_meta .but25{
+    overflow: hidden;
     line-height:43px;
     float:left;
-    padding:0 30px;
+    padding:0 20px;
+    tab-index: -10em;
 }
 
 .detail_meta .but25 {
@@ -402,6 +422,43 @@
     .detail_meta .but25:hover {
         border-color:#e14041;
     }
+
+.detail_meta .btnAddToCart {
+    float: left;
+    width: 190px;
+    height: 44px;
+    background: url("../images/pdDetailAddToCartBtn.png") no-repeat;
+    -webkit-transition: all .24s;
+    -moz-transition: all .24s;
+    -ms-transition: all .24s;
+    -o-transition: all .24s;
+    transition: all .24s;
+}
+.detail_meta .btnAddToCart:hover {
+    background: url("../images/pdDetailAddToCartBtn_h.png") no-repeat;
+}
+.detail_meta .addFavorite i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    margin-right: 6px;
+    background: url("../images/starIcon.png") no-repeat;
+    -webkit-transition: all .24s;
+    -moz-transition: all .24s;
+    -ms-transition: all .24s;
+    -o-transition: all .24s;
+    transition: all .24s;
+}
+
+.detail_meta .addFavorite:hover i {
+    background: url("../images/starIcon_h.png") no-repeat;
+}
+
+.detail_meta .addFavorite * {
+    vertical-align: middle;
+}
+
 
 
 
@@ -432,8 +489,8 @@
     }
         .product > .left > .nav_list > .title2 {
             width:100%;
-            height:50px;
-            line-height:50px;
+            height:45px;
+            line-height:45px;
             color:#222;
             font-size:16px;
             float:left;
@@ -479,7 +536,7 @@
         box-shadow: 2px 2px 2px #e2e2e2;
     }
         .product > .left > .best > .title,
-        .product > .right > .hot_offers > .title {
+        .product > .right > .hot_offers > .groupTabHd {
             width:100%;
             height:50px;
             line-height:50px;
@@ -688,24 +745,6 @@
         margin: 0 0 30px 30px;
     }
 
-        .product > .right > .hot_offers.combination .over::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        .product > .right > .hot_offers.combination .over::-webkit-scrollbar-track-piece {
-            background-color: #e1e1e1;
-            -webkit-border-radius: 6px;
-        }
-        .product > .right > .hot_offers.combination .over::-webkit-scrollbar-thumb:vertical {
-            height: 5px;
-            background-color: #e83015;
-            -webkit-border-radius: 6px;
-        }
-        .product > .right > .hot_offers.combination .over::-webkit-scrollbar-thumb:horizontal {
-            width: 5px;
-            background-color: #e83015;
-            -webkit-border-radius: 6px;
-        }
         .product > .right > .hot_offers.combination .over .list {
             display:inline-flex;
             width:auto;
@@ -798,11 +837,17 @@
                     color:#fff!important;
                 }
 
+
+                .goodIntroSummary{
+                    padding:12px 25px 20px 25px;
+                    font-size: 14px;
+                    background-color:#fff;
+                }
+
         .product > .right > .detail_cont .jianjie {
             float:left;
             width:100%;
-            padding:10px 20px;
-            background-color:#fff;
+            line-height: 36px;
         }
 
         .product > .right > .detail_cont .center_html {
@@ -844,13 +889,10 @@
                     width:100%;
                     border-bottom:1px solid #dadada;
                 }
-                    .product > .right > .detail_cont .appraisal > .list > li:last-child {
-                        border-bottom:none;
-                    }
                     .product > .right > .detail_cont .appraisal > .list > li > .name {
                         float:left;
-                        width:120px;
-                        margin:15px 20px 0 30px;
+                        width:118px;
+                        margin:15px 0 0 22px;
                     }
                         .product > .right > .detail_cont .appraisal > .list > li > .name > .starts,
                         .product > .right > .detail_cont .appraisal > .list > li > .right .find_list > li > .name > .starts {
@@ -858,18 +900,19 @@
                         }
                     .product > .right > .detail_cont .appraisal > .list > li > .right {
                         width:750px;
-                        float:right;
+                        float:left;
                     }
                         .product > .right > .detail_cont .appraisal > .list > li > .right .aps_one,
                         .product > .right > .detail_cont .appraisal > .list > li > .right .find_list > li {
-                            width: 730px;
+                            width: 760px;
                             float: left;
                             border-bottom: 1px solid #ececec;
-                            padding: 15px 20px 15px 0;
+                            padding: 16px 20px 16px 0;
                         }
                             .product > .right > .detail_cont .appraisal > .list > li > .right .aps_one .time {
                                 float:right;
                                 color:#aaa;
+                                font-size: 12px;
                             }
 
                         .product > .right > .detail_cont .appraisal > .list > li > .right .find_list {
@@ -877,6 +920,7 @@
                             width:100%;
                         }
                             .product > .right > .detail_cont .appraisal > .list > li > .right .find_list .repy {
+                                line-height: 20px;
                             }
 
                         .product > .right > .detail_cont .appraisal > .list > li > .right .tip_hf {
@@ -900,3 +944,239 @@
             .product > .right > .detail_cont .more:hover {
                 color:#e14041;
             }
+
+.product > .right > .hot_offers > .groupTabHd {
+    height: 45px;
+    line-height: 45px;
+    padding-bottom: 5px;
+}
+.combination .groupTabHd{}
+
+.combination .groupTabHd ul{
+}
+
+.combination .groupTabHd li{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 24px;
+    font-size: 16px;
+    color: #999;
+    border-right: 1px solid #d3d3d3;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.combination .groupTabHd li.active {
+    color: #333;
+}
+
+.combination .groupTabHd li.last {
+    border-right: none;
+}
+
+.combination .groupTabBd .item {
+    display: none;
+}
+
+.combination .groupTabBd .item.active {
+    display: block;
+}
+
+/* ------------------------ */
+.product .crumb {
+    margin-top: 36px;
+}
+
+.product .crumb .active {
+    color: #666;
+}
+
+/* product detail tab */
+.tabContent {
+
+}
+
+.tabItem {
+    display: none;
+}
+
+/* model and bag */
+.modelTableWrap {
+    padding: 24px 22px 36px 22px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+.modelTable {
+    line-height: 38px;
+    border: 1px solid #ededed;
+}
+
+.modelTable .title p {
+    margin-left: 25px;
+}
+
+.modelTable .desc {
+    padding-left: 25px;
+}
+
+/* service */
+.service{
+    font-size: 14px;
+}
+.serviceContent {
+    padding: 24px 24px 36px 24px;
+    background: #fff;
+}
+
+.serviceContent .summary {
+    line-height: 36px;
+    padding: 30px 42px;
+    color: #000;
+    background: #fcfcfc;
+    border: 1px solid #e0e0e0;
+}
+
+.serviceList {
+    margin-top: 24px;
+}
+
+.serviceList .item {
+    padding: 54px 0;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.serviceList .item .desc {
+    width: 630px;
+    margin-left: 50px;
+}
+
+.serviceList .item .desc dt {
+    line-height: 34px;
+    font-size: 18px;
+    color: #555;
+}
+
+.serviceList .item .desc dd {
+    line-height: 24px;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* comment */
+.comment {
+}
+
+.comment .appraisal {
+    margin-top: 0 !important;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.comment .appraisal .name a {
+    color: #333;
+}
+
+.comment .pagination {
+    margin: 48px 25px 0 0;
+}
+
+/* consult */
+.consult {
+}
+
+.consultContent {
+    padding: 0 25px 40px 25px;
+    background: #fff;
+}
+
+/* comment module */
+.commentMod {
+}
+
+.commentMod .item {
+    padding: 40px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.commentMod .user {
+    float: left;
+    width: 78px;
+}
+
+.commentMod .user .thumb img{
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.commentMod .user .thumb:hover img {
+    opacity: .8;
+}
+
+.commentMod .user .name {
+    line-height: 18px;
+    margin-top: 6px;
+    color: #333;
+}
+
+.commentMod .user .name span {
+    color: #a5a5a5;
+}
+
+.commentMod .user .rank {
+    margin-top: 4px;
+}
+
+.commentMod .user .rank img {
+    margin: 1px 2px 0 0;
+    vertical-align: top;
+}
+
+.commentMod .article {
+    float: left;
+    width: 750px;
+    margin-left: 35px;
+}
+
+.commentMod .article .postDate {
+    line-height: 16px;
+    color: #cfcfcf;
+}
+
+.commentMod .article .para {
+    line-height: 20px;
+    padding: 8px 0;
+    color: #333;
+}
+
+.commentMod .reply {
+    padding: 2px 20px 17px 20px;
+    margin-top: 14px;
+    background: #f9f9f9;
+}
+
+.commentMod  .replyHd {
+    line-height: 34px;
+    color: #cfcfcf;
+}
+
+.commentMod  .replyBd {
+    line-height: 20px;
+    color: #333;
+}
+
+.commentMod .article .replyDate {
+    line-height: 20px;
+    color: #cfcfcf;
+}
+
+.consultContent  .pagination {
+    margin-top: 48px;
+}
