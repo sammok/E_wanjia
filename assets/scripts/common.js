@@ -84,7 +84,9 @@ $(function () {
     });
 
 
-    /* Table components */
+    /* Table components
+     * used: mywanjiaIndex.html
+     * */
     function components_Table() {
         $('.table .tableThumb').each(function (){
             var thumbs = $(this).find('a');
@@ -119,6 +121,21 @@ $(function () {
         });
     }
     components_Checkbox();
+
+    /* floatEntry */
+    function floatEntry (){
+        $(window).scroll(function (){
+            console.log($(window).scrollTop());
+
+            if($(window).scrollTop() >= 490) {
+                $('.floatEntry').fadeIn();
+            } else {
+                $('.floatEntry').fadeOut();
+            };
+        })
+    }
+
+    floatEntry();
     
 });
 

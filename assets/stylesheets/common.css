@@ -250,13 +250,14 @@ input {
    --------------------------------------------------------------------------- */
 /* floatEntry */
 .floatEntry {
+    display: none;
     width: 50px;
     height: 203px;
     position: fixed;
     top: 60%;
     left:50%;
     z-index: 200;
-    margin-left: 620px;
+    margin-left: 605px;
 }
 
 .floatEntry .entry{
@@ -1928,9 +1929,3 @@ input {
 /* ---------------------------------------------------------------------------
  *      responsitory
    --------------------------------------------------------------------------- */
-@media screen and (max-width: 1366px){
-    /* hide when less screen size */
-    .floatEntry {
-        display: none;
-    }
-}
