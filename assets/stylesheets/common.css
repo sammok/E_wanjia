@@ -1783,9 +1783,11 @@ input {
     display: inline-block;
     width: 13px;
     height: 13px;
+    line-height: 13px;
     vertical-align: middle;
     margin-right: 10px;
     cursor: pointer;
+    background: #fff;
 }
 
 .checkbox i {

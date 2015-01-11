@@ -215,7 +215,13 @@
     }
     .product > .datles_table .ld1 {
         width:130px;
-        margin-left:15px;
+        margin-left:25px;
+    }
+
+    .product > .datles_table .ld1 .checkbox {
+        vertical-align: baseline;
+        position: relative;
+        top: 2px;
     }
     .product > .datles_table .ld2 {
         width:220px;
@@ -259,8 +265,9 @@
             line-height:90px;
             border-bottom:1px dashed #e4e4e4;
         }
-            .product > .datles_table > .ll > li > .ld1 .check {
-                margin:35px 0 0;
+            .product > .datles_table > .ll > li > .ld1 .checkbox {
+                float:left;
+                margin: 19px 0 0 0;
             }
             .product > .datles_table > .ll > li > .ld1 .img_view {
                 float: left;
@@ -372,12 +379,13 @@
         float:left;
         width:100%;
         line-height:45px;
+        margin: 10px 0 5px 0;
         font-size:14px;
         color:#333;
     }
 
     .product > .datles_table .float_l {
-        margin-left:15px;
+        margin-left:25px;
     }
         .product > .datles_table .upcaozuo a {
             margin:0 10px;
@@ -395,13 +403,24 @@
         }
 
         .product > .datles_table .upcaozuo b {
-            margin:0 5px;
+            font-weight: normal;
+            letter-spacing: -1px;
         }
         .product > .datles_table .upcaozuo .quantity {
             float:right;
             line-height:20px;
-            margin:10px 15px 0 40px;
+            width: 153px;
+            margin:10px 0 0 40px;
         }
+
+    .product > .datles_table .upcaozuo .float_l * {
+        vertical-align: middle;
+    }
+
+    .product > .datles_table .upcaozuo .float_l .checkbox {
+        position: relative;
+        top: -2px;
+    }
 .product > .jiesuan {
     background-color: #fff;
     float: left;
@@ -416,7 +435,7 @@
         float: right;
         font-size: 24px;
         margin-left: 30px;
-        padding: 0 30px;
+        padding: 0 42px;
         cursor:pointer;
 	height:45px;
     }
@@ -429,6 +448,51 @@
         }
 
 
+/* table add */
+.datles_table{
+}
+
+.datles_table .giftWrap {
+    padding: 0 0 8px 155px;
+}
+
+.datles_table .giftWrap .item {
+    line-height: 18px;
+    margin-bottom: 4px;
+    color: #929292;
+    font-size: 12px;
+}
+
+.datles_table .giftWrap .item span {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px;
+    margin-right: 12px;
+    position: relative;
+    background: #eaeaea;
+}
+
+.datles_table .giftWrap .item span i {
+    width:0px;
+    height:0px;
+    border-bottom:4px solid transparent;
+    border-top:4px solid transparent;
+    border-left:4px solid #eaeaea;
+    font-size:0px;
+    line-height:0px;
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.datles_table .giftWrap .item a {
+    color: #929292;
+}
+
+.datles_table .giftWrap .item a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -436,8 +500,7 @@
 
 
 
-
-    .product > .best{
+.product > .best{
         margin: 15px 0;
         width: 100%;
         float: left;
@@ -682,6 +745,7 @@
     /* low sceen size fix */
     .messagePanel {
         height: 690px;
+        margin-top: -300px;
     }
 
     .messagePanelBd .tableWrap {
