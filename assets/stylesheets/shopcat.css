@@ -96,6 +96,7 @@
         }
             .product .regionTo .region .region_list .title {
                 float:left;
+                width: 110px;
                 padding:0 10px;
                 cursor:pointer;
                 position:relative;
