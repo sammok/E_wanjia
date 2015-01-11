@@ -56,7 +56,10 @@
 .recentFavorite {
 }
 
-
+/* goodRecommendList */
+.goodRecommendItem {
+    margin-right: 50px;
+}
 
 
 

@@ -993,7 +993,7 @@ body {
     display: inline-block;
     width: 100%;
     font-size: 24px;
-    font-weight:bold;
+    font-weight:normal;
     height:30px;
 }
 .baner6 .left > .title .more {
@@ -1005,7 +1005,7 @@ body {
 }
 .baner6 .left > .list {
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 13px;
     width: 100%;
 }
 
@@ -1074,8 +1074,8 @@ body {
 .baner6 .right > .title {
     color: #666;
     font-size: 24px;
-    font-weight:bold;
-    margin-bottom: 7px;
+    font-weight:normal;
+    margin-bottom: 13px;
 }
 .baner6 .right .cont {
     float: left;

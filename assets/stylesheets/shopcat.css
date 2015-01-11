@@ -98,6 +98,7 @@
                 float:left;
                 width: 110px;
                 padding:0 10px;
+                font-size: 14px;
                 cursor:pointer;
                 position:relative;
                 z-index:2;
@@ -853,94 +854,6 @@
 
 .xiugaiYouhui .messagePanelBd {
     padding-bottom: 25px;
-}
-
-
-/* very cheapper */
-/* goodRecommendList */
-.goodRecommendList {
-}
-
-.goodRecommendListContent {
-    overflow: hidden;
-}
-
-.goodRecommendListContent .itemWrap {
-    width: 120%;
-    *zoom: 1;
-}
-
-.goodRecommendListContent .itemWrap:before,
-.goodRecommendListContent .itemWrap:after {
-    display: table;
-    line-height: 0;
-    content: "";
-}
-
-.goodRecommendListContent .itemWrap:after {
-    clear: both;
-}
-
-.goodRecommendListItem {
-    float: left;
-    width: 180px;
-    margin-right: 58px;
-}
-
-.goodRecommendListItem .thumb {
-    display: block;
-    width: 180px;
-    height: 180px;
-
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
-}
-
-.goodRecommendListItem .thumb:hover {
-    opacity: .8;
-}
-
-.goodRecommendListItem .thumb img {
-    vertical-align: top;
-}
-
-.goodRecommendListItem .name {
-    display: inline-block;
-    margin: 8px 0;
-    font-size: 14px;
-    color: #333;
-}
-
-.goodRecommendListItem .name:hover {
-    color: #e04040;
-}
-
-.goodRecommendListItem .info {
-    position: relative;
-}
-
-.goodRecommendListItem .operate {
-    position: absolute;
-    right: 0;
-    top: 8px;
-}
-
-.goodRecommendListItem .textPrimary {
-    font-size: 18px;
-    margin-left: -5px;
-}
-
-.goodRecommendListItem .textPrimary strong {
-    font-size: 24px;
-    margin-left: -3px;
-}
-
-.goodRecommendListItem .textIgnore {
-    margin-top: -5px;
-    text-decoration: line-through;
 }
 
 
