@@ -244,6 +244,7 @@ body {
 .baner1 .left > .list > li .bottom .stock {
     float:left;
     clear:both;
+    line-height: 18px;
 }
 .baner1 .left > .list > li .bottom .stock .title {
     font-size:12px;
@@ -1138,8 +1139,12 @@ body {
 .baner6 .right .cont .more {
     width:auto;
     float:right;
-    margin-top:10px;
-    cursor:pointer;
+    margin-top:24px;
+    color: #bbb;
+}
+
+.baner6 .right .cont .more a {
+    color: #bbb;
 }
 
 .baner6 {
