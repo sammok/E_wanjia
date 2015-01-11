@@ -50,6 +50,7 @@ a {
 
 a img {
     outline: none;
+    border: none;
 }
 
 table {
@@ -1878,6 +1879,7 @@ input {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+
     -o-user-select: none;
 }
 
