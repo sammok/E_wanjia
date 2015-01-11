@@ -431,14 +431,18 @@
             font-size: 12px;
             height: 15px;
             line-height: 14px;
-            margin: 10px 5px 0 15px;
+            margin: 10px 5px 0 25px;
             padding: 0 5px;
         }
-        .product > .datles_table .tip > .but {
+
+        .product > .datles_table .tip > .ttpDesc {
+            margin-left: 5px;
+        }
+.product > .datles_table .tip > .but {
             height:23px;
             line-height:23px;
             display:inline-block;
-            margin-left:10px;
+            margin-left:15px;
             padding:0 5px;
             border-radius:5px;
             color:#fff;
