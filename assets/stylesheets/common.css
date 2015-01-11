@@ -200,6 +200,7 @@ input {
     line-height: 25px;
     background-color: #fff;
     border: 1px solid #ededed;
+    color: #333;
     float: right;
     font-size: 12px;
     cursor: pointer;

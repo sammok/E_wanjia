@@ -34,19 +34,20 @@
 
 /* row 1 recommend */
 .row1{
-    padding-top: 52px;
+    padding-top: 25px;
     background: url("../images/sceneListRow1Bg.png");
 }
 
 .row1 .rowContent{
-    height: 370px;
-    padding: 30px;
+    height: 318px;
+    padding: 0 30px 0 55px;
     background: #fff;
 }
 
 .row1 .list .item{
     float:left;
     width: 192px;
+    padding: 30px 0 0 0;
     margin-right: 45px;
 }
 
@@ -54,18 +55,23 @@
     margin-right: 0;
 }
 
-.row1 .list .item a {
+.row1 .list .desc {
     color: #333;
     font-size: 14px;
     line-height: 20px;
 }
 
-.row1 .list .item .info {
-    margin-top: 35px;
+.row1 .list .desc p {
+    margin-bottom: 6px;
+}
+
+.row1 .list .info {
+    margin-top: 14px;
 }
 
 .row1 .textPrimary {
     font-size: 22px;
+    margin-left: -5px;
 }
 
 .row1 .textPrimary strong {
@@ -73,14 +79,31 @@
     margin-left: -6px;
 }
 
-.row1 .list .item .btn{
+.row1 .list .btn{
     font-size: 12px;
     line-height: 24px;
 }
 
+.row1 .recommend .thumb {
+    overflow: hidden;
+    width: 428px;
+    height: 293px;
+}
+
+.row1 .recommend .thumb img {
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.row1 .recommend .thumb:hover img {
+    margin-left: -4px;
+}
+
 /* row module */
 .rowModA {
-    background: #fff;
 }
 
 .rowModA.active {
@@ -89,12 +112,33 @@
 }
 
 .rowModA .rowSide a {
+    overflow: hidden;
+    width: 200px;
+    height: 386px;
     position: relative;
+    z-index: 10;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
     -o-transition: all .25s;
     transition: all .25s;
+}
+
+.rowModA .rowSide a img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.rowModA .rowSide a:hover img {
+    margin-left: -8px;
 }
 
 .rowModA .rowSide a:after {
@@ -113,6 +157,7 @@
     position: absolute;
     left: 17px;
     top: 26px;
+    z-index: 10;
     padding: 0;
     margin: 0;
 }
@@ -153,7 +198,10 @@
 .rowModA .productListMore.active{
     bottom: 0;
     top: auto;
+    background-position: center top;
 }
+
+
 
 /* row 2 breakfast */
 .product_list {
@@ -162,9 +210,6 @@
     padding: 30px;
     background: #fff;
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .product_list.active {
@@ -198,14 +243,25 @@
 .product_list > li .img_view img {
     height: 100%;
     width: 100%;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
+
+.product_list > li .img_view:hover img {
+    opacity: .8;
+}
+
 .product_list > li .name {
     color: #333;
     cursor: pointer;
     float: left;
     font-size: 14px;
     height: 35px;
-    margin: 5px 0;
+    line-height: 18px;
+    margin: 16px 0 4px 0;
     overflow: hidden;
     transition: all 0.5s ease 0s;
     position:relative;
@@ -244,8 +300,8 @@
     color: #fff;
     float: left;
     font-size: 12px;
-    height: 17px;
-    line-height: 17px;
+    height: 16px;
+    line-height: 16px;
     margin-right: 3px;
     padding: 0 5px;
 }
