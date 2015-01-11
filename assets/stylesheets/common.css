@@ -311,7 +311,6 @@ input {
     height: 28px;
     line-height: 28px;
     text-align: center;
-    color: #222;
     font-size: 16px;
     background: #fff;
     border: 1px solid #e04141;
@@ -333,6 +332,10 @@ input {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+.floatEntry .count a {
+    color: #222;
 }
 
 
