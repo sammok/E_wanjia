@@ -44,6 +44,15 @@
     background: #fff;
 }
 
+.row1 .list {
+    width: 666px;
+    overflow: hidden;
+}
+
+.row1 .listWrap {
+    width: 120%;
+}
+
 .row1 .list .item{
     float:left;
     width: 192px;
@@ -213,7 +222,7 @@
 }
 
 .product_list.active {
-    height: 660px;
+    height: auto;
     box-shadow: 2px 3px 5px #ccc;
 }
 .product_list > li {
