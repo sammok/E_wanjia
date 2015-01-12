@@ -79,6 +79,8 @@
 }
 
 .row1 .textPrimary {
+    height: 32px;
+    line-height: 32px;
     font-size: 22px;
     margin-left: -5px;
 }
@@ -222,7 +224,7 @@
 }
 
 .product_list.active {
-    height: auto;
+    height: autog;
     box-shadow: 2px 3px 5px #ccc;
 }
 .product_list > li {
