@@ -383,20 +383,9 @@
         .product > .right .filter_nav .check {
             float:left;
         }
-            .product > .right .filter_nav .check input {
-                position: relative;
-                width: 15px;
-                height: 15px;
-                background: url(../images/check.png) no-repeat transparent;
-                background-size: 100%;
-                color: transparent;
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                -webkit-appearance: none;
-                
-                border: 0;
-                border-radius: 0;
+            .product > .right .filter_nav .check .checkbox {
                 float:left;
-                margin:15px 5px 0 25px;
+                margin:15px 10px 0 25px;
             }
                 .product > .right .filter_nav .check input:checked {
                     background-position: 0 -30px;

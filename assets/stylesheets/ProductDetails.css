@@ -1042,6 +1042,10 @@
     display: none;
 }
 
+.tabItem.active {
+    display: block;
+}
+
 /* model and bag */
 .modelTableWrap {
     padding: 24px 22px 36px 22px;
