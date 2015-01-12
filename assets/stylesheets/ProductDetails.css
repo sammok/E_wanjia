@@ -198,6 +198,12 @@
     position: relative;
 }
 
+.detail_meta .detail_right .dt_lins.sale li {
+    overflow: hidden;
+    height: 18px;
+    line-height: 18px;
+}
+
 .detail_meta .detail_right .dt_lins.sale .list{
     overflow: hidden;
     height: 76px;

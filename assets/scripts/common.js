@@ -14,7 +14,7 @@ $(function () {
             isSelected = false;
 
         sidebarHd.hover(function (){
-            sidebarBd.fadeIn();
+            sidebarBd.show();
         }, function (){
             bdTimer = setTimeout(function (){
                 sidebarBd.hide();
