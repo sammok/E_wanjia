@@ -458,7 +458,44 @@
             background:-o-linear-gradient(top,#9dcd64,#7db53a); /*Opera11*/
         }
 
-    .product > .datles_table .upcaozuo {
+.product > .datles_table .tip .giftItem {
+    margin-left: 5px;
+    color: #929292;
+    font-size: 12px;
+}
+
+.product > .datles_table .tip .giftItem span {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px;
+    margin-right: 12px;
+    position: relative;
+    background: #eaeaea;
+}
+
+.product > .datles_table .tip .giftItem span i {
+    width:0px;
+    height:0px;
+    border-bottom:4px solid transparent;
+    border-top:4px solid transparent;
+    border-left:4px solid #eaeaea;
+    font-size:0px;
+    line-height:0px;
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.product > .datles_table .tip .giftItem a {
+    color: #929292;
+}
+
+.product > .datles_table .tip .giftItem a:hover {
+    text-decoration: underline;
+}
+
+.product > .datles_table .upcaozuo {
         float:left;
         width:100%;
         line-height:45px;
@@ -570,6 +607,13 @@
     padding: 0 0 8px 164px;
 }
 
+.datles_table .giftTitle {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    margin-left: -100px;
+}
+
 .datles_table .giftWrap .item {
     line-height: 18px;
     margin-bottom: 4px;
@@ -608,6 +652,10 @@
     text-decoration: underline;
 }
 
+
+.orderGift {
+    padding: 10px 0 20px 0;
+}
 
 
 
