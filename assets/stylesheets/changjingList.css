@@ -224,7 +224,7 @@
 }
 
 .product_list.active {
-    height: autog;
+    height: auto;
     box-shadow: 2px 3px 5px #ccc;
 }
 .product_list > li {
