@@ -164,7 +164,7 @@
     .detail_meta .detail_right .money {
         width:100%;
         float:left;
-        border-bottom:1px solid #b3b3b3;
+        border-bottom:1px solid #dedede;
         font-size:14px;
         color:#333;
         line-height:60px;
@@ -195,6 +195,39 @@
 
 .detail_meta .detail_right .dt_lins.sale {
     margin-top:26px;
+    position: relative;
+}
+
+.detail_meta .detail_right .dt_lins.sale .list{
+    overflow: hidden;
+    height: 76px;
+}
+
+.detail_meta .detail_right .dt_lins.sale.active .list {
+    height: auto;
+}
+
+.detail_meta .detail_right .dt_lins.sale .toggleBtn {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    font-size: 12px;
+    color: #7b7b7b;
+    padding: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.detail_meta .detail_right .dt_lins.sale .toggleBtn i {
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background: url("../images/toggleArrow.png") no-repeat;
+}
+
+.detail_meta .detail_right .dt_lins.sale.active .toggleBtn i{
+    background: url("../images/toggleArrowOn.png") no-repeat;
 }
 
 .detail_meta .detail_right .dt_lins.norm {
@@ -742,13 +775,14 @@
         overflow: hidden;
         overflow-x: auto;
         float: left;
-        margin: 0 0 30px 30px;
+        margin: 0 0 30px 35px;
     }
 
         .product > .right > .hot_offers.combination .over .list {
-            display:inline-flex;
-            width:auto;
+
+            width:1200%;
             overflow:inherit;
+            margin-left: -15px;
         }
             .product > .right > .hot_offers.combination .over .list > li {
                 padding: 15px 25px 15px 15px;
@@ -950,26 +984,27 @@
     line-height: 45px;
     padding-bottom: 5px;
 }
-.combination .groupTabHd{}
+.combination .groupTabHd{
+}
 
 .combination .groupTabHd ul{
+    padding-top: 12px;
+    overflow: hidden;
+    zoom: 1;
 }
 
 .combination .groupTabHd li{
-    display: inline-block;
+    display: block;
     height: 22px;
     line-height: 22px;
-    padding: 0 24px;
+    margin-left: 35px;
     font-size: 16px;
-    color: #999;
-    border-right: 1px solid #d3d3d3;
+    color: #333;
     vertical-align: middle;
     cursor: pointer;
+    text-indent: 0;
 }
 
-.combination .groupTabHd li.active {
-    color: #333;
-}
 
 .combination .groupTabHd li.last {
     border-right: none;
@@ -1071,7 +1106,7 @@
 }
 
 .comment .appraisal {
-    margin-top: 0 !important;
+    margin-top: 7px!important;
     padding-top: 5px;
     padding-bottom: 40px;
 }
@@ -1095,6 +1130,10 @@
 
 /* comment module */
 .commentMod {
+}
+
+.consult .commentMod {
+    margin-top: -12px;
 }
 
 .commentMod .item {

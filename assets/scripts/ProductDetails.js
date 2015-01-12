@@ -168,13 +168,56 @@ $(function () {
         return { left: X, top: Y };
     }
 
+    // dynamic set scrollContent
+    function dynamicScrollShow(){
+        var itemCount = $('.over .list:first li').length;
+        var itemWidth = $('.over .list:first li:first').innerWidth();
+        console.log(itemCount, itemWidth);
+        $('.over .list:first').width(itemCount * itemWidth - 10);
+
+    }
+    dynamicScrollShow();
 
     // recommend  tab;
     function recommendGroupTab(){
         $('.combination .groupTabHd li').click(function (){
             $('.combination .groupTabBd .item').eq($(this).index())
                 .fadeIn().siblings('.item').hide();
+
+            $(this).addClass('active')
+                .siblings('li').removeClass('active');
         });
     }
     recommendGroupTab();
+
+    // toggle sale;
+    function toggleSale (){
+        var str1 = '展开';
+        var str2 = '收起';
+
+        $('.saleToggle').click(function (){
+            $('.dt_lins.sale').toggleClass('active');
+            var textobj = $(this).find('span');
+
+            if (textobj.text() == '展开') {
+                textobj.text(str2);
+            } else {
+                textobj.text(str1);
+            }
+
+        });
+    }
+    toggleSale();
+
+    // good main tab
+    function goodMainTab(){
+        $('.detail_cont .nav a').click(function (){
+            $(this).addClass('active')
+                .siblings('a').removeClass('active');
+
+            $('.tabContent .tabItem').siblings('.tabItem').hide()
+                .eq($(this).index()).show();
+        });
+    }
+    goodMainTab();
 });
