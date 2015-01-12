@@ -71,6 +71,18 @@
 }
 
 .row1 .list .desc p {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.row1 .list .desc:hover p {
+    color: #e14041;
+}
+
+.row1 .list .desc p {
     margin-bottom: 6px;
 }
 
@@ -91,6 +103,7 @@
 }
 
 .row1 .list .btn{
+    float:right;
     font-size: 12px;
     line-height: 24px;
 }
