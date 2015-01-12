@@ -14,8 +14,8 @@
     background-color: #fff;
     margin-bottom: 38px;
 }
-.seafood .promotion-list li.new:before,
-.seafood .promotion-list li.hot:before {
+.seafood .promotion-list li .flag,
+.seafood .promotion-list li .flag {
     display: block;
     position: absolute;
     width: 69px;
@@ -29,12 +29,7 @@
     text-align: center;
     padding: 10px;
 }
-.seafood .promotion-list li.new:before {
-    content: '今日新品';
-}
-.seafood .promotion-list li.hot:before {
-    content: '人气特卖';
-}
+
 .seafood .promotion-list li .timer {
     position: absolute;
     top: -18px;
