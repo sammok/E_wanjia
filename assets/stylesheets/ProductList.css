@@ -251,7 +251,7 @@
                     transition:all 0.5s ease;s
                 }
 
-                .product > .right > .filter > .list > li> .a_list a.selected{
+                .product > .right > .filter > .list > li .a_list.active a.selected{
                     color: #e14041;
                 }
                 .product .right .filter .list li .a_list.active {

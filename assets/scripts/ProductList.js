@@ -21,16 +21,17 @@ $(function () {
 
         // double choose
         $('.m_choice').click(function () {
-            if ($(this).hasClass('active')){
-                $(this).siblings('.a_list').find('a').removeClass('selected');
-            }
+            $(this).siblings('.a_list').find('a').removeClass('selected');
+
             $(this).toggleClass('active');
 
             $(this).siblings('.a_list').toggleClass('active');
 
-            $('.a_list a').click(function (){
-                $(this).toggleClass('selected');
-            });
+
+        });
+
+        $('.a_list a').click(function (){
+            $(this).toggleClass('selected');
         });
     }
     conditionalFilter();
