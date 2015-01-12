@@ -251,9 +251,6 @@
                     transition:all 0.5s ease;s
                 }
 
-                .product > .right > .filter > .list > li .a_list.active a.selected{
-                    color: #e14041;
-                }
                 .product .right .filter .list li .a_list.active {
                     height:auto;
                 }
@@ -263,6 +260,11 @@
                         white-space:nowrap;
                         margin-right:15px;
                         color: #333;
+                    }
+
+                    .product > .right > .filter > .list > li .a_list.active a.selected span，
+                    .product > .right > .filter > .list > li .a_list a:hover span{
+                        color: #e14041;
                     }
                     .product > .right > .filter > .list > li > .a_list > a span {
                         color: #888;
@@ -365,14 +367,31 @@
     background: none;
 }
 
+/* price count icon */
 .filter_nav .item.price span,
 .filter_nav .item.count span{
-    background: url("../images/verticalArrowIcon.png") no-repeat 55px center;
+    background: url("../images/verticalDirection_n.png") no-repeat 55px center;
+}
+
+.filter_nav .item.price:hover span,
+.filter_nav .item.count:hover span{
+    background: url("../images/verticalDirectionActive_nh.png") no-repeat 55px center;
 }
 
 .filter_nav .item.price.toggle span,
 .filter_nav .item.count.toggle span{
-    background: url("../images/verticalArrowIconOn.png") no-repeat 55px center;
+    background: url("../images/verticalDirection_n.png") no-repeat 55px center;
+}
+
+/* active */
+.filter_nav .item.price.active span,
+.filter_nav .item.count.active span{
+    background: url("../images/verticalDirectionActive_h.png") no-repeat 55px center;
+}
+
+.filter_nav .item.price.toggle.active span,
+.filter_nav .item.count.toggle.active span{
+    background: url("../images/verticalDirectionActive_n.png") no-repeat 55px center;
 }
 
 .filter_nav .item.default i {

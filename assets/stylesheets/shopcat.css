@@ -104,6 +104,10 @@
                 z-index:2;
                 background-color:#fff;
             }
+
+.product .regionTo .region .region_list .cnt {
+    float:left;
+}
                 .product .regionTo .region .region_list .title .ico {
                     border-left: 1px solid #ddd;
                     color: #999;

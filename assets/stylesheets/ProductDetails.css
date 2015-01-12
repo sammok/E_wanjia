@@ -250,6 +250,7 @@
                 clear: both;
                 float: left;
                 margin-bottom:11px;
+                color: #888;
             }
                 .detail_meta .detail_right .dt_lins  > .list > li:last-child {
                     margin:0;
@@ -356,6 +357,9 @@
                 z-index:2;
                 background-color:#fff;
             }
+.detail_meta .detail_right .dt_lins.region .region_list .title .cnt {
+    float: left;
+}
                 .detail_meta .detail_right .dt_lins.region .region_list .title .ico {
                     border-left: 1px solid #ddd;
                     color: #999;
@@ -934,6 +938,10 @@
                         width:118px;
                         margin:15px 0 0 22px;
                     }
+
+.product > .right > .detail_cont .appraisal > .list > li > .name a{
+    color: #333;
+}
                         .product > .right > .detail_cont .appraisal > .list > li > .name > .starts,
                         .product > .right > .detail_cont .appraisal > .list > li > .right .find_list > li > .name > .starts {
                             color: #a5a5a5;
@@ -959,6 +967,10 @@
                             float:left;
                             width:100%;
                         }
+
+.product > .right > .detail_cont .appraisal > .list > li > .right .find_list .name a{
+    color: #333;
+}
                             .product > .right > .detail_cont .appraisal > .list > li > .right .find_list .repy {
                                 line-height: 20px;
                             }
