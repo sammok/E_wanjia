@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/common.css" rel="stylesheet" charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/ProductDetails.css" rel="stylesheet" />
         <script type="text/javascript" src="assets/scripts/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/jquery.SuperSlide.min.js"></script>
         <script type="text/javascript" src="assets/scripts/common.js"></script>
         <script type="text/javascript" src="assets/scripts/ProductDetails.js"></script>
     </head>
@@ -1309,6 +1310,10 @@
                         <a class="less"></a>
                         <input class="quantity_txt"/>
                         <a class="add"></a>
+                        <span class="kucun">库存:1024</span>
+                        <span class="tips">
+                            您所选的商品数量大于库存!
+                        </span>
                     </div>
                     <div class="dt_lins region">
                         <span class="title">送至</span>
@@ -1368,9 +1373,190 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dt_lins buyOperate">
-                        <a class="btnAddToCart"></a>
-                        <a class="but25 addFavorite"><i></i><span>收藏</span></a>
+                    <div class="dt_lins buyOperate pr">
+                        <a class="btnAddToCart" href="javascript:$('.addToCart').fadeIn();"></a>
+                        <a class="but25 addFavorite" href="javascript:$('.addToFavorite').fadeIn();"><i></i><span>收藏</span></a>
+
+                        <!-- add to cart panel -->
+                        <div class="infoPanel successPanel recommend1 addToCart">
+                            <div class="infoPanelHd">提示 <i class="closeBtn"></i></div>
+                            <div class="infoPanelBd">
+                                <div class="hd">
+                                    <div class="clearfix mt5">
+                                        <img class="fl mt10" src="assets/images/iconPass.png" alt="" width="37" height="36"/>
+                                        <div class="fl ml15">
+                                            <h2 class="title fn">已经成功加入购物车!</h2>
+                                            <p class="total">购物车内共计5件商品，合计&nbsp;<span>￥127.35</span>&nbsp;元</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix btnWrap">
+                                        <a class="btn default" href="">继续购物</a>
+                                        <a class="btn primary" href="">去购物车结算&nbsp;&gt;</a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <div class="buyRecommend">
+                                        <div class="buyRecommendHd clearfix">
+                                            <a href="" class="fr">推荐更多&gt;&gt;</a>
+                                            <p class="fl">购买该商品的用户还购买了</p>
+                                        </div>
+                                        <div class="buyRecommendBd">
+                                            <div class="slide">
+                                                <div class="slide-hd">
+                                                    <i class="prev"></i>
+                                                    <i class="next"></i>
+                                                </div>
+                                                <div class="slide-bd">
+                                                    <div class="list">
+                                                        <ul class="listWrap clearfix">
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end add to cart panel -->
+                        <!-- add to favorite panel -->
+                        <div class="infoPanel successPanel recommend2 addToFavorite">
+                            <div class="infoPanelHd">提示 <i class="closeBtn"></i></div>
+                            <div class="infoPanelBd">
+                                <div class="hd">
+                                    <div class="clearfix mt5">
+                                        <img class="fl mt10" src="assets/images/iconPass.png" alt="" width="37" height="36"/>
+                                        <div class="fl ml15">
+                                            <h2 class="title fn">收藏成功！</h2>
+                                            <p class="total">您已经收藏了21件商品。</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix btnWrap">
+                                        <a class="btn default" href="">继续购物</a>
+                                        <a class="btn primary" href="">去购物车结算&nbsp;&gt;</a>
+                                    </div>
+                                </div>
+                                <div class="bd">
+                                    <div class="buyRecommend">
+                                        <div class="buyRecommendHd clearfix">
+                                            <a href="" class="fr">推荐更多&gt;&gt;</a>
+                                            <p class="fl">购买该商品的用户还购买了</p>
+                                        </div>
+                                        <div class="buyRecommendBd">
+                                            <div class="slide">
+                                                <div class="slide-hd">
+                                                    <i class="prev"></i>
+                                                    <i class="next"></i>
+                                                </div>
+                                                <div class="slide-bd">
+                                                    <div class="list">
+                                                        <ul class="listWrap clearfix">
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <a class="thumb show" href=""><img src="assets/img/1.png" alt="" width="90" height="90"/></a>
+                                                                <a class="name show f12" href="">百草味坚果炒货手剥山核桃 </a>
+                                                                <p class="textPrimary">
+                                                                    ￥<strong>139</strong>.00
+                                                                </p>
+                                                                <a class="tableBtn f12" href="">加入购物车</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end add to favorite panel -->
                     </div>
                     <div class="dt_lins region">
                         <img src="assets/images/service.png"/>
@@ -1465,9 +1651,10 @@
             </div>
             <div class="right">
                 <div class="hot_offers combination">
-                    <div class="groupTabHd">
+                    <div class="groupTabHd enableSelect">
                         <ul class="clearfix">
-                            <li class="active">套餐优惠</li>
+                            <li class="active">推荐搭配</li>
+                            <li class="last">促销组合</li>
                         </ul>
                     </div>
                     <div class="groupTabBd clearfix">
@@ -1517,12 +1704,67 @@
                                 </ul>
                             </div>
                             <div class="total">
-                                <span class="name">已选择3个商品</span>
-                            <span class="price">
-                                总价：<span>¥<span>128</span>.00</span>
-                                <span class="cankao">参考价：<s>¥148.00</s></span>
-                            </span>
-                                <a class="bute14041">加入购物车</a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="totalContent">
+                                                <span class="name">已选择3个商品</span>
+                                                <span class="price">
+                                                    总价：<span>¥<span>128</span>.00</span>
+                                                    <span class="cankao">参考价：<s>¥148.00</s></span>
+                                                </span>
+                                                <a class="bute14041">加入购物车</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="over">
+                                <ul class="list">
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                    </li>
+                                    <li>
+                                        <a class="img_view">
+                                            <img src="assets/img/p1.png" alt=""/>
+                                        </a>
+                                        <span class="name">百草味 坚果 炒货 手剥山核桃 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="total">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="totalContent">
+                                                <span class="price">
+                                                    套装价：<span>¥<span>128</span>.00</span>
+                                                    <span class="cankao">参考价：<s>¥148.00</s></span>
+                                                    <span class="cankao">参考价：<s>¥148.00</s></span>
+                                                </span>
+                                                <a class="bute14041">加入购物车</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1630,7 +1872,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a class="more">展开更多...</a>
                         </div>
                         <!-- end 商品介绍 -->
 

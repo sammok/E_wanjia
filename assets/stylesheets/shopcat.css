@@ -741,46 +741,6 @@
                 }
 
 
-/* exchangeGoodPanel */
-.messagePanel {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    margin: -235px 0 0 -345px;
-    width: 600px;
-    background: #fff;
-    border: 1px solid #dedede;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-    z-index: 1000;
-}
-
-.messagePanelHd {
-    position: relative;
-    line-height: 38px;
-    padding: 0 0 0 20px;
-    font-size: 14px;
-    border-bottom: 1px solid #dedede;
-}
-
-.messagePanelHd .closeBtn{
-    width: 20px;
-    height: 20px;
-    background: url("../images/closeBtn_n.png") no-repeat;
-    cursor: pointer;
-    position: absolute;
-    right: 8px;
-    top: 10px;
-}
-
-.messagePanelHd .closeBtn:hover{
-    /*background: url("../images/closeBtn_a.png") no-repeat;*/
-}
-
-.messagePanelBd {
-    padding: 15px 20px;
-}
-
 .messagePanelBd .tableWrap {
     width: 560px;
     max-height: 310px;

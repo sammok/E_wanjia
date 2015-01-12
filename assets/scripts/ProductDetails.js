@@ -168,12 +168,23 @@ $(function () {
         return { left: X, top: Y };
     }
 
+
+    // panel inner recommend slide
+    function tuijianSlider (){
+        jQuery(".recommend1 .slide").slide({titCell:'.slide-hd i', mainCell:'.slide-bd ul',vis:5,effect:"left"});
+        jQuery(".recommend2 .slide").slide({titCell:'.slide-hd i', mainCell:'.slide-bd ul',vis:5,effect:"left"});
+    }
+    tuijianSlider();
+
     // dynamic set scrollContent
     function dynamicScrollShow(){
         var itemCount = $('.over .list:first li').length;
         var itemWidth = $('.over .list:first li:first').innerWidth();
-        console.log(itemCount, itemWidth);
         $('.over .list:first').width(itemCount * itemWidth);
+
+        var itemCount = $('.over .list:last li').length;
+        var itemWidth = $('.over .list:last li:first').innerWidth();
+        $('.over .list:last').width(itemCount * itemWidth);
 
     }
     dynamicScrollShow();

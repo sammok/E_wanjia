@@ -29,6 +29,18 @@
     text-align: center;
 }
 
+.fn{ font-weight: normal;}
+.fb{ font-weight: bold;}
+
+
+.f12 { font-size: 12px;}
+.f14 { font-size: 14px;}
+.f16 { font-size: 16px;}
+.f20 { font-size: 20px;}
+.f24 { font-size: 24px;}
+
+.pr{ position: relative;}
+.pa{ position: absolute;}
 /* ---------------------------------------------------------------------------
  *      global
    --------------------------------------------------------------------------- */
@@ -88,6 +100,10 @@ th, td {
     margin-top: 8px;
 }
 
+.mt5 {
+    margin-top: 5px;
+}
+
 .mt10 {
     margin-top: 10px;
 }
@@ -144,6 +160,10 @@ th, td {
     margin-left: 40px;
 }
 
+.mr15{
+    margin-right: 15px;
+}
+
 /* preset color */
 .colore14041 {
     color: #e14041;
@@ -165,7 +185,7 @@ th, td {
     float: left;
 }
 
-.float_r, fr {
+.float_r, .fr {
     float: right;
 }
 
@@ -1940,6 +1960,48 @@ input {
 
 .selectBd a .textPrimary {
     margin-left: 4px;
+}
+
+
+/* exchangeGoodPanel */
+.messagePanel {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -235px 0 0 -345px;
+    width: 600px;
+    background: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+    z-index: 1000;
+}
+
+.messagePanelHd {
+    position: relative;
+    line-height: 38px;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    background: #fafafa;
+    border-bottom: 1px solid #dedede;
+}
+
+.messagePanelHd .closeBtn{
+    width: 20px;
+    height: 20px;
+    background: url("../images/closeBtn_n.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+.messagePanelHd .closeBtn:hover{
+    /*background: url("../images/closeBtn_a.png") no-repeat;*/
+}
+
+.messagePanelBd {
+    padding: 15px 20px;
 }
 
 
