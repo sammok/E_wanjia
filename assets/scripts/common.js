@@ -125,8 +125,6 @@ $(function () {
     /* floatEntry */
     function floatEntry (){
         $(window).scroll(function (){
-            console.log($(window).scrollTop());
-
             if($(window).scrollTop() >= 490) {
                 $('.floatEntry').fadeIn();
             } else {
