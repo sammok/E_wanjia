@@ -173,7 +173,7 @@ $(function () {
         var itemCount = $('.over .list:first li').length;
         var itemWidth = $('.over .list:first li:first').innerWidth();
         console.log(itemCount, itemWidth);
-        $('.over .list:first').width(itemCount * itemWidth - 10);
+        $('.over .list:first').width(itemCount * itemWidth);
 
     }
     dynamicScrollShow();
