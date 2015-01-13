@@ -2,18 +2,18 @@
 .f8{font-size:0.8px -webkit-text-size-adjust:none;}
 .f9{font-size:0.9px -webkit-text-size-adjust:none;}
 .f10{font-size: 1px -webkit-text-size-adjust:none;}
-.f12{font-size:1.2px}
-.f13{font-size:1.3px}
-.f14{font-size:1.4px}
-.f15{font-size:1.5px}
-.f16{font-size:1.6px}
-.f18{font-size:1.8px}
-.f20{font-size:2.0px}
-.f24{font-size:2.4px}
-.f26{font-size:2.6px}
-.f28{font-size:2.8px}
-.f30{font-size:3.0px}
-.f32{font-size:3.2px}
+.f12{font-size:12px}
+.f13{font-size:13px}
+.f14{font-size:14px}
+.f15{font-size:15px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.f24{font-size:24px}
+.f26{font-size:26px}
+.f28{font-size:28px}
+.f30{font-size:30px}
+.f32{font-size:32px}
 .fb{font-weight:bold;}
 .fn{font-weight:normal;}
 .t2{text-indent:2em;}
@@ -175,6 +175,11 @@
 .pr40{padding-right:40px;}
 .pr50{padding-right:50px;}
 
+.c_red { color: #e14041;}
+.c_blue { color: #1e589c;}
+.c999{ color: #999;}
+
+.tdu{ text-decoration: underline;}
 /* ---------------------------------------------------------------------------
  *      function
    --------------------------------------------------------------------------- */
