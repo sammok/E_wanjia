@@ -18,7 +18,8 @@ $(function () {
         // brand multi select
         $('.brandMultiSelect').click(function (){
             // clear status
-            $('.filter-conditional *, .condition-wrap *').removeClass('active');
+            $(this).parents('.filter-row').siblings('.filter-row')
+                .find('*').removeClass('active');
 
             $(this).toggleClass('active');
             $(this).parents('.filter-brand')
@@ -40,8 +41,7 @@ $(function () {
 
         // brand select cancel
         $('.cancelBtn').click(function (){
-            $('.filter-brand, .condition-wrap, .condition-wrap *').removeClass('active');
-            $('.condition-list *').removeClass('active');
+            $('.filter-row *').removeClass('active');
         });
 
 
@@ -49,7 +49,8 @@ $(function () {
         // another conditional select
         $('.anotherMultiSelect').click(function (){
             // clear status
-            $('.filter-conditional *, .condition-wrap, .condition-wrap *').removeClass('active');
+            $(this).parents('.filter-row').siblings('.filter-row')
+                .find('*').removeClass('active');
 
             $(this).toggleClass('active').parents('.anotherCondition')
                 .find('.condition-wrap').toggleClass('active');
