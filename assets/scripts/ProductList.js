@@ -10,53 +10,26 @@ $(function () {
 
     // conditional filter
     function conditionalFilter(){
-        // brand slide
-        $('.brandToggle').click(function (){
-            $('.filter-brand .condition-wrap').toggleClass('slideDown');
-        });
-
-        // brand multi select
-        $('.brandMultiSelect').click(function (){
+        // multi select switch
+        $('.multiSelect').click(function (){
             // clear status
             $(this).parents('.filter-row').siblings('.filter-row')
                 .find('*').removeClass('active');
 
-            $(this).toggleClass('active');
-            $(this).parents('.filter-brand')
+            $('.filter-row .all').addClass('active');
+
+            $(this).toggleClass('active').parents('.filter-conditional')
                 .find('.condition-wrap').toggleClass('active');
-
-            if ($(this).hasClass('active') === false){
-                $('.brand-list *').removeClass('active');
-            }
-        });
-
-        $('.filter-brand .condition-list li').click(function (){
-            if ($('.filter-brand .multiSelect').hasClass('active')){
-                $(this).toggleClass('active');
-            } else {
-                $(this).toggleClass('active')
-                    .siblings('li').removeClass('active');
-            }
         });
 
         // brand select cancel
         $('.cancelBtn').click(function (){
             $('.filter-row *').removeClass('active');
+            $('.filter-row .all').addClass('active');
         });
 
-
-
-        // another conditional select
-        $('.anotherMultiSelect').click(function (){
-            // clear status
-            $(this).parents('.filter-row').siblings('.filter-row')
-                .find('*').removeClass('active');
-
-            $(this).toggleClass('active').parents('.anotherCondition')
-                .find('.condition-wrap').toggleClass('active');
-        });
-
-        var parent = $('.anotherCondition');
+        // bind condition item
+        var parent = $('.filter-conditional');
 
         parent.find('.condition-list li').click(function (){
             var that = $(this);
@@ -95,20 +68,6 @@ $(function () {
                     }
                 }
 
-            }
-        });
-
-        // bind toggle;
-        var str1 = '展开';
-        var str2 = '收起';
-
-        $('.filterMod .toggle').click(function (){
-            if ($(this).text() == str1){
-                $(this).text(str2)
-                    .addClass('active');
-            } else {
-                $(this).text(str1)
-                    .removeClass('active');
             }
         });
 

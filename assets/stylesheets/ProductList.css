@@ -497,41 +497,6 @@
     background: #fff;
 }
 
-.filter-brand {
-    padding: 5px 0;
-}
-
-.filter-brand .brand-search {
-
-}
-
-.filter-brand .toggle {
-    color: #818181;
-    font-size: 12px;
-    padding-right: 15px;
-    background: url("../images/trangleDown.png") no-repeat right 9px;
-    cursor:pointer;
-}
-
-.filter-brand .toggle.active {
-    background: url("../images/trangleUp.png") no-repeat right 8px;
-}
-
-.filter-brand .brand-search input {
-    display: none;
-    width: 150px;
-    height: 14px;
-    line-height: 14px;
-    padding: 3px 5px;
-    color: #999;
-    border: 1px solid #e0e0e0;
-    background: #fff;
-}
-
-.filter-brand .brand-search input:focus {
-    color: #666;
-}
-
 .multiSelect {
     display: block;
     height: 23px;
@@ -573,45 +538,6 @@
 .multiSelect.active i,
 .multiSelect:hover i{
     background: url("../images/jiaOn.png") no-repeat;
-}
-
-.brand-key {
-    display: none;
-    height:26px;
-    line-height: 22px;
-    margin: 6px 0 0 54px;
-}
-
-.brand-key .allBrand {
-    width: 60px;
-    height:26px;
-    background: url("../images/allBrandBg.png");
-}
-
-.brand-key-list {
-    font-size: 12px;
-    margin-left: 3px;
-}
-
-.brand-key-list a {
-    float:left;
-    padding: 0 5px;
-    margin: 0 3px;
-    color: #e14041;
-}
-
-.brand-key-list a.active{
-    color: #fff;
-    background: #e14041;
-}
-
-.brand .condition-list{
-    overflow: hidden;
-    width: 758px;
-    height: 75px;
-    margin-left: 54px;
-    padding: 10px 15px;
-    border: 1px solid #e0e0e0;
 }
 
 /* condition list */
@@ -689,10 +615,6 @@
 
 .condition-wrap.active .confirmGroup {
     display: block;
-}
-
-.brand-tips p {
-    color: #aaa;
 }
 
 /* filter conditional */
