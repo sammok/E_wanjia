@@ -331,11 +331,6 @@ body {
 }
 
 .baner1 .right .cont .img_view img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
 }
 
 .baner1 .right .cont .bottom {
@@ -490,11 +485,6 @@ body {
 }
 
 .baner3 > li > .left:hover > img {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
 }
 .baner3 > li > .left > .pop {
     line-height:20px;
@@ -786,11 +776,6 @@ body {
 }
 
 .baner5 .right > .bgtt > .left:hover img{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
 }
 
 .baner5 .right > .bgtt > .left > .news {
@@ -1136,8 +1121,17 @@ body {
     color: #bbb;
 }
 
-.baner6 .right .cont .more a {
+.baner6 .right .cont .more {
     color: #bbb;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.baner6 .right .cont .more:hover {
+    color: #e14041;
 }
 
 .baner6 {
