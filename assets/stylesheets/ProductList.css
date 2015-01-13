@@ -444,10 +444,6 @@
     font-size: 14px;
 }
 
-.filterMod-bd {
-    padding: 20px;
-    background: #fff;
-}
 
 .filterMod a {
     color: #333;
@@ -455,6 +451,50 @@
 
 .filterMod .col01 {
     width: 54px;
+}
+
+.filterMod-hd {
+    padding: 15px 20px 10px 20px;
+    background: #fff;
+}
+
+.filterMod-hd .col01 {
+    width: 70px;
+}
+
+.filterMod-hd .detail {
+    margin-top: -1px;
+    font-size: 12px;
+    background: #e14041;
+    border: 1px solid transparent;
+}
+
+.filterMod-hd .detail:hover {
+    border-color: #c21f1f;
+}
+
+.filterMod-hd .detail a {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px 0 8px;
+}
+
+.filterMod-hd .detail span {
+    margin-left: 10px;
+}
+
+.filterMod-hd .detail .close {
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    color: #fff;
+    font-style: normal;
+}
+
+.filterMod-bd {
+    padding: 0 20px 20px 20px;
+    background: #fff;
 }
 
 .filter-brand {
@@ -495,6 +535,7 @@
 .multiSelect {
     display: block;
     height: 23px;
+    line-height: 23px;
     padding: 0 10px 0 8px;
     text-align: center;
     background: url(../images/multiSelectBg.png) repeat-x;
@@ -518,6 +559,8 @@
     height: 8px;
     margin-right: 8px;
     background: url("../images/jia.png") no-repeat;
+    position: relative;
+    top: -1px;
 }
 
 .multiSelect.active,
@@ -584,6 +627,11 @@
     height: 22px;
     line-height: 22px;
     margin: 0 25px 5px 0;
+    font-size: 12px;
+}
+
+.condition-listContent li:hover p {
+    color: #e14041;
 }
 
 .filter-conditional .condition-listContent .all { min-width: 1px!important; margin-right: 20px;}
@@ -693,6 +741,7 @@
      height: 7px;
      margin-left: 7px;
      background: url("../images/arrowDown.png") no-repeat;
+     cursor: pointer;
  }
 
 .filter-more.active i {
