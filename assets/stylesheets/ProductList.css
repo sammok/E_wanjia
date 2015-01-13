@@ -189,129 +189,7 @@
             .product > .right > .hot_offers > .list > li .but25 {
                 margin-top:-3px;
             }
-    .product > .right > .filter {
-        color:#333;
-        font-size:14px;
-        width:880px;
-        padding:20px;
-        float:left;
-        margin:15px 0 30px;
-        background-color:#fff;
-        position:relative;
-    }
-        .product > .right > .filter > .list {
-            width: 100%;
-            float: left;
-            overflow:hidden;
-            transition:all 0.5s ease;
-        }
 
-.product > .right > .filter > .list .moreItem {
-    display: none;
-}
-
-.product > .right > .filter > .list .moreItem.active {
-    display: block;
-}
-            .product > .right > .filter > .list.show {
-                height:auto;
-            }
-            .product > .right > .filter > .list > li {
-                width:100%;
-                border-top:1px solid #f1f1f1;
-                margin-top:-1px;
-                line-height:30px;
-                float:left;
-                padding:7px 0;
-            }
-                .product > .right > .filter > .list > li > .title,
-                .product > .right > .filter > .list > li > .all {
-                    width: 50px;
-                    float: left;
-                }
-                .product > .right > .filter > .list > li a {
-                    cursor: pointer;
-                    transition: all 0s ease;
-                }
-                    .product > .right > .filter > .list > li a:hover,
-                    .product > .right > .filter > .list > li > .active{
-                        color: #e14041;
-                        border-color: #e14041 !important;
-                    }
-                    .product > .right > .filter > .list > li a:hover i,
-                    .product > .right > .filter > .list > li a.active i{
-                        background-image: url("../images/jiaOn.png");
-                    }
-
-                .product > .right > .filter > .list > li> .a_list {
-                    width:620px;
-                    float:left;
-                    height:30px;
-                    overflow:hidden;
-                    transition:all 0.5s ease;s
-                }
-
-                .product .right .filter .list li .a_list.active {
-                    height:auto;
-                }
-                    .product > .right > .filter > .list > li > .a_list > a {
-                        float:left;
-                        word-break:break-all;
-                        white-space:nowrap;
-                        margin-right:15px;
-                        color: #333;
-                    }
-
-                    .product > .right > .filter > .list > li .a_list.active a.selected span，
-                    .product > .right > .filter > .list > li .a_list a:hover span{
-                        color: #e14041;
-                    }
-                    .product > .right > .filter > .list > li > .a_list > a span {
-                        color: #888;
-                    }
-                .product > .right > .filter > .list > li > .moer {
-                    color: #818181;
-                    float: left;
-                    font-size: 12px;
-                    margin-left: 50px;
-                }
-                    .product > .right > .filter > .list > li > .moer > .ico {
-                        color: #999;
-                        font-size: 6px;
-                        margin-left: 3px;
-                        position: relative;
-                        top: -2px;
-                        display:inline-block;
-                    }
-                .product > .right > .filter > .list > li > .m_choice {
-                }
-                    .product > .right > .filter > .list > li > .m_choice > i {
-                        background: url("../images/jia.png") no-repeat 0 center;
-                        float: left;
-                        height: 25px;
-                        margin-right: 5px;
-                        width: 8px;
-                    }
-        .product > .right > .filter > .moer {
-            position: absolute;
-            width: 350px;
-            left:50%;
-            bottom:-30px;
-            margin-left:-175px;
-            line-height: 30px;
-            font-size: 14px;
-            color: #777;
-            background-color:#fff;
-            text-align:center;
-            cursor:pointer;
-        }
-            .product > .right > .filter > .moer:hover {
-                color:#e14041;
-            }
-            .product > .right > .filter > .moer > .ico {
-                margin-left:5px;
-                display:inline-block;
-            }
         .product > .right .animate {
             transition:all 0.5s ease;
             transform:rotate(-180deg);
@@ -559,3 +437,317 @@
         margin-top: 15px;
     }
 
+
+/* product filter */
+.filterMod {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+
+.filterMod a {
+    color: #333;
+}
+
+.filterMod .col01 {
+    width: 54px;
+}
+
+.filterMod-hd {
+    padding: 15px 20px 10px 20px;
+    background: #fff;
+}
+
+.filterMod-hd .col01 {
+    width: 70px;
+}
+
+.filterMod-hd .detail {
+    margin-top: -1px;
+    font-size: 12px;
+    background: #e14041;
+    border: 1px solid transparent;
+}
+
+.filterMod-hd .detail:hover {
+    border-color: #c21f1f;
+}
+
+.filterMod-hd .detail a {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px 0 8px;
+}
+
+.filterMod-hd .detail span {
+    margin-left: 10px;
+}
+
+.filterMod-hd .detail .close {
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    color: #fff;
+    font-style: normal;
+}
+
+.filterMod-bd {
+    padding: 0 20px 20px 20px;
+    background: #fff;
+}
+
+.filter-brand {
+    padding: 5px 0;
+}
+
+.filter-brand .brand-search {
+
+}
+
+.filter-brand .toggle {
+    color: #818181;
+    font-size: 12px;
+    padding-right: 15px;
+    background: url("../images/trangleDown.png") no-repeat right 9px;
+    cursor:pointer;
+}
+
+.filter-brand .toggle.active {
+    background: url("../images/trangleUp.png") no-repeat right 8px;
+}
+
+.filter-brand .brand-search input {
+    display: none;
+    width: 150px;
+    height: 14px;
+    line-height: 14px;
+    padding: 3px 5px;
+    color: #999;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.filter-brand .brand-search input:focus {
+    color: #666;
+}
+
+.multiSelect {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px 0 8px;
+    text-align: center;
+    background: url(../images/multiSelectBg.png) repeat-x;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.multiSelect span {
+    vertical-align: top;
+}
+
+.multiSelect i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background: url("../images/jia.png") no-repeat;
+    position: relative;
+    top: -1px;
+}
+
+.multiSelect.active,
+.multiSelect:hover
+{
+    color: #e14041;
+    border-color: #e14041;
+}
+
+.multiSelect.active i,
+.multiSelect:hover i{
+    background: url("../images/jiaOn.png") no-repeat;
+}
+
+.brand-key {
+    display: none;
+    height:26px;
+    line-height: 22px;
+    margin: 6px 0 0 54px;
+}
+
+.brand-key .allBrand {
+    width: 60px;
+    height:26px;
+    background: url("../images/allBrandBg.png");
+}
+
+.brand-key-list {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.brand-key-list a {
+    float:left;
+    padding: 0 5px;
+    margin: 0 3px;
+    color: #e14041;
+}
+
+.brand-key-list a.active{
+    color: #fff;
+    background: #e14041;
+}
+
+.brand .condition-list{
+    overflow: hidden;
+    width: 758px;
+    height: 75px;
+    margin-left: 54px;
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+}
+
+/* condition list */
+.condition-list {
+    width: 720px;
+}
+
+.condition-listContent {
+}
+
+.condition-listContent li {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 25px 5px 0;
+    font-size: 12px;
+}
+
+.condition-listContent li:hover p {
+    color: #e14041;
+}
+
+.filter-conditional .condition-listContent .all { min-width: 1px!important; margin-right: 20px;}
+
+.condition-listContent .checkbox {
+    display: none;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+.condition-listContent p {
+    display: inline-block;
+}
+
+.condition-listContent p span {
+    display: none;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* condition-list active */
+
+/*.condition-wrap.active .condition-list,*/
+.condition-wrap.slideDown .condition-list{
+    height: auto;
+}
+
+/* checkbox active */
+.condition-wrap.active .checkbox {
+    display: inline-block;
+}
+
+.condition-wrap .checkbox.active {
+    display: inline-block;
+}
+
+.condition-wrap .checkbox.active i {
+    /* cancel checkbox components default checked style */
+    background: none;
+}
+
+.condition-list.active .listWrap p span {
+    display: inline;
+}
+
+
+.condition-listContent li.active .checkbox i {
+    background: url("../images/checkboxActive.png") no-repeat center center;
+}
+
+.condition-listContent li.active p {
+    color: #e14041;
+}
+
+.condition-wrap.active .confirmGroup {
+    display: block;
+}
+
+.brand-tips p {
+    color: #aaa;
+}
+
+/* filter conditional */
+.filter-conditional {
+    line-height: 28px;
+    padding: 7px 0;
+    border-top: 1px solid #f1f1f1;
+}
+
+.filter-conditional.active .checkbox {
+    display: inline-block;
+}
+
+.filter-conditional .multiSelect {
+    margin-top: 2px;
+}
+
+.filter-conditional .condition-listContent li{ margin-bottom: 0; line-height: 28px;}
+
+.filter-conditional .condition-wrap.active .condition-list{
+    overflow: hidden;
+    height: 75px;
+    /*margin-left: 54px;*/
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+}
+
+/* filter more */
+.filter-more {
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 285px;
+    color: #777;
+    background: #fff;
+    cursor: pointer;
+}
+
+.filter-more p {
+    padding-left: 20px;
+}
+
+.filter-more i {
+     display: inline-block;
+     width: 13px;
+     height: 7px;
+     margin-left: 7px;
+     background: url("../images/arrowDown.png") no-repeat;
+     cursor: pointer;
+ }
+
+.filter-more.active i {
+    background: url("../images/arrowUp.png") no-repeat;
+}
+
+/* confirm btn */
+.confirmGroup { display:none; margin-left: 54px; padding-bottom: 15px;}
+.confirmGroup .btn{ margin-right: 5px;}

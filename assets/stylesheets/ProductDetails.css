@@ -359,6 +359,7 @@
         .detail_meta .detail_right .dt_lins.region .region_list {
             float:left;
             position:relative;
+            z-index: 10;
             background-color:#fff;
             border:1px solid #d1d1d1;
         }
@@ -795,7 +796,7 @@
             }
     .product > .right > .hot_offers.combination .over {
         width: 660px;
-        height: 261px;
+        height: 280px;
         overflow: hidden;
         overflow-x: auto;
         float: left;
