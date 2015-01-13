@@ -81,12 +81,21 @@
 }
 .seafood .promotion-list li .name h3 {
     font-size: 18px;
+    font-weight: normal;
     margin-top: 28px;
+    margin-bottom: 12px;
 }
 .seafood .promotion-list li .name p {
+    line-height: 20px;
     font-size: 14px;
     color: #666;
 }
+
+.seafood .promotion-list li .info .price {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
 .seafood .promotion-list li .price strong {
     color: #e14041;
     font-size: 32px;
@@ -132,6 +141,7 @@
     border-left-color: #bdbdbd;
     border-bottom-color: #a7a7a7;
     border-right-color: #bdbdbd;
+    cursor: no-drop;
 }
 
 
