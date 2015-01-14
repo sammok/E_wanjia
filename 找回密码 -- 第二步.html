@@ -64,8 +64,10 @@
             </div><!-- end ProgressBar -->
 
             <div class="UserSignIn">
-                <p class="mt10 phoneaptcha"><input class="textInput" placeholder="输入验证码">
+                <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
+                <p class="mt10 phoneaptcha has-error"><input class="textInput" placeholder="输入验证码">
                     <a href="#">32秒</a>
+                    <small class=“errorText”>验证码错误，请重新填写</small>
                 </p>
                 <p class="UserLoginFt mt10">若当前号码已不用/丢失，或无法收到验证码？ <a class="Plink">邮箱验证</a></p>
                 <p class="mt40"><a class="SignInBtn btnPrimary " href="#">下一步</a></p>

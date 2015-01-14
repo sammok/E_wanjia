@@ -1630,6 +1630,21 @@ input {
     -webkit-box-sizing: border-box;
 }
 
+/* form verify */
+
+.has-error {
+}
+
+.has-error input {
+    border-color: #e14041!important;
+}
+
+.has-error small {
+    margin-left: 10px;
+    color: #e14041;
+    font-size: 12px;
+}
+
 /* panel  */
 .panel {
 }

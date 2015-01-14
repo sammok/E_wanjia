@@ -1255,7 +1255,10 @@
                             <div class="InputAddress"><!--InputAddress-->
                                 <a class="Add-btn btnPrimary" href="javascript:void(0);">添加新地址</a>
                                 <div class="AddressCont mt15">
-                                    <p><span>*</span>收 货 人&nbsp;&nbsp;：<input class="Iname input" value="" placeholder="填写姓名"></p>
+                                    <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
+                                    <p class="has-error"><span>*</span>收 货 人&nbsp;&nbsp;：<input class="Iname input" value="" placeholder="填写姓名">
+                                        <small class="errorText">必须填写收货人</small>
+                                    </p>
                                     <p><span>*</span>所在地区 ：
                                         <select class="select-address input">
                                             <option>深圳市南山区北环大道</option>
@@ -1265,8 +1268,12 @@
                                             <option>深圳市南山区北环大道</option>
                                         </select>
                                     </p>
-                                    <p><span>*</span>详细地址 ：<input type="text" class="Detailed-addres input" value="" placeholder="填写详细地址"><a class="panla">配送说明</a></p>
-                                    <p><span>*</span>手机号码 ：<input type="number" class="phone-number input" value="" placeholder="填写手机号码"></p>
+                                    <p class="has-error"><span>*</span>详细地址 ：<input type="text" class="Detailed-addres input" value="" placeholder="填写详细地址"><a class="panla">配送说明</a>
+                                        <small class="errorText">必须填写详细地址</small>
+                                    </p>
+                                    <p class="has-error"><span>*</span>手机号码 ：<input type="number" class="phone-number input" value="" placeholder="填写手机号码">
+                                        <small class="errorText">必须填写手机号码</small>
+                                    </p>
                                     <p><span>&nbsp;</span>固定电话 ：<input class="hdtelephone input" value="" placeholder="021">&nbsp;-&nbsp;<input class="telephonecont input" value="" ></p>
                                     <div class="default-address">
                                         <div class="checkbox enableSelect active" data-checked="true">

@@ -56,9 +56,9 @@
     height: 126px;
 }
 .UserSignIn{
-     width:480px;
+     /*width:480px;*/
      display: block;
-     margin: 0 auto;
+     margin-left: 300px;
     padding-bottom: 10px;
  }
 
@@ -349,7 +349,7 @@
     top:1px;
 }
 .PasswordFind .UserSignIn{
-    width: 500px;
+    /*width: 500px;*/
 }
 .PasswordFind .emailYz{
 
