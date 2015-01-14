@@ -8,16 +8,10 @@
     min-height: 626px;
 }
 .myCard .btnPrimary{
-    padding: 2px 11px;
-    position: relative;
-    top: 2px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
     margin-right: 8px;
-    font-size: 14px;
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
 }
 .myCard .btn:hover{
     border: 1px #999 solid;
@@ -33,7 +27,7 @@
     color: #555;
 }
 .myCardCont .textInput{
-    padding: 5px 0px;
+    padding: 5px 10px;
     width: 341px;
 }
 .myCardCont .p3{
