@@ -169,6 +169,7 @@
     display: block;
     float: right;
     text-align: right;
+    padding: 40px 0 22px 0;
     margin-right: 62px;
 }
 .productList-ft dt{
