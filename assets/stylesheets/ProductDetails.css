@@ -1048,7 +1048,7 @@
 
 .combination .groupTabBd .item {
     display: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
     zoom:1;
 }
 

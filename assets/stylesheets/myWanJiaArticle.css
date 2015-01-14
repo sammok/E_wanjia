@@ -4,21 +4,25 @@
 #FaqHd h2 a{
     background: url("../images/sidebarMainHdproblem_icon.png") no-repeat 60px center;
 }
-.myFaq ul li h4{
+.articleList ul li h4{
     font-size: 14px;color: #333;
     font-weight: normal;
     border-bottom: 1px solid #f0f0f0;
     padding: 7px 0 7px 10px;
     position: relative;
 }
-.myFaq ul{
+
+.articleList ul li h4 a { color: #333;}
+.articleList ul li h4 a:hover { color: #e14041;}
+
+.articleList ul{
     margin-top: -15px;
 }
-.myFaq ul li{
+.articleList ul li{
     padding-bottom: 7px;
     padding-left: 9px;
 }
-.myFaq ul li h4 span{
+.articleList ul li h4 span{
     background: #78b235;
     width: 6px;
     height: 6px;
@@ -33,9 +37,16 @@
     border-radius: 3px;
     behavior: url(assets/stylesheets/PIE.htc);
 }
-.myFaq .cont{
+.articleList .cont{
    text-indent: 2em;color: #555;
     line-height: 26px;
     font-size: 14px;
 
+}
+
+
+/* article detail */
+.articleBd {
+    line-height: 20px;
+    color: #999;
 }
