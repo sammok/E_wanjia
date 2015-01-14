@@ -1403,6 +1403,7 @@ input {
    --------------------------------------------------------------------------- */
 /* text */
 .textPrimary {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
     color: #e04040;
 }
 

@@ -57,7 +57,7 @@
 }
     .product > .mani_cat_but .title {
         float:left;
-        margin-left:20px;
+        margin-left:25px;
         font-size:16px;
         color:#333;
     }
@@ -86,7 +86,7 @@
         .product .regionTo .region > .tp_span {
             float:left;
             font-size:14px;
-            margin:0 15px;
+            margin:0 15px 0 25px;
         }
         .product .regionTo .region .region_list {
             float:left;
@@ -563,7 +563,7 @@
             float:right;
             line-height:20px;
             width: 153px;
-            margin: 8px 0 0 40px;
+            margin: 10px 0 0 36px;
         }
 
         .product > .datles_table .upcaozuo .quantity .textPrimary {
