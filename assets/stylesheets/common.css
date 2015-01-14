@@ -2015,7 +2015,11 @@ input {
     display: inline-block;
     width: 100%;
     height: 100%;
+    vertical-align: top!important;
     border: 1px solid #cfcfcf;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .checkbox.active i {

@@ -563,7 +563,7 @@
             float:right;
             line-height:20px;
             width: 153px;
-            margin:10px 0 0 40px;
+            margin: 8px 0 0 40px;
         }
 
         .product > .datles_table .upcaozuo .quantity .textPrimary {
@@ -580,10 +580,6 @@
         vertical-align: middle;
     }
 
-    .product > .datles_table .upcaozuo .float_l .checkbox {
-        position: relative;
-        top: -2px;
-    }
 .product > .jiesuan {
     background-color: #fff;
     float: left;
