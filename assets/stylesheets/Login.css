@@ -69,6 +69,10 @@
     margin-right: 10px;
     text-align: right;
 }
+
+.UserSignIn.signIn label {
+    margin-left: -145px;
+}
 .UserLogin p{
     color: #333;
 }
@@ -144,6 +148,10 @@
     font-size: 14px;
     /*margin-left: 68px;*/
     color: #696969;
+}
+
+.signIn .UserLoginFt {
+    margin-top: 17px;
 }
 .UserSignIn .UserLoginFt .qq{
     padding: 0px 10px;
