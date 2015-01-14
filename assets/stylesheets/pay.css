@@ -22,6 +22,18 @@
     font-weight: normal;
 }
 
+.orderDetail {
+    display: none;
+}
+
+.orderDetail li {
+    line-height: 20px;
+}
+
+.orderDetail .col {
+    min-width: 60px;
+}
+
 .panelBd {
     padding: 35px 45px 45px 45px;
     background: #fff url("../images/panelBdBgMask.png") repeat-x;
@@ -176,9 +188,11 @@
     text-align: center;
     font-size: 18px;
     color: #fff;
-    background: url("../images/payBtnBg.jpg") no-repeat;
+    background: #e14041;
     border: none;
     cursor: pointer;
+    border-top: 1px solid #f0a0a0;
+    border-bottom: 1px solid #c21f1f;
 
     transition: all .2s;
     -webkit-transition: all .2s;
@@ -193,7 +207,9 @@
 }
 
 .paySubmitBtn:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background: #ff5758;
 }
+
+
 
 

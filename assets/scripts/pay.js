@@ -1,4 +1,9 @@
 $(function (){
+    // toggle order detail
+    $('.toggleDetail').click(function (){
+        $('.orderDetail').slideToggle();
+    });
+
     // init default bank;
     $('.bankChooseValue').val('huarun');
 
