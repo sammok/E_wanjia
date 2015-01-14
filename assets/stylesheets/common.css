@@ -233,6 +233,7 @@ html, body, ul, p {
     margin: 0;
     list-style: none;
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
