@@ -74,3 +74,11 @@
     margin-left: 10px;
     text-align: left;
 }
+
+.myJifenListTable .add .score {
+    color: #e14041;
+}
+
+.myJifenListTable .sub .score {
+    color: #5dad00;
+}
