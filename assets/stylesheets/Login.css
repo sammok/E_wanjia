@@ -102,7 +102,6 @@
 }
 .UserSignIn .operatePw{
     font-size: 12px;
-    padding-left: 68px;
 }
 .UserSignIn .operatePw .checkbox{
     vertical-align: middle;
@@ -161,13 +160,17 @@
 
 /* registerPhone */
 .registerPhone{
-    width: 560px !important;
 }
 .registerPhone .textInput{
     width: 374px;
 }
+
+.registerPhone label {
+    width: 86px;
+    margin-left: -96px;
+}
+
 .registerPhone .SignInBtn{
-    margin-left:84px;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
@@ -175,10 +178,8 @@
     transition: all .25s;
 }
 .registerPhone .operatePw{
-    margin-left: 16px;
 }
 .registerPhone .userphone{
-    margin-left: 5px !important;
 }
 .registerPhone .aptcha{
     width: 199px;
@@ -210,11 +211,16 @@
 
 /* end registerEmail */
 .registerEmail{
-    width: 560px !important;
+    /*width: 560px !important;*/
+}
+
+.registerEmail label {
+    width: 86px;
+    margin-left: -96px;
 }
 .registerEmail .useremail{
-    margin-left: 7px !important;
-}
+    /*margin-left: 7px !important;*/
+/*}*/
 .registerEmail .textInput{
     width: 374px;
 }
