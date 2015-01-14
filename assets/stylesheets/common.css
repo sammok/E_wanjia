@@ -90,6 +90,7 @@
 .mt40{ margin-top:40px;}
 .mt50{ margin-top:50px;}
 .mt55{ margin-top:55px;}
+.mt100{ margin-top:100px;}
 
 .ml0{ margin-left:0 !important;}
 .ml5{ margin-left:5px;}
@@ -1478,7 +1479,7 @@ input {
 
 .btnMd {
     height: 34px;
-    line-height: 34px;
+    /*line-height: 34px;*/
     padding: 0 20px;
     font-size: 14px;
     text-align: center;

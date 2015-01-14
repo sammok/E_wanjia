@@ -1148,8 +1148,8 @@
 }
 
 .comment .appraisal {
-    margin-top: 7px!important;
-    padding-top: 5px;
+    margin-top: 0!important;
+    padding-top: 12px;
     padding-bottom: 40px;
 }
 

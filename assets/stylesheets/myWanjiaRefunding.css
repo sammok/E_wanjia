@@ -79,6 +79,7 @@
     width: 216px;
     vertical-align: middle;
     margin-left: 14px;
+    outline: none;
 }
 
 .operation .select option {
