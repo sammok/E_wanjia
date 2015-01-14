@@ -1421,13 +1421,14 @@ input {
     font-size: 15px;
 }
 
-.textNormaal {
+.textNormal {
     color: #555;
 }
 
-.textNormaal strong {
+.textNormal strong {
     font-weight: normal;
     font-size: 20px;
+    vertical-align: bottom;
 }
 
 /* btn */

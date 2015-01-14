@@ -48,7 +48,7 @@
 }
 
 /* coupon page */
-.myCoupon .btnRed{
+.myCoupon .active {
     background: #e14041 !important;color: #fff!important;
 }
 .myCoupon .btn{
@@ -58,7 +58,4 @@
     line-height: 27px;
     color: #555;
     background: #f4f4f4;border: none;
-}
-.myCoupon .btn:hover{
-    font-size: 15px;
 }
