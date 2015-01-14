@@ -1873,7 +1873,7 @@ input {
 .tableBtn {
     display: inline-block;
     height: 22px;
-    line-height: 20px;
+    /*line-height: 20px;*/
     padding: 0 12px;
     margin: 6px 0;
     color: #333;
