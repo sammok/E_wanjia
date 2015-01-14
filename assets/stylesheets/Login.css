@@ -71,7 +71,9 @@
 .UserLogin p{
     color: #333;
 }
-.UserSignIn .username{
+.UserSignIn .username,
+.UserSignIn .password
+{
     width:373px;
 }
 .UserSignIn .textInput{
