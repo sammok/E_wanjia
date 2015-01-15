@@ -137,8 +137,8 @@ $(function () {
 
     /* panel */
     function panel(){
-        $('.infoPanel .closeBtn').click(function () {
-            $(this).parents('.infoPanel').fadeOut();
+        $('.messagePanel .closeBtn').click(function () {
+            $(this).parents('.messagePanel').fadeOut();
         });
     }
     panel();
