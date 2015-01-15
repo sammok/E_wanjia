@@ -53,7 +53,13 @@
     background: #fff url("../images/panelBdBgMask.png") repeat-x;
 }
 #Loginpage{
-    height: 126px;
+    height: 114px;
+    background: url("../images/headerBgInner.png") repeat-x;
+}
+
+#Loginpage .headerLogo {
+    margin-top: -1px;
+    background: url("../images/headerLogoInner.png") no-repeat;
 }
 .UserSignIn{
      /*width:480px;*/
