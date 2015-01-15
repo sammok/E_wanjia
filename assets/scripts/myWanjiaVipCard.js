@@ -89,8 +89,26 @@ var vipCard = {
     }
 };
 
+var authorize = {
+    authorizePhone: function (){
+        $('.bindAuthorize01 .btnStepTo2').click(function (){
+            // Todo: ajax validation
+
+            if (true) {
+                $(this).parents('.bindAuthorize01').hide();
+                $('.bindAuthorize02').fadeIn();
+            } else {
+
+            }
+        });
+    }
+};
 
 $(function (){
+    // vip card page
     vipCard.applyVipCard();
     vipCard.bindVipCard();
+
+    // authorize page
+    authorize.authorizePhone();
 });

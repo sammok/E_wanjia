@@ -121,3 +121,14 @@
     color: #1e589d;
     text-decoration: underline;
 }
+
+/* bind authorize */
+.bindAuthorize01 {
+    margin: 0 0 0 105px;
+}
+
+.bindAuthorize02 .success {
+    padding-top: 10px;
+}
+
+.bindAuthorize02 .success * {vertical-align: middle;}
