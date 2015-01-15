@@ -38,7 +38,7 @@
 <!-- end header -->
 
 <div class="center">
-    <div class="panel">
+    <div class="panel signInSignOutPanel">
 
         <div class="panelBd PasswordFind">
             <!-- ProgressBar -->
@@ -64,18 +64,20 @@
             </div><!-- end ProgressBar -->
 
             <div class="UserSignIn">
-                <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
-                <p class="has-error">
-                    <label for="">用户名 :</label><input class="textInput username" placeholder="输入手机号/邮箱/用户名">
-                    <small class="errorText">请输入用户名</small>
-                </p>
-                <p class="mt15 aptchaWrap has-error">
-                    <label for="">验证码 : </label><input class="textInput aptcha" placeholder="输入手机验证码">
-                    <a href=""><img src="assets/images/yam.jpg" class="captchaImg" width="105" height="40"></a>
-                    <a href="#">看不清，换一张？</a>
-                    <small class="errorText">验证码输入错误，请重新输入</small>
-                </p>
-                <p class="mt35"><label for="">&nbsp;</label><a class="SignInBtn btnPrimary" href="#">下一步</a></p>
+                <div class="passwordFindFormBody">
+                    <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
+                    <p class="has-error" style="padding-top: 67px;">
+                        <label for="">用户名 :</label><input class="textInput username" placeholder="输入手机号/邮箱/用户名">
+                        <small class="errorText">请输入用户名</small>
+                    </p>
+                    <p class="mt15 aptchaWrap has-error">
+                        <label for="">验证码 : </label><input class="textInput aptcha" placeholder="输入手机验证码">
+                        <a href=""><img src="assets/images/yam.jpg" class="captchaImg" width="105" height="40"></a>
+                        <a href="#">看不清，换一张？</a>
+                        <small class="errorText">验证码输入错误，请重新输入</small>
+                    </p>
+                </div>
+                <p><label for="">&nbsp;</label><a class="SignInBtn btnPrimary" href="#">下一步</a></p>
             </div>
         </div>
     </div>

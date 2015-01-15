@@ -129,7 +129,7 @@ $(function () {
                 $('.floatEntry').fadeIn();
             } else {
                 $('.floatEntry').fadeOut();
-            };
+            }
         })
     }
 

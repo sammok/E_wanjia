@@ -38,7 +38,7 @@
 <!-- end header -->
 
 <div class="center">
-    <div class="panel">
+    <div class="panel signInSignOutPanel">
 
         <div class="panelBd PasswordFind">
             <!-- ProgressBar -->
@@ -64,13 +64,16 @@
             </div><!-- end ProgressBar -->
 
             <div class="UserSignIn">
-                <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
-                <p class="mt10 phoneaptcha has-error">
+                <div class="passwordFindFormBody">
+                    <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
+                    <p class="phoneaptcha has-error" style="padding-top: 35px;">
                     <h2 class="f24"><label for="">&nbsp;</label>验证邮件发送成功！请立刻完成验证！</h2>
                     <p class="f14 c666" style="margin-top: -8px;"><label for="">&nbsp;</label>验证邮件24小时内有效, 请尽快登陆您的邮箱点击验证链接进行新密码的设置</p>
-                </p>
-                <p class="UserLoginFt mt40"><label for="">&nbsp;</label><span>您也可以通过手机验证进行密码更改</span> <a class="Plink">手机验证</a></p>
-                <p class="mt55 pb40"><label for="">&nbsp;</label><a class="SignInBtn btnPrimary " href="#">查看验证邮箱</a></p>
+                    </p>
+                    <p class="UserLoginFt mt40"><label for="">&nbsp;</label><span>您也可以通过手机验证进行密码更改</span> <a class="Plink">手机验证</a></p>
+                </div>
+
+                <p><label for="">&nbsp;</label><a class="SignInBtn btnPrimary " href="#">查看验证邮箱</a></p>
             </div>
         </div>
     </div>

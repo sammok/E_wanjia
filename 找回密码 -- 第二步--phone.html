@@ -38,7 +38,7 @@
 <!-- end header -->
 
 <div class="center">
-    <div class="panel">
+    <div class="panel signInSignOutPanel">
 
         <div class="panelBd PasswordFind">
             <!-- ProgressBar -->
@@ -63,15 +63,17 @@
                 </ul>
             </div><!-- end ProgressBar -->
 
-            <div class="UserSignIn">
-                <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
-                <p class="mt10 phoneaptcha has-error">
-                    <label for="">&nbsp;</label><input class="textInput" placeholder="输入验证码">
-                    <a href="#">32秒</a>
-                    <small class=“errorText”>验证码错误，请重新填写</small>
-                </p>
-                <p class="UserLoginFt mt10"><label for="">&nbsp;</label><span>若当前号码已不用/丢失，或无法收到验证码？</span> <a class="Plink">邮箱验证</a></p>
-                <p class="mt55"><label for="">&nbsp;</label><a class="SignInBtn btnPrimary " href="#">下一步</a></p>
+            <div class="UserSignIn ">
+                <div class="passwordFindFormBody">
+                    <!-- 表单错误时给整行表单父级挂has-error的class  然后表单提示文本写进 small.errorText里 -->
+                    <p class="phoneaptcha has-error" style="padding-top: 89px;">
+                        <label for="">&nbsp;</label><input class="textInput" placeholder="输入验证码">
+                        <a href="#">32秒</a>
+                        <small class=“errorText”>验证码错误，请重新填写</small>
+                    </p>
+                    <p class="UserLoginFt mt10"><label for="">&nbsp;</label><span>若当前号码已不用/丢失，或无法收到验证码？</span> <a class="Plink">邮箱验证</a></p>
+                </div>
+                <p><label for="">&nbsp;</label><a class="SignInBtn btnPrimary " href="#">下一步</a></p>
             </div>
         </div>
     </div>

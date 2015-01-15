@@ -1,4 +1,10 @@
 /* created by Qianglong Mo 2014 */
+
+/* global */
+.signInSignOutPanel .panelBd {
+    min-height: 500px;
+}
+
 .payBg{
     background: #ededed;
 }
@@ -376,6 +382,12 @@
 .PasswordFind{
     background: #fff !important;
 }
+
+.PasswordFind .passwordFindFormBody {
+    min-height: 200px;
+    padding-bottom: 15px;
+}
+
 .PasswordFind .pt20{
     padding-top: 20px;
     padding: 68px;
@@ -387,6 +399,7 @@
 .PasswordFind .ProgressBar{
     width: 700px;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 .PasswordFind .UserSignIn{
     margin-bottom: 10px;
