@@ -142,6 +142,8 @@
                 .product .left > .best > .list > li .name,
                 .product > .right > .hot_offers > .list > li .name {
                     width:100%;
+                    height: 38px;
+                    overflow: hidden;
                     float:left;
                     font-size:14px;
                     color:#333;
@@ -366,6 +368,7 @@
                 float: left;
                 font-size: 14px;
                 height: 35px;
+                max-height: 35px;
                 margin: 5px 0;
                 overflow: hidden;
                 padding: 0 15px;
