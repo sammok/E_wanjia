@@ -5,7 +5,7 @@ body {
 
 .badge_bao,
 .badge_re {
-    display: none;
+    display: block;
     width: 71px;
     height: 71px;
     background: url(../images/badge/bao.png) no-repeat;
@@ -16,7 +16,7 @@ body {
 }
 
 .news {
-    display: none;
+    display: block;
     width: 37px;
     height: 44px;
     line-height: 38px;
@@ -235,6 +235,13 @@ body {
     line-height: 19px;
     overflow: hidden;
     width: 100%;
+
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url("ellipsis.xml#ellipsis");
 }
 .baner1 .left > .list > li .bottom .price {
     float:left;
@@ -344,6 +351,14 @@ body {
 .baner1 .right .cont .bottom .name {
     color:#333;
     float:left;
+    width: 270px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url("ellipsis.xml#ellipsis");
 }
 .baner1 .right .cont .bottom .price {
     float:left;
@@ -507,7 +522,7 @@ body {
     bottom:0;
 }
 .baner3 > li > .left > .pop .badge_re {
-    display: none;
+    display: block;
     position:absolute;
     z-index:2;
     right:25px;
@@ -516,9 +531,17 @@ body {
 .baner3 > li > .left > .pop .name {
     display:block;
     width: 352px;
+    max-height: 40px;
     color:#333;
     font-size:14px;
+    overflow: hidden;
 }
+
+.baner3 > li > .left.hasBadge .pop .name {
+    width: 280px;
+}
+
+
 .baner3 > li > .left > .pop .price {
     display:block;
     margin:20px 0 15px 0;
@@ -665,6 +688,10 @@ body {
     font-weight:normal;
     white-space:nowrap;
     text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url("ellipsis.xml#ellipsis");
 }
 .baner4 > .list > li > .bottom .present {
     color: #999;
@@ -812,7 +839,7 @@ body {
 }
 
 .baner5 .right > .bgtt > .left > .pop .badge_re {
-    display: none;
+    display: block;
     position: absolute;
     right: 25px;
     top: 20px;
@@ -822,8 +849,11 @@ body {
 .baner5 .right > .bgtt > .left > .pop .name {
     color: #333;
     display: block;
-    width: 260px;
+    width: 280px;
+    max-height: 40px;
     font-size: 14px;
+    overflow: hidden;
+    font-weight:normal;
 }
 
 .baner5 .right > .bgtt > .left > .pop .price {
@@ -835,9 +865,19 @@ body {
     border-top: 1px dashed #ddd;
     color: #666;
     display: block;
+    width: 335px;
     font-size: 14px;
     padding: 15px 0;
     position: relative;
+
+    overflow: hidden;
+    font-weight:normal;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url("ellipsis.xml#ellipsis");
 }
 
 .baner5 .right > .bgtt > .left > .pop .tip b {
@@ -956,8 +996,13 @@ body {
     line-height: 20px;
     margin-top: 10px;
     overflow: hidden;
+    font-weight:normal;
+    white-space:nowrap;
+    text-overflow:ellipsis;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url("ellipsis.xml#ellipsis");
 }
 .baner5 > .right > .bgll > .bottom .present {
     color: #999;
