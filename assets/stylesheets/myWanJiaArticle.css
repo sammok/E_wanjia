@@ -1,9 +1,9 @@
 /* Created by Qianglong Mo 2015 */
 
-/* FAQ */
-#FaqHd h2 a{
-    background: url("../images/sidebarMainHdproblem_icon.png") no-repeat 60px center;
-}
+/* article list */
+/*#FaqHd h2 a{*/
+    /*background: url("../images/sidebarMainHdproblem_icon.png") no-repeat 60px center;*/
+/*}*/
 .articleList ul li h4{
     font-size: 14px;color: #333;
     font-weight: normal;
@@ -50,3 +50,6 @@
     line-height: 20px;
     color: #999;
 }
+
+.articleBd h1 {}
+.articleBd p { margin-bottom: 0.6em; }
