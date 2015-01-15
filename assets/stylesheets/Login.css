@@ -76,8 +76,14 @@
     text-align: right;
 }
 
+/* sign in */
+.UserSignIn.signIn {
+    margin-top: 10px;
+    padding-left: 155px;
+}
+
 .UserSignIn.signIn label {
-    margin-left: -145px;
+    margin-left: -155px;
 }
 .UserLogin p{
     color: #333;
@@ -111,6 +117,7 @@
     text-decoration: underline;
 }
 .UserSignIn .operatePw{
+    width: 405px;
     font-size: 12px;
 }
 .UserSignIn .operatePw .checkbox{
@@ -121,7 +128,6 @@
 }
 .UserSignIn .operatePw a{
     float: right;
-    margin-right: 13px;
     color: #1f589d;
     text-decoration: underline;
 }
