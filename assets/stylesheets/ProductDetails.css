@@ -290,8 +290,8 @@
                 line-height:35px;
                 height:35px;
                 float:left;
-                margin-right:10px;
                 padding:0 15px;
+                margin: 0 10px 10px 0;
                 color:#333;
                 font-size:14px;
                 border:1px solid #d1d1d1;
@@ -303,9 +303,19 @@
                 .detail_meta .detail_right .dt_lins .norm_list > a.active,
                 .detail_meta .detail_right .dt_lins .norm_list > a:hover {
                     border:2px solid #e14041;
+                    padding: 0 14px;
+                    height:33px;
+                    line-height:33px;
+                }
+                .detail_meta .detail_right .dt_lins .norm_list > a.enable,
+                .detail_meta .detail_right .dt_lins .norm_list > a.enable:hover {
+                    color:#999;
+                    border: 1px dashed #d1d1d1;
+                    padding: 1px 15px;
                     margin:0 9px 0 -1px;
                     height:32px;
                     line-height:32px;
+                    cursor: no-drop;
                 }
         .detail_meta .detail_right .dt_lins.quantity {
             line-height:30px;
