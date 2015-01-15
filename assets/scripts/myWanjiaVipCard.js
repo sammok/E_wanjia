@@ -74,10 +74,23 @@ var vipCard = {
                 .siblings('input[type="hidden"]').val($(this).find('.formRadio').attr('data-value'));
 
         });
+    },
+    bindVipCard: function (){
+        $('.btnStepTo2').click(function (){
+            // Todo: ajax validation
+
+            if (true) {
+                $('.vipCardBindStep01').hide();
+                $('.vipCardBindStep03').fadeIn();
+            } else {
+
+            }
+        });
     }
 };
 
 
 $(function (){
     vipCard.applyVipCard();
+    vipCard.bindVipCard();
 });

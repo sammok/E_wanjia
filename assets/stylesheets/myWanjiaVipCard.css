@@ -98,21 +98,26 @@
     margin: 0 0 0 105px;
 }
 
-.vipCardApplyStep03 {
+.vipCardApplyStep03,
+.vipCardBindStep03
+{
     color: #333;
 }
 
-.vipCardApplyStep03 h2 {
+.vipCardApplyStep03 h2,
+.vipCardBindStep03 h2{
     margin: 103px 0 19px 0;
     font-size: 18px;
     font-weight: normal;
 }
 
-.vipCardApplyStep03 p {
+.vipCardApplyStep03 p,
+.vipCardBindStep03 p{
     font-size: 14px;
 }
 
-.vipCardApplyStep03 p a {
+.vipCardApplyStep03 p a,
+.vipCardBindStep03 p a{
     color: #1e589d;
     text-decoration: underline;
 }
