@@ -1438,7 +1438,7 @@ input {
 .textNormal strong {
     font-weight: normal;
     font-size: 20px;
-    vertical-align: bottom;
+    vertical-align: baseline;
 }
 
 /* btn */

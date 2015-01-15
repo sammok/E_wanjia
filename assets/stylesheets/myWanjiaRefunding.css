@@ -73,7 +73,7 @@
 .operation .select{
     border: 1px solid #d9d9d9;
     height: 28px;
-    line-height: 28px;
+    /*line-height: 28px;*/
     font-size: 14px;
     padding: 0 0 0 12px;
     width: 216px;
