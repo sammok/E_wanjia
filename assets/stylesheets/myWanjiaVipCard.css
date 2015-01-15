@@ -127,8 +127,16 @@
     margin: 0 0 0 105px;
 }
 
+.bindAuthorize02 h2 {
+    font-weight: normal;
+}
+
 .bindAuthorize02 .success {
     padding-top: 10px;
 }
 
 .bindAuthorize02 .success * {vertical-align: middle;}
+
+.bindAuthorize02 .btnPrimary {
+    line-height: 36px;
+}
