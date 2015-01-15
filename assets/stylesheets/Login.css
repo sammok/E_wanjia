@@ -159,16 +159,44 @@
 .signIn .UserLoginFt {
     margin-top: 17px;
 }
+
+.signIn .UserLoginFt * {
+    vertical-align: middle;
+}
+
 .UserSignIn .UserLoginFt .qq{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
     padding: 0px 10px;
     background: url("../images/loginBg.png") no-repeat ;
     margin-right: 13px;
     margin-left: 14px;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }
 .UserSignIn .UserLoginFt .xina{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
     padding: 0px 14px;
     margin-left: 13px;
-    background: url("../images/loginBg.png") no-repeat -46px 0px;
+    background: url("../images/loginBg.png") no-repeat -46px 0;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.UserSignIn .UserLoginFt .qq:hover{
+    background: url("../images/loginBg.png") no-repeat 0 -25px;
+}
+.UserSignIn .UserLoginFt .xina:hover{
+    background: url("../images/loginBg.png") no-repeat -46px -25px;
 }
 
 
