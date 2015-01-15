@@ -253,28 +253,28 @@
 /* price count icon */
 .filter_nav .item.price span,
 .filter_nav .item.count span{
-    background: url("../images/verticalDirection_n.png") no-repeat 55px center;
+    background: url("../images/verticalArrowIcon.png") no-repeat 55px center;
 }
 
 .filter_nav .item.price:hover span,
 .filter_nav .item.count:hover span{
-    background: url("../images/verticalDirectionActive_nh.png") no-repeat 55px center;
+    background: url("../images/verticalArrowActive_h.png") no-repeat 55px center;
 }
 
 .filter_nav .item.price.toggle span,
 .filter_nav .item.count.toggle span{
-    background: url("../images/verticalDirection_n.png") no-repeat 55px center;
+    background: url("../images/verticalArrowActive_n.png") no-repeat 55px center;
 }
 
 /* active */
 .filter_nav .item.price.active span,
 .filter_nav .item.count.active span{
-    background: url("../images/verticalDirectionActive_h.png") no-repeat 55px center;
+    background: url("../images/verticalArrowActive_n.png") no-repeat 55px center;
 }
 
 .filter_nav .item.price.toggle.active span,
 .filter_nav .item.count.toggle.active span{
-    background: url("../images/verticalDirectionActive_n.png") no-repeat 55px center;
+    background: url("../images/verticalArrowActive_h.png") no-repeat 55px center;
 }
 
 .filter_nav .item.default i {
