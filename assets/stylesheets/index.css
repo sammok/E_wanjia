@@ -3,29 +3,29 @@ body {
     background-color: #ededed;
 }
 
-.badge_bao,
-.badge_re {
-    display: block;
-    width: 71px;
-    height: 71px;
-    background: url(../images/badge/bao.png) no-repeat;
-}
+/*.badge_bao,*/
+/*.badge {*/
+    /*display: block;*/
+    /*width: 71px;*/
+    /*height: 71px;*/
+    /*background: url(../images/badge/bao.png) no-repeat;*/
+/*}*/
 
-.badge_re {
-    background-image: url(../images/badge/re.png)
-}
+/*.badge {*/
+    /*background-image: url(../images/badge/re.png)*/
+/*}*/
 
-.news {
-    display: block;
-    width: 37px;
-    height: 44px;
-    line-height: 38px;
-    text-align: center;
-    color: #ededed;
-    font-size: 14px;
-    font-weight: bold;
-    background: url(../images/badge/new.png) no-repeat;
-}
+/*.marker {*/
+    /*display: block;*/
+    /*width: 37px;*/
+    /*height: 44px;*/
+    /*line-height: 38px;*/
+    /*text-align: center;*/
+    /*color: #ededed;*/
+    /*font-size: 14px;*/
+    /*font-weight: bold;*/
+    /*background: url(../images/badge/new.png) no-repeat;*/
+/*}*/
 
 .border_b_ededed {
     border-bottom: 1px solid #ededed;
@@ -481,11 +481,7 @@ body {
     margin-left:-1px;
     border-right:1px solid #ededed;
 }
-.baner3 > li > .left > .news {
-    position: absolute;
-    z-index: 2;
-    left: 30px;
-    top: 0;
+.baner3 > li > .left > .marker {
 }
 .baner3 > li > .left > img {
     /*vertical-align:middle;*/
@@ -520,13 +516,6 @@ body {
     transition:all 0.2s ease-out;
     opacity:1;
     bottom:0;
-}
-.baner3 > li > .left > .pop .badge_re {
-    display: block;
-    position:absolute;
-    z-index:2;
-    right:25px;
-    top:20px;
 }
 .baner3 > li > .left > .pop .name {
     display:block;
@@ -805,7 +794,7 @@ body {
 .baner5 .right > .bgtt > .left:hover img{
 }
 
-.baner5 .right > .bgtt > .left > .news {
+.baner5 .right > .bgtt > .left > .marker {
     left: 30px;
     position: absolute;
     top: 0;
@@ -838,7 +827,7 @@ body {
     transition: all 0.2s ease-out 0s;
 }
 
-.baner5 .right > .bgtt > .left > .pop .badge_re {
+.baner5 .right > .bgtt > .left > .pop .badge {
     display: block;
     position: absolute;
     right: 25px;
@@ -1352,3 +1341,5 @@ body {
     font-size: 30px;
     margin-left: -4px;
 }
+
+

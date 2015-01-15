@@ -2215,6 +2215,57 @@ input {
 }
 
 
+/* badge and marker
+ * Add hasMarker or hasBadge for product item, preset div.mask DOM and div.badge DOM for item
+*/
+
+/* marker is used for inner page */
+.hasMarker .marker{
+    width: 57px;
+    height: 58px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.marker_new .marker {
+    background: url("../images/marker_new.png") no-repeat -2px -1px;
+}
+
+.marker_hot .marker {
+    background: url("../images/marker_hot.png") no-repeat -2px -1px;
+}
+
+.marker_import .marker {
+    background: url("../images/marker_import.png") no-repeat -2px -1px;
+}
+
+/* badge is used for index page */
+.hasBadge .badge{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    z-index: 10;
+}
+
+.badge_new .badge {
+    background: url("../images/badge_new.png") no-repeat;
+}
+
+.badge_hot .badge {
+    background: url("../images/badge_hot.png") no-repeat;
+}
+
+.badge_import .badge {
+    background: url("../images/badge_import.png") no-repeat;
+}
+
+
+
+
 /* ---------------------------------------------------------------------------
  *      responsitory
    --------------------------------------------------------------------------- */

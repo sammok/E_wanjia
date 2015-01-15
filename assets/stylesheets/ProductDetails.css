@@ -711,7 +711,7 @@
         }
         .product > .right .filter_nav > .price ,
         .product > .right .filter_nav > .sales ,
-        .product > .right .filter_nav > .news {
+        .product > .right .filter_nav > .marker {
             float:left;
             color:#333;
             line-height:20px;
@@ -734,7 +734,7 @@
             .product > .right .filter_nav > .sales.top {
                 background-position:right -24px;
             }
-        .product > .right .filter_nav > .news {
+        .product > .right .filter_nav > .marker {
             padding:0 15px;
         }
         .product > .right .filter_nav .active {
