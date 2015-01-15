@@ -109,6 +109,10 @@
                     float:right;
                     margin-right:40px;
                 }
+
+.product > .best > .panl_order > .title > .but2:hover {
+    color: #e14041;
+}
             .product > .best > .panl_order > .show_od {
                 float:left;
                 width:100%;
@@ -617,6 +621,10 @@
         font-size: 12px;
         text-decoration: underline;
     }
+.qut .but:hover,
+.qut2 .but:hover {
+    color: #e14041;
+}
     .qut2 > .t1 {
         float:right;
         clear:both;

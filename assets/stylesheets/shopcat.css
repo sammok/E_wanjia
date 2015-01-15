@@ -417,9 +417,9 @@
                 clear:both;
                 cursor:pointer;
             }
-                .product > .datles_table > .ll > li > .ld8 a:hover {
-                    color: #e14041;
-                }
+            .product > .datles_table > .ll > li > .ld8 a:hover {
+                color:#1e589c;
+            }
     .product > .datles_table .tip {
         width:100%;
         float:left;
@@ -454,6 +454,7 @@
     color: #1e589c;
     text-decoration: underline;
 }
+
 
     /* end other goods list */
 

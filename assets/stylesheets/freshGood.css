@@ -85,6 +85,13 @@
     margin-top: 28px;
     margin-bottom: 12px;
 }
+
+.seafood .promotion-list li .name h3 a{
+    color: #000;
+}
+.seafood .promotion-list li .name h3 a:hover {
+    color: #e14041;
+}
 .seafood .promotion-list li .name p {
     line-height: 20px;
     font-size: 14px;

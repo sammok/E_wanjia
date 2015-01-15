@@ -164,6 +164,7 @@
 
 .rowModA .rowSide a:hover img {
     margin-left: -8px;
+    margin-left: 0\9;
 }
 
 .rowModA .rowSide a:after {
@@ -208,6 +209,8 @@
 
 .rowModA .rowMain {
     position: relative;
+    width: 990px;
+    overflow: hidden;
 }
 
 .rowModA .productListMore {
@@ -230,7 +233,7 @@
 
 /* row 2 breakfast */
 .product_list {
-    width: 930px;
+    width: 960px;
     height: 326px;
     padding: 30px;
     background: #fff;

@@ -112,6 +112,16 @@
         margin:30px 10px 0 0;
         font-size:16px;
         padding:0 25px;
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        -ms-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s;
+    }
+
+    .product .order_xq > .but25:hover {
+        border-color: #e14041;
+        color: #e14041;
     }
 
     .product > .best{

@@ -179,6 +179,7 @@
 
 .c_red { color: #e14041;}
 .c_blue { color: #1e589c;}
+.c_blue:hover { color: #e14041;}
 .c333{ color: #333;}
 .c666{ color: #666;}
 .c999{ color: #999;}
@@ -1458,6 +1459,11 @@ input {
     cursor: pointer;
 }
 
+.btn:hover {
+    color: #e04040;
+    border-color: #e04040;
+}
+
 .btnDefault {
     color: #333;
     background: url("../images/btnBg.png") repeat-x;
@@ -1782,7 +1788,7 @@ input {
 }
 
 .tableBd a:hover {
-    color: #e04040;
+    color: #1e589c;
 }
 
 .tableDetail {

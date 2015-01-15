@@ -1,5 +1,6 @@
 /* Created by Qianglong Mo 2015 */
 
+
 /* Address manage */
 .AddressCont{
     background: #fcfcfc;
@@ -81,6 +82,7 @@
     text-decoration:underline;
     padding-left: 10px;
 }
+
 .InputAddress .default-address{
     vertical-align: middle;
     margin-left: 103px;
@@ -134,7 +136,7 @@
     color: #555;
 }
 .MyAddress .AddressList ul li ul li a:hover{
-    color: #e04040;
+    color: #1e589c;
 }
 .MyAddress .AddressList .active{
      margin-top: 26px;

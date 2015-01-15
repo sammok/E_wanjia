@@ -213,3 +213,6 @@
 .Orderdetails-cont  .productTable{
 
 }
+
+.Orderdetails-cont  .productTable .name { color: #555; font-size: 14px;}
+.Orderdetails-cont  .productTable .name:hover { color: #e14041;}
