@@ -1137,7 +1137,7 @@ input {
     background: url("../images/sanjiao_right.png") no-repeat right center;
     color: #333;
     font-size: 14px;
-    margin-right: 0;
+    margin-right: 10px;
     padding-right: 10px;
     position: relative;
 }
@@ -1148,13 +1148,13 @@ input {
 }
 
 .sideGoodCategoriesDetail .list .itemGroup a {
-    border-left: 1px solid #333;
+    border-right: 1px solid #333;
     color: #333;
     cursor: pointer;
     font-size: 12px;
     margin-left: -1px;
     margin-right: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
     white-space: nowrap;
 }
 
@@ -1260,6 +1260,7 @@ input {
     position: absolute;
     top: 0;
     left: 666px;
+    height: 330px;
     border-left: 1px solid #eee;
 }
 
