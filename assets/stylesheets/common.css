@@ -1116,6 +1116,7 @@ input {
 .sideGoodCategoriesDetail .listWrap {
     width: 666px;
     height: 100%;
+    line-height: 440px;
     background: url("../images/whiteOpacity95.png");
 }
 
@@ -1131,6 +1132,10 @@ input {
     display: block;
     margin-bottom: 15px;
     min-height: 30px;
+}
+
+.sideGoodCategoriesDetail .item.most .list li {
+    margin-bottom: 5px;
 }
 
 .sideGoodCategoriesDetail .list .title {
