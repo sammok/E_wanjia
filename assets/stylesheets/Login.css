@@ -82,6 +82,9 @@
     text-align: right;
 }
 
+
+.UserSignIn h2 { font-weight: normal;}
+
 /* sign in */
 .UserSignIn.signIn {
     margin-top: 10px;
