@@ -1279,36 +1279,11 @@ body {
     border-bottom: none;
 }
 
-.sideRecommend .desc {
-    float: left;
-    vertical-align: middle;
-    margin: 10px 0 0 0;
-    padding: 0;
-}
 
-.sideRecommend .desc dt {
-    width: 65px;
-    line-height: 20px;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    color: #202020;
-}
-
-.sideRecommend .desc dt:hover {
-    color: #e14041;
-}
-.sideRecommend .desc dd {
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 14px;
-    color: #aaa;
-}
-
-.sideRecommend .thumb {
-    float: right;
-}
-.sideRecommend .thumb img {
+.sideRecommend a img {
+    display: block;
+    width: 214px;
+    height: 100px;
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
@@ -1316,7 +1291,7 @@ body {
     transition: all .25s;
 }
 
-.sideRecommend .thumb:hover {
+.sideRecommend a img:hover {
     opacity: .8;
 }
 
