@@ -2222,7 +2222,7 @@ input {
 }
 
 .messagePanelBd {
-    padding: 15px 20px;
+    padding: 5px 20px 10px 20px;
 }
 
 /* messagePanel size */
@@ -2245,7 +2245,7 @@ input {
 }
 
 .successPanel .hd {
-    padding-bottom: 28px;
+    padding-bottom: 18px;
 }
 
 .successPanel .bd {

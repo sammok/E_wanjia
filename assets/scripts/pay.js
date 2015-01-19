@@ -1,8 +1,26 @@
 $(function (){
     // toggle order detail
-    //$('.toggleDetail').click(function (){
-    //    $('.orderDetail').slideToggle();
-    //});
+    var timer = null;
+
+    $('.toggleDetail').mouseover(function (){
+        $('.orderDetail').show();
+    });
+
+    $('.toggleDetail').mouseout(function (){
+            timer = setTimeout(function (){
+                $('.orderDetail').fadeOut();
+            }, 200);
+        });
+
+    $('.orderDetail').mouseover(function (){
+        clearTimeout(timer);
+    });
+
+    $('.orderDetail').mouseout(function (){
+        timer = setTimeout(function (){
+            $('.orderDetail').fadeOut();
+        }, 2000);
+    });
 
     // init default bank;
     $('.bankChooseValue').val('huarun');

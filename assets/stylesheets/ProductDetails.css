@@ -1306,7 +1306,7 @@
 }
 
 .buyRecommendHd {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 16px;
     font-size: 14px;
     color: #333;
@@ -1316,7 +1316,7 @@
     color: #1e589b;
 }
 .slide {
-    padding: 0 20px 20px 24px;
+    padding: 0 20px 10px 24px;
 }
 
 .slide-hd {
@@ -1365,7 +1365,7 @@
 .slide-bd li {
     float: left;
     width: 90px;
-    height: 194px;
+    height: 168px;
 }
 
 
@@ -1375,10 +1375,14 @@
 }
 
 .slide-bd .name {
+    float: none!important;
+    overflow: hidden;
+    width: 90px;
+    height: 16px;
     line-height: 16px!important;
     font-size: 12px!important;
     text-align: left;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .slide-bd a{
@@ -1400,14 +1404,14 @@
     width: 84px;
     height:24px;
     padding: 0 ;
-    margin-top: 8px;
+    margin-top: 2px;
     font-size: 12px;
     text-align: center;
     background: url("../images/btnBg.png") repeat-x;
 }
 
 .slide-bd .textPrimary {
-    margin-top: 14px;
+    margin-top: 4px;
 }
 
 .slide-bd .list {
