@@ -234,18 +234,29 @@ $(function () {
 
     // add to cart and favorite
     $('.btnAddToCart').click(function (){
-        $('.addToCart').fadeIn();
-
-        setTimeout(function (){
-            $('.addToCart').fadeOut();
-        }, 5000);
+        panelActive('.addToCart');
     });
 
     $('.btnAddFavorite').click(function (){
-        $('.addToFavorite').fadeIn();
-
-        setTimeout(function (){
-            $('.addToFavorite').fadeOut();
-        }, 5000);
+        panelActive('.addToFavorite');
     });
+
+    function panelActive (panel){
+        clearTimeout(timer);
+        $(panel).fadeIn();
+
+        var timer = setTimeout(function (){
+            $(panel).fadeOut();
+        }, 2000);
+
+        $(panel).mouseover(function (){
+            clearTimeout(timer);
+        });
+
+        $(panel).mouseout(function (){
+            timer = setTimeout(function (){
+                $(panel).fadeOut();
+            }, 2000);
+        });
+    }
 });
