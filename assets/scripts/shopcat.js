@@ -24,9 +24,6 @@ $(function () {
 
     function messagePanel(){
         // button
-        $('.messagePanel .closeBtn').click(function (){
-            $(this).parents('.messagePanel').fadeOut();
-        });
 
         $('.messagePanel .continue').click(function (){
             $(this).parents('.messagePanel').fadeOut();
@@ -36,9 +33,22 @@ $(function () {
             $(this).parents('.messagePanel').fadeOut();
         });
 
-        $('.exchangeBtn').click(function (){
-            $('.jiaJiaGetGood').fadeIn();
-        });
+        // absolutePosition panel
+        function showAbsolutePanel(btn, panel){
+            $(btn).click(function (){
+                $(panel).css({
+                    "position": "absolute",
+                    'left': $(this).offset().left + 'px',
+                    'top': $(this).offset().top + $(this).height() + 5 + 'px',
+                    'margin-left': '0',
+                    'margin-top': '0'
+                }).fadeIn();
+            });
+        }
+
+        // show absolute panel
+        showAbsolutePanel('.exchangeBtn', '.jiaJiaGetGood');
+        showAbsolutePanel('.singleDiscount', '.chooseGift');
     }
     messagePanel();
 })
