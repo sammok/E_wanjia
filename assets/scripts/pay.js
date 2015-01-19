@@ -3,23 +3,26 @@ $(function (){
     var timer = null;
 
     $('.toggleDetail').mouseover(function (){
+        clearTimeout(timer);
         $('.orderDetail').show();
     });
 
     $('.toggleDetail').mouseout(function (){
-            timer = setTimeout(function (){
-                $('.orderDetail').fadeOut();
-            }, 200);
-        });
+        clearTimeout(timer);
+        timer = setTimeout(function (){
+            $('.orderDetail').hide();
+        }, 200);
+    });
 
     $('.orderDetail').mouseover(function (){
         clearTimeout(timer);
+        $('.orderDetail').show();
     });
 
     $('.orderDetail').mouseout(function (){
         timer = setTimeout(function (){
-            $('.orderDetail').fadeOut();
-        }, 2000);
+            $('.orderDetail').hide();
+        }, 200);
     });
 
     // init default bank;
