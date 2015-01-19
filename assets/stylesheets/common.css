@@ -2243,10 +2243,15 @@ input {
     left: 0;
     margin: 0!important;
 }
+
 .successPanel .hd {
     padding-bottom: 28px;
-    border-bottom: 1px solid #e9e9e9;
 }
+
+.successPanel .bd {
+    border-top: 1px solid #e9e9e9;
+}
+
 .successPanel .title{ line-height: 36px; margin-top: -2px; margin-bottom: 0; font-size: 24px; color: #78b135;}
 .successPanel span{ color: #292929;}
 .successPanel .btn{

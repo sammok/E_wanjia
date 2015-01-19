@@ -231,4 +231,21 @@ $(function () {
         });
     }
     goodMainTab();
+
+    // add to cart and favorite
+    $('.btnAddToCart').click(function (){
+        $('.addToCart').fadeIn();
+
+        setTimeout(function (){
+            $('.addToCart').fadeOut();
+        }, 5000);
+    });
+
+    $('.btnAddFavorite').click(function (){
+        $('.addToFavorite').fadeIn();
+
+        setTimeout(function (){
+            $('.addToFavorite').fadeOut();
+        }, 5000);
+    });
 });
