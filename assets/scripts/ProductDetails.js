@@ -26,7 +26,7 @@ $(function () {
 
     // ͼƬ���¹���
     var count = $("#imageMenu li").length - 5; /* ��ʾ 6 �� li��ǩ���� */
-    var interval = $("#imageMenu li:first").width();
+    var interval = 85+10;
     var curIndex = 0;
 
     $('.scrollbutton').click(function () {
