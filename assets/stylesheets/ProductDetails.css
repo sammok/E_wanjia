@@ -52,7 +52,7 @@
             .preview .scrollbutton.smallImgDown.disabled {
                 opacity:0.5;
             }
-#imageMenu {height: 85px; width:380px; overflow-x:hidden; margin-left:0; float:left;}
+#imageMenu {height: 85px; width:380px; overflow:hidden; margin-left:0; float:left;}
     #imageMenu ul {
         height:85px%;
     }
