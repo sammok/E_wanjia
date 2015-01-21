@@ -1312,7 +1312,8 @@ input {
 }
 
 .crumb a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #e14041;
 }
 
 .crumb a.active {
