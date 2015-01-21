@@ -330,10 +330,10 @@
                 transition:all 0.5s ease;
             }
             .product > .right .filter_nav .statistics .ico.a_left:hover {
-                transform:translate3d(-3px,0,0);
+                color: #e14041;
             }
             .product > .right .filter_nav .statistics .ico.a_right:hover {
-                transform:translate3d(3px,0,0);
+                color: #e14041;
             }
 
     .product > .right > .product_list {
