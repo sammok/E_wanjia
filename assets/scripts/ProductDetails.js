@@ -88,7 +88,7 @@ $(function () {
         if ($(this).attr("id") != "onlickImg") {
             clearTimeout(midChangeHandler);
             midChange($(this).attr("data-src").replace("small", "mid"));
-            $(this).css({ "border": "3px solid #959595" });
+            //$(this).css({ "border": "3px solid #959595" });
         }
     }).bind("mouseout", function () {
         if ($(this).attr("id") != "onlickImg") {

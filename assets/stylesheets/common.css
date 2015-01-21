@@ -788,6 +788,7 @@ input {
 
 .headerSearchHotkey {
     display: block;
+    width: 372px;
     color: #bdbdbd;
     padding-top: 10px;
 }

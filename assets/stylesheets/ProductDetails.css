@@ -52,47 +52,35 @@
             .preview .scrollbutton.smallImgDown.disabled {
                 opacity:0.5;
             }
-        .preview .scrollbutton.smallImgUp:hover {
-            transform: translate3d(-5px,0,0) scale(1.2);
-            -webkit-transform: translate3d(-5px,0,0) scale(1.2);
-            -o-transform: translate3d(-5px,0,0) scale(1.2);
-        }
-        .preview .scrollbutton.smallImgDown:hover {
-            transform: translate3d(5px,0,0) scale(1.2);
-            -webkit-transform: translate3d(5px,0,0) scale(1.2);
-            -o-transform: translate3d(5px,0,0) scale(1.2);
-        }
-        .preview .scrollbutton.smallImgUp.disabled:hover,
-        .preview .scrollbutton.smallImgDown.disabled:hover {
-            transform: translate3d(0,0,0) scale(1);
-            -webkit-transform: translate3d(0,0,0) scale(1);
-            -o-transform: translate3d(0,0,0) scale(1);
-        }
-#imageMenu {height:100%; width:380px; overflow:hidden; margin-left:0; float:left;}
+#imageMenu {height: 85px; width:380px; overflow-x:hidden; margin-left:0; float:left;}
     #imageMenu ul {
-        height:100%;
+        height:85px%;
     }
     #imageMenu li {
-        height: 100%;
-        width: 95px;
+        height: 85px;
+        width: 85px;
         overflow: hidden;
+        margin-right: 10px;
         float: left;
         text-align: center;
     }
         #imageMenu li img {
             width: 85px;
-            height: 100%;
+            height: 85px;
             cursor: pointer;
-            transition:all 0.2s ease;
         }
-        #imageMenu li#onlickImg img,
-        #imageMenu li:hover img {
+        #imageMenu li#onlickImg,
+        #imageMenu li:hover {
             width: 79px;
             height: 79px;
             border: 3px solid #959595;
         }
 
-        #imageMenu li#onlickImg img {
+        #imageMenu li#onlickImg img,
+        #imageMenu li:hover img {
+            margin: -3px 0 0 -3px;
+        }
+        #imageMenu li#onlickImg {
             border-color:#e14041!important;
         }
 /* bigImg */
@@ -100,6 +88,7 @@
 .preview .bigImg #midimg{width:100%; height:100%; vertical-align:middle;}
 .preview .bigImg #winSelector{width:140px; height:140px;}
     .preview .bigImg .jia {
+        display: none;
         background:url(../images/jia.png) no-repeat center #fff;
         border:solid #d8d8d8;
         border-width:1px 0 0 1px;
