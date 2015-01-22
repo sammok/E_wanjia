@@ -443,3 +443,30 @@
     margin-top: 80px;
 }
 /* End 找回密码 */
+
+/* 注册协议 */
+.protocolPanel {
+    margin-top: -265px;
+}
+
+.protocolPanel .messagePanelBd {
+    padding: 20px;
+}
+
+.protocolPanel #protocol-con{
+    overflow: auto;
+    max-height: 400px;
+    line-height: 1.45em;
+    font-size: 14px;
+    color: #666;
+}
+
+.protocolPanel .protocol-content {
+    margin-top: -15px;
+}
+
+.protocolPanel .btn {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
