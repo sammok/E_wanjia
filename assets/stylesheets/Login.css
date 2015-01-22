@@ -469,3 +469,16 @@
     height: 30px;
     margin-bottom: 15px;
 }
+
+/* registration success */
+.registrationSuccess { border-image: none; min-height: 375px;}
+.registrationSuccess .message { padding-top: 85px;}
+.registrationSuccess .message * {vertical-align: middle; color: #3f403f; }
+.registrationSuccess .btnPrimary { width: auto; padding: 0 25px 0 28px; height: 33px; line-height: 33px; font-size: 14px;}
+.registrationSuccess .tips {
+    width: 574px;
+    padding: 12px 0 0 0;
+    margin: 20px auto 0 auto;
+    color: #6d6d6d;
+    border-top: 1px solid #f0f0f0;
+}
