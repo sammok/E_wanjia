@@ -2583,6 +2583,41 @@ input {
     line-height: 22px;
 }
 
+/* float tips */
+.floatTips {
+    position: absolute;
+    top: -45px;
+    left: -80px;
+    z-index: 20;
+    min-width: 112px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px 0 40px;
+    font-size: 14px;
+    color: #3f403f;
+    box-shadow: 0 1px 4px #999;
+    background: #fff url("../images/icon-successSmall.png") no-repeat 14px 7px;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.floatTips i {
+    position: absolute;
+    bottom: -7px;
+    right: 20px;
+    width: 13px;
+    height: 8px;
+    background: url("../images/bg_arrow02.png") no-repeat;
+}
+
+.floatTips.active {
+    opacity: 0;
+    top: -55px;
+}
+
 /* ---------------------------------------------------------------------------
  *      responsitory
    --------------------------------------------------------------------------- */
