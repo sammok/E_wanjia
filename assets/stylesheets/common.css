@@ -868,50 +868,46 @@ input {
 
 .manifesto {
     width: 1190px;
-    display: inline-block;
     overflow: hidden;
+    margin-top: 70px;
+    position: relative;
+    left: 25px;
 }
 
-.manifesto > li {
+.manifesto li {
     float: left;
     width: 33%;
-    text-align: center;
     border-left: 1px solid #b7b7b7;
     color: #333;
     font-size: 18px;
-    line-height: 70px;
-    margin: 73px 0 0 -1px;
+    padding-bottom: 16px;
+    margin: 0 0 0 -1px;
     height: 70px;
 }
-
-.manifesto > li .ico {
-    font-size: 55px;
-    color: #e14041;
-    position: relative;
-    vertical-align: middle;
+.manifesto li img {
+    margin-left: 60px;
 }
 
-.manifesto > li > .font {
-    display: inline-block;
-    line-height: 25px;
-    text-align: left;
-    vertical-align: middle;
+.manifesto li .desc {
+    margin-top: 11px;
 }
 
-.manifesto > li .t1 {
-    font-size: 24px;
+.manifesto li .desc.mt10 {
+    margin-top: 9px;
 }
+
+.manifesto span { color: #666; display: block; }
 
 .web_map {
     width: 100%;
     display: inline-block;
-    margin-top: 58px;
+    margin-top: 49px;
 }
 
 .web_map > li {
     float: left;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 24px;
     margin-left: 7%;
     text-align: left;
     width: 13%;
@@ -922,7 +918,7 @@ input {
     font-weight: bold;
     color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .web_map > li a {
@@ -940,7 +936,7 @@ input {
     display: inline-block;
     text-align: center;
     font-size: 16px;
-    margin-top: 42px;
+    margin-top: 66px;
 }
 
 .web_map_My a {
@@ -958,13 +954,13 @@ input {
     display: inline-block;
     text-align: center;
     font-size: 14px;
-    margin: 50px 0 20px;
+    margin: 47px 0 20px;
     color: #848484;
 }
 
 .record p {
     display: block;
-    margin: 5px 0 15px;
+    margin: 5px 0 14px 0;
 }
 
 .sideGoodCategories {
