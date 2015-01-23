@@ -1562,7 +1562,7 @@ input {
 
 .textInput {
     display: inline-block;
-    height: 16px;
+    min-height: 16px;
     line-height: 16px;
     padding: 17px 15px;
     font-size: 14px;
