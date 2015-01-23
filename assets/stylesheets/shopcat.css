@@ -590,12 +590,12 @@
     width: 100%;
 }
     .product > .jiesuan .pay {
-        background-color: #e14041;
+        background: #e14041 url("../images/payArrow.png") no-repeat 107px 14px;
         color: #fff;
         float: right;
         font-size: 24px;
         margin-left: 30px;
-        padding: 0 42px;
+        padding: 0 62px 0 48px;
         cursor:pointer;
 	    height:45px;
         -webkit-transition: all .25s;
@@ -606,10 +606,11 @@
     }
 
     .product > .jiesuan .pay:hover {
-        background: #fe7171;
+        background-color: #fe7171;
     }
 
         .product > .jiesuan .pay .ico {
+            display: none;
             font-size: 20px;
             margin-left: 10px;
             position: relative;
