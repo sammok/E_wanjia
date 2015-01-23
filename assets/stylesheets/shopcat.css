@@ -875,8 +875,7 @@
 }
 
 .information li {
-    height: 72px;
-    line-height: 72px;
+    padding: 20px 0;
     border-bottom: 1px dashed #d1d1d1;
 }
 
