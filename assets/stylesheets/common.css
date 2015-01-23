@@ -789,13 +789,13 @@ input {
 }
 
 .headerSearch .text .headerSearchBtn {
-    width: 22px;
-    height: 21px;
+    width: 32px;
+    height: 30px;
     position: absolute;
     cursor: pointer;
-    background: url(../images/SiteBtm_ico.png) no-repeat 0 -99px;
-    right: 14px;
-    top: 10px;
+    background: url("../images/searchZoom.png") no-repeat center center;
+    right: 9px;
+    top: 5px;
 }
 
 .headerSearchHotkey {
