@@ -626,7 +626,7 @@
 /* filter conditional */
 .filter-conditional {
     line-height: 28px;
-    padding: 7px 0;
+    padding: 7px 0 12px 0;
     border-top: 1px solid #f1f1f1;
 }
 
@@ -642,9 +642,9 @@
 
 .filter-conditional .condition-wrap.active .condition-list{
     overflow: hidden;
-    height: 75px;
+    height: auto;
     /*margin-left: 54px;*/
-    padding: 10px 15px;
+    padding: 10px 15px 14px 0;
     border: 1px solid #e0e0e0;
 }
 
