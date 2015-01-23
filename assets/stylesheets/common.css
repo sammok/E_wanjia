@@ -281,6 +281,10 @@ select {
     vertical-align: middle;
 }
 
+button, select, input {
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+
 .clearfix {
     *zoom: 1;
 }
