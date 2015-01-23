@@ -1089,9 +1089,14 @@
 
 .modelTable {
     line-height: 38px;
-    border: 1px solid #ededed;
 }
 
+.modelTable,
+.modelTable tr,
+.modelTable th,
+.modelTable td{
+    border: 1px solid #ededed;
+}
 .modelTable .title p {
     margin-left: 25px;
 }
