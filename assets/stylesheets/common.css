@@ -1474,6 +1474,15 @@ input {
     border: 1px solid #d1d1d1;
 }
 
+.btnDefault30 {
+    color: #333;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    background: url("../images/btnDefault30.png") repeat-x;
+    border: 1px solid #d1d1d1;
+}
+
 .btnDefault:hover {
     color: #e04040;
     border-color: #e04040;

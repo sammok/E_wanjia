@@ -470,12 +470,31 @@
     margin-bottom: 15px;
 }
 
-/* registration success */
-.registrationSuccess { border-image: none; min-height: 375px;}
-.registrationSuccess .message { padding-top: 85px;}
-.registrationSuccess .message * {vertical-align: middle; color: #3f403f; }
-.registrationSuccess .btnPrimary { width: auto; padding: 0 25px 0 28px; height: 33px; line-height: 33px; font-size: 14px;}
-.registrationSuccess .tips {
+/* registration email success */
+.registrationEmailSuccess { border-image: none; min-height: 367px; background: #fff;}
+.registrationEmailSuccess .panelContent {
+    width: 675px;
+    margin: 0 auto;
+}
+.registrationEmailSuccess .message { padding-top: 70px; font-size: 20px; line-height: 32px; margin-left: 112px;}
+.registrationEmailSuccess .message * {vertical-align: middle; color: #3f403f; }
+.registrationEmailSuccess .btnWrap { margin-left: 167px;}
+.registrationEmailSuccess .btnWrap * {vertical-align: middle;}
+.registrationEmailSuccess .btnPrimary { width: auto; padding: 0 17px 0 20px; height: 28px; line-height: 28px; font-size: 14px;}
+.registrationEmailSuccess .btnDefault30 { width: auto; padding: 0 17px 0 20px;}
+.registrationEmailSuccess .tips {
+    padding: 12px 0 0 167px;
+    margin: 26px 0 0 0;
+    color: #6d6d6d;
+    border-top: 1px dotted #f0f0f0;
+}
+
+/* registration phone success */
+.registrationPhoneSuccess { border-image: none; min-height: 375px;}
+.registrationPhoneSuccess .message { padding-top: 85px;}
+.registrationPhoneSuccess .message * {vertical-align: middle; color: #3f403f; }
+.registrationPhoneSuccess .btnPrimary { width: auto; padding: 0 25px 0 28px; height: 33px; line-height: 33px; font-size: 14px;}
+.registrationPhoneSuccess .tips {
     width: 574px;
     padding: 12px 0 0 0;
     margin: 20px auto 0 auto;
