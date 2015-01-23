@@ -54,9 +54,11 @@
     border-color: #e04040;
 }
 .InputAddress .select-address{
+    height: auto;
     line-height: normal;
     padding-left: 7px;
     margin-left: 14px;
+    vertical-align: middle;
 }
 
 .InputAddress .select-address:focus {
