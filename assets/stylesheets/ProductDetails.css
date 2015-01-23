@@ -13,7 +13,6 @@
     width:100%;
     position:relative;
     float:left;
-    margin-bottom:40px;
 }
     .detail_meta .gallery {
         
@@ -134,6 +133,7 @@
 .detail_meta .detail_right {
     width:733px;
     float:right;
+    margin-bottom: 20px;
 }
     .detail_meta .detail_right .name {
         color:#333;
