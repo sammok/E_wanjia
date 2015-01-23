@@ -275,6 +275,12 @@ th, td {
     margin: 0;
 }
 
+select {
+    height: auto!important;
+    line-height: normal!important;
+    vertical-align: middle;
+}
+
 .clearfix {
     *zoom: 1;
 }
