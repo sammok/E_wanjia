@@ -771,7 +771,9 @@ input {
 
 .headerSearch .text input {
     height: 39px;
+    line-height: 39px;
     width: 315px;
+    color: #666;
     padding: 0 45px 0 10px;
     border: 1px solid #ccc;
 }
