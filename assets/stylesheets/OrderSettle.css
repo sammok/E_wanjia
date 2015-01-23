@@ -145,15 +145,15 @@
                             float:left;
                             margin: 8px 10px 0px 0;
                         }
-                        .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry {
+                        .product > .best > .panl_order > .table_od > .addrs_list > li > .right {
                             float:left;
                             font-size:14px;
                             color:#555;
                         }
-                            .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry td {
+                            .product > .best > .panl_order > .table_od > .addrs_list > li > .right td {
                                 padding:5px 0;
                             }
-                                .product > .best > .panl_order > .table_od > .addrs_list > li > .siteNavEntry td a {
+                                .product > .best > .panl_order > .table_od > .addrs_list > li > .right td a {
                                     color: #1e589c;
                                     cursor: pointer;
                                     font-size: 12px;
@@ -195,6 +195,12 @@
                                 margin: 5px 0 0 10px;
                                 width: 110px;
                                 padding:0 15px;
+                            }
+
+                            .product > .best > .panl_order > .table_od > .new_addrs > .tb > li select {
+                                height: 30px;
+                                line-height: 30px;
+                                border: 1px solid #d9d9d9;
                             }
                             .product > .best > .panl_order > .table_od > .new_addrs > .tb > li > .bute14041 {
                                 margin: 20px 0 10px;
