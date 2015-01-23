@@ -1132,26 +1132,24 @@ input {
 .sideGoodCategoriesDetail .list {
     line-height: 30px;
     margin-left: 30px;
-    width: 580px;
 }
 
 .sideGoodCategoriesDetail .list li {
     display: block;
     margin-bottom: 15px;
     min-height: 30px;
-}
-
-.sideGoodCategoriesDetail .item.most .list li {
-    margin-bottom: 5px;
+    overflow: hidden;
 }
 
 .sideGoodCategoriesDetail .list .title {
+    float: left;
+    width: 66px;
     background: url("../images/sanjiao_right.png") no-repeat right center;
     color: #333;
     font-size: 14px;
     margin-right: 10px;
     padding-right: 10px;
-    position: relative;
+    text-align: right;
 }
 
 .sideGoodCategoriesDetail .list .title a {
@@ -1159,6 +1157,11 @@ input {
     font-size: 14px;
 }
 
+.sideGoodCategoriesDetail .list .itemGroup {
+    float: left;
+    max-width: 520px;
+    margin-top: -1px;
+}
 .sideGoodCategoriesDetail .list .itemGroup a {
     border-right: 1px solid #333;
     color: #333;
