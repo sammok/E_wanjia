@@ -59,6 +59,7 @@
 .seafood .promotion-list li .pic {
     float: left;
     width: 780px;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 320px;
@@ -67,17 +68,19 @@
     margin-left: 815px;
     margin-right: 30px;
     height: 320px;
+    overflow:hidden;
 }
 .seafood .promotion-list li .info .info-row {
-    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
     padding: 15px 10px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: -1px;
 }
-.seafood .promotion-list li .info .info-row:last-child {
+.seafood .promotion-list li .info .info-row:first-child {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 0;
+    border-top: 0;
 }
 .seafood .promotion-list li .name h3 {
     font-size: 18px;
