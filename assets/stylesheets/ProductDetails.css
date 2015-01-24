@@ -188,16 +188,29 @@
 }
 
 .detail_meta .detail_right .dt_lins.sale li {
-    overflow: hidden;
-    height: 18px;
     line-height: 18px;
 }
 
 .detail_meta .detail_right .dt_lins.sale .list{
-    overflow: hidden;
-    height: 76px;
 }
 
+.detail_meta .detail_right .dt_lins.sale .list li * {
+    vertical-align: middle;
+}
+
+.detail_meta .detail_right .dt_lins.sale .list li .good {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+}
+
+.detail_meta .detail_right .dt_lins.sale .list li i{
+    font-style: normal;
+    color: #e14041;
+    margin-right: 10px;
+    font-size: 12px;
+}
 .detail_meta .detail_right .dt_lins.sale.active .list {
     height: auto;
 }
@@ -244,23 +257,23 @@
                 .detail_meta .detail_right .dt_lins  > .list > li:last-child {
                     margin:0;
                 }
-                .detail_meta .detail_right .dt_lins  > .list > li > span {
+                .detail_meta .detail_right .dt_lins  > .list > li > .flag {
                     border-radius: 17px;
                     color: #fff;
-                    float: left;
+                    display: inline-block;
                     font-size: 12px;
                     height: 18px;
                     line-height: 18px;
                     margin-right: 10px;
                     padding: 0 5px;
                 }
-                    .detail_meta .detail_right .dt_lins  > .list > li > span.red {
+                    .detail_meta .detail_right .dt_lins  > .list > li > .flag.red {
                         background-color: #e14041;
                     }
-                    .detail_meta .detail_right .dt_lins  > .list > li > span.blue {
+                    .detail_meta .detail_right .dt_lins  > .list > li > .flag.blue {
                         background-color: #1e589c;
                     }
-                    .detail_meta .detail_right .dt_lins  > .list > li > span.gray {
+                    .detail_meta .detail_right .dt_lins  > .list > li > .flag.gray {
                         background-color: #78b235;
                     }
         .detail_meta .detail_right .dt_lins.norm {
