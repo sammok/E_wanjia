@@ -493,6 +493,15 @@
 .detail_meta .btnAddToCart:hover {
     background: url("../images/pdDetailAddToCartBtn_h.png") no-repeat;
 }
+
+.detail_meta .btnAddToCart.enable {
+    background: #999;
+}
+
+.detail_meta .btnAddToCart.enable:hover {
+    background: #999;
+    cursor: no-drop;
+}
 .detail_meta .addFavorite i {
     display: inline-block;
     width: 15px;
