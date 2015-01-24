@@ -796,6 +796,7 @@ input {
     background: url("../images/searchZoom.png") no-repeat center center;
     right: 9px;
     top: 5px;
+    outline: none;
 }
 
 .headerSearchHotkey {
