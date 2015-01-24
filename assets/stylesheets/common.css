@@ -1174,9 +1174,10 @@ input {
     white-space: nowrap;
 }
 
-.sideGoodCategoriesDetail .list .itemGroup a:first-child{
-    border-left: none;
+.sideGoodCategoriesDetail .list .itemGroup a:last-child{
+    border-right: none;
 }
+
 
 .sideGoodCategoriesDetail .list .itemGroup a:hover,
 .sideGoodCategoriesDetail .list .itemGroup a.active {
