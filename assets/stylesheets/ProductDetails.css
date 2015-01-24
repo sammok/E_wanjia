@@ -483,7 +483,13 @@
     float: left;
     width: 190px;
     height: 44px;
-    background: url("../images/pdDetailAddToCartBtn.png") no-repeat;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #e14041;
+    border-top: 1px #f0a0a0 solid;
+    border-bottom: 1px solid #a42f30;
     -webkit-transition: all .24s;
     -moz-transition: all .24s;
     -ms-transition: all .24s;
@@ -491,18 +497,29 @@
     transition: all .24s;
 }
 .detail_meta .btnAddToCart:hover {
-    background: url("../images/pdDetailAddToCartBtn_h.png") no-repeat;
+    background: #fe7171;
+}
+
+.detail_meta .btnAddToCart * {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+.detail_meta .btnAddToCart i {
+    margin-right: 8px;
+    font-size: 14px;
 }
 
 .detail_meta .btnAddToCart.enable {
     background: #999;
+    border-color: #999;
 }
 
 .detail_meta .btnAddToCart.enable:hover {
     background: #999;
     cursor: no-drop;
 }
-.detail_meta .addFavorite i {
+.detail_meta .btnAddFavorite i {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -516,12 +533,14 @@
     transition: all .24s;
 }
 
-.detail_meta .addFavorite:hover i {
+.detail_meta .btnAddFavorite:hover i {
     background: url("../images/starIcon_h.png") no-repeat;
 }
 
-.detail_meta .addFavorite * {
+.detail_meta .btnAddFavorite * {
     vertical-align: middle;
+    position: relative;
+    top: -2px;
 }
 
 
