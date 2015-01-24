@@ -157,7 +157,8 @@
     -o-transition: all .25s;
     transition: all .25s;
 }
-.btnPrimary:hover {
+.btnPrimary:hover,
+.UserSignIn .SignInBtn:hover{
     color: #fff;
     background: #ff5758;
     border-top: 1px solid #f0a0a0;
