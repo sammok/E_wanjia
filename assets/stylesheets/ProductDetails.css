@@ -511,12 +511,12 @@
 }
 
 .detail_meta .btnAddToCart.enable {
-    background: #999;
-    border-color: #999;
+    background: #bbb;
+    border-color: #bbb;
 }
 
 .detail_meta .btnAddToCart.enable:hover {
-    background: #999;
+    background: #bbb;
     cursor: no-drop;
 }
 .detail_meta .btnAddFavorite i {

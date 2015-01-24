@@ -617,10 +617,10 @@
             top: -2px;
         }
 .product > .jiesuan .pay.enable {
-    background-color: #999;
+    background-color: #bbb;
 }
 .product > .jiesuan .pay.enable:hover {
-    background-color: #999;
+    background-color: #bbb;
     cursor: no-drop;
 }
 
