@@ -616,6 +616,13 @@
             position: relative;
             top: -2px;
         }
+.product > .jiesuan .pay.enable {
+    background-color: #999;
+}
+.product > .jiesuan .pay.enable:hover {
+    background-color: #999;
+    cursor: no-drop;
+}
 
 .product > .jiesuan .textPrimary {
     display: inline-block;
