@@ -780,12 +780,16 @@ input {
 }
 
 .headerSearch .text input {
+    display: block;
     height: 39px;
     line-height: 39px;
     width: 315px;
     color: #666;
     padding: 0 45px 0 10px;
     border: 1px solid #ccc;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
 }
 
 .headerSearch .text .headerSearchBtn {
