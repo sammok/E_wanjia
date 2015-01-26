@@ -552,6 +552,8 @@ input {
     right: -10px;
     top: -16px;
 
+    behavior: url(assets/stylesheets/PIE.htc);
+
     -webkit-transition: all .25s;
     -moz-transition: all .25s;
     -ms-transition: all .25s;
@@ -884,7 +886,7 @@ input {
 .manifesto {
     width: 1190px;
     overflow: hidden;
-    margin-top: 70px;
+    padding-top: 70px;
     position: relative;
     left: 25px;
 }

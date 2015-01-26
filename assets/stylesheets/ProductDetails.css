@@ -1462,3 +1462,15 @@
     width: 1200%;
 }
 
+
+.groupTabBd .checkbox {
+        margin-top: 7px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        line-height: 13px;
+        vertical-align: middle;
+        margin-right: 10px;
+        cursor: pointer;
+        background: #fff;
+}
