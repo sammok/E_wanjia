@@ -34,7 +34,7 @@ body {
 /*��ҳ�����õ�Ƭ������ʼ*/
 .index_banner_group {
     width: 100%;
-    height: 100%;
+    height: 440px;
     position: absolute;
     top: 0;
     left: 0;
@@ -49,7 +49,7 @@ body {
 
 .index_banner_group .banner_list > li {
     width: 100%;
-    height: 100%;
+    height: 440px;
     position: absolute;
     left: 0;
     top: 0;
