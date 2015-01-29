@@ -256,7 +256,7 @@
     }
 
     .product > .datles_table .th .ld2 {
-        width:149px;
+        width:249px;
         padding: 0 0 0 16px;
     }
 
@@ -269,6 +269,7 @@
     .product > .datles_table .th .ld4 {
         width: 113px;
         text-align: center;
+        padding-left: 50px;
     }
 
     .product > .datles_table .th .ld5 {
@@ -279,16 +280,17 @@
 
     .product > .datles_table .th .ld6 {
         width:138px;
-        margin-left: 17px;
+        margin-left: 47px;
         text-align: center;
     }
 
     .product > .datles_table .th .ld7 {
         width:141px;
         text-align: center;
+        padding-left: 45px;
     }
     .product > .datles_table .th .ld8 {
-        padding: 0 0 0 7px;
+        padding: 0 0 0 95px;
     }
 
     .product > .datles_table .check {
@@ -303,7 +305,7 @@
     }
 
     .product > .datles_table .ll .ld2 {
-        width: 165px;
+        width: 265px;
     }
     .product > .datles_table .ll .ld3 {
         width:185px;
@@ -314,6 +316,7 @@
     .product > .datles_table .ll .ld4 {
         width: 113px;
         text-align: center;
+        padding-left: 50px;
     }
 
     .product > .datles_table .ll .ld5 {
@@ -324,7 +327,7 @@
 
     .product > .datles_table .ll .ld6 {
         width:138px;
-        margin-left: 17px;
+        margin-left: 47px;
         text-align: center;
     }
 
@@ -333,7 +336,7 @@
         text-align: center;
     }
     .product > .datles_table .ll .ld8 {
-        padding: 0 0 0 7px;
+        padding: 0 0 0 87px;
     }
 
         .product > .datles_table > .ll > li {
@@ -366,7 +369,7 @@
                     display:inline-block;
                     vertical-align:middle;
                     line-height:19px;
-                    width: 150px;
+                    width: 250px;
                     word-break: break-all;
                 }
                     .product > .datles_table > .ll > li > .ld2 > a:hover {
@@ -406,6 +409,7 @@
             }
             .product > .datles_table > .ll > li > .ld7 {
                 font-size:18px;
+                padding-left: 45px;
             }
 
             .product > .datles_table > .ll > li > .ld7 .textPrimary strong {
@@ -642,7 +646,7 @@
 
 .datles_table .giftWrap {
     line-height: 18px;
-    padding: 0 0 8px 164px;
+    padding: 19px 0 8px 62px;
 }
 
 .datles_table .giftTitle {
