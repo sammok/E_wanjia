@@ -959,6 +959,7 @@ input {
 .web_map_My a {
     color: #333;
     cursor: pointer;
+    padding: 0 8px;
 }
 
 .web_map_My a:hover {
