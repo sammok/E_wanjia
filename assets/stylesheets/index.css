@@ -300,10 +300,9 @@ body {
     top: 2px;
 
 }
+.baner1 .right > .title .timerGroup * { color: #e14041; vertical-align: baseline;}
 .baner1 .right > .title > .over_time .clockIcon {
     margin-right:5px;
-    position: relative;
-    top: -1px;
 }
 .baner1 .right .cont {
     width:100%;
