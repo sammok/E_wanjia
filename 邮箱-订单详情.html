@@ -2,83 +2,46 @@
 <html lang="ch">
 	<head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="assets/stylesheets/email/common.css" rel="stylesheet" charset="utf-8"/>
     </head>
     <body class="email-body">
-        <!-- header -->
-        <header class="email-header">
-            <div class="email-header-inner layout">
-                <a class="email-header-logo fl" href=""></a>
-                <div class="cb"></div>
-            </div>
-        </header>
-        <!-- end header-->
+    <table style="width: 700px; margin: 0 auto; padding: 0; font-family: 'microsoft yahei', '微软雅黑', Arial, 'Helvetica Neue', Helvetica, sans-serif; color: #333;">
+        <tr>
+            <td>
+                <div>
+                    <a href=""><img src="assets/images/email/images/email_innerhtml_header.jpg" alt="" width="700" height="105" style="display: block"/></a>
+                </div>
+                <!-- end header-->
 
-        <!-- main -->
-        <div class="email-main email-orderdetail layout">
-            <h1 class="email-orderdetail-title">
-                亲爱的<span class="text-red">zhangsan</span>:
-            </h1>
-            <p>您的订单<span class="text-red">2031223324707714</span>已出仓发货，请注意查收</p>
-            <!-- order detail table -->
-            <table class="email-orderdetail-table">
-                <tr>
-                    <th width="25%">订单号</th>
-                    <th width="25%">收件人</th>
-                    <th width="25%">订单金额</th>
-                    <th width="25%">下单时间</th>
-                </tr>
-                <tr>
-                    <td><p>2031223324707714</p></td>
-                    <td><p>张三</p></td>
-                    <td><p>￥478.00</p></td>
-                    <td><p>2014.10.10</p></td>
-                </tr>
-            </table>
-            <!-- end order detail table -->
-        </div>
-        <!-- end main -->
+                <!-- main -->
+                <div style="line-height: 30px; padding: 24px 0 35px 0; font-size: 14px;">
+                    <h1 style="font-size: 20px; padding: 22px 0; margin:0; font-weight: normal;">
+                        亲爱的<span style="color: #e71b38;">zhangsan</span>:
+                    </h1>
+                    <p style="margin: 0;">您的订单<span style="color: #4d88c3;">2031223324707714</span>已出仓发货，请注意查收</p>
+                    <!-- order detail table -->
+                    <table style="width: 700px; margin-top: 4px; border-collapse: collapse;">
+                        <tr>
+                            <th width="25%" style=" height: 34px; line-height: 34px; font-size: 14px; font-weight: normal; color: #909090; text-align: center; background: #fbfbfb; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">订单号</th>
+                            <th width="25%" style=" height: 34px; line-height: 34px; font-size: 14px; font-weight: normal; color: #909090; text-align: center; background: #fbfbfb; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">收件人</th>
+                            <th width="25%" style=" height: 34px; line-height: 34px; font-size: 14px; font-weight: normal; color: #909090; text-align: center; background: #fbfbfb; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">订单金额</th>
+                            <th width="25%" style=" height: 34px; line-height: 34px; font-size: 14px; font-weight: normal; color: #909090; text-align: center; background: #fbfbfb; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">下单时间</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 0; color: #333; text-align: center;"><p style="margin:0;">2031223324707714</p></td>
+                            <td style="padding: 20px 0; color: #333; text-align: center;"><p style="margin:0;">张三</p></td>
+                            <td style="padding: 20px 0; color: #333; text-align: center;"><p style="margin:0;">￥478.00</p></td>
+                            <td style="padding: 20px 0; color: #333; text-align: center;"><p style="margin:0;">2014.10.10</p></td>
+                        </tr>
+                    </table>
+                    <!-- end order detail table -->
+                </div>
+                <!-- end main -->
 
-        <!-- footer -->
-        <footer class="email-footer">
-            <div class="layout">
-                <h2 class="email-footer-title">e万家是致力于满足顾客生活场景的购物网站</h2>
-                <ul class="list">
-                    <li class="item fl">
-                        <dl>
-                            <dt><i>1</i><span>一日三餐</span></dt>
-                            <dd>精选全球食材，<br/>打造健康美味餐桌；</dd>
-                        </dl>
-                    </li>
-                    <li class="item fl">
-                        <dl>
-                            <dt><i>2</i><span>美丽人生</span></dt>
-                            <dd>携手品质与时尚，<br/>带顾客体验天然之美；</dd>
-                        </dl>
-                    </li>
-                    <li class="item fl">
-                        <dl>
-                            <dt><i>3</i><span>温馨亲子</span></dt>
-                            <dd>营造安全轻松亲子氛围，<br/>带来更多家庭乐趣；</dd>
-                        </dl>
-                    </li>
-                    <li class="item fl">
-                        <dl>
-                            <dt><i>4</i><span>品质生活</span></dt>
-                            <dd>强化功能与设计，<br/>为居家提供更多舒适选择；</dd>
-                        </dl>
-                    </li>
-                    <li class="item last fl">
-                        <dl>
-                            <dt><i>5</i><span>快乐办公</span></dt>
-                            <dd>提升白领办公的舒适与品位；<br/>给效率与心情加油；
-                            </dd>
-                        </dl>
-                    </li>
-                    <li class="cb"></li>
-                </ul>
-            </div>
-        </footer>
-        <!-- end footer -->
+                <!-- footer -->
+                <img src="assets/images/email/images/email_innerhtml_footer.png" alt="" style="margin: 30px 0 70px 0;" width="700" height="231"/>
+                <!-- end footer -->
+            </td>
+        </tr>
+    </table>
     </body>
 </html>

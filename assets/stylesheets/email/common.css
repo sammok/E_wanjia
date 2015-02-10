@@ -20,9 +20,6 @@ li { list-style: none;}
 }
 
 .email-header-logo {
-    width: 320px;
-    height: 97px;
-    background: url("../../images/email/images/email_logo.png") no-repeat;
 }
 
 /* main */
@@ -128,18 +125,7 @@ li { list-style: none;}
     vertical-align: middle;
 }
 .email-footer .list .item dt i {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-style: normal;
-    background: #95c0e5;
-    border-radius: 22px;
+
 }
 
 .email-footer .list .item dd {
