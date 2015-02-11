@@ -140,3 +140,33 @@
 .bindAuthorize02 .btnPrimary {
     line-height: 36px;
 }
+
+/* bind authorize */
+
+.applyVipCard {
+    font-size: 14px;
+    color: #555;
+}
+
+.applyVipCard {
+    margin: 0 0 0 105px;
+}
+
+/* my coupon */
+.myCoupon .panelBd {
+    min-height: 624px;
+}
+.couponList .tableBd td { height: 54px;}
+.couponList .tableBd .couponOperate a {
+    color: #1e589c;
+    text-decoration: underline;
+    margin: 0 2px;
+}
+
+.couponTips {
+    line-height: 24px;
+    padding: 0 20px;
+    margin-top:24px;
+    font-size: 14px;
+    color: #666;
+}

@@ -76,8 +76,76 @@
 }
 
 .myFavorite .tableBd td {
-    height: 130px;
+    padding: 20px 0;
+    height: 90px;
 }
 
+.myFavorite .tableBd .middleTd {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
 
+.myFavorite .tableBd .productRow {
+    padding: 12px 0;
+}
 
+/* tuihuo table */
+.tuihuoTable {}
+.tuihuoTable .tableBd .item{
+    width: 265px;
+    margin-left: 25px;
+}
+.tuihuoTable .tableBd .name{
+    width: 116px;
+    line-height: 90px;
+    margin: 0 0 0 15px;
+}
+
+.tuihuoTable .tableBd .name a{
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.tuihuoTable .tableBd .operateBtn {
+    padding-top: 35px;
+}
+
+.tuihuoTable .tableBd .amount {
+    margin-top: 32px;
+}
+
+.tuihuoTable .tableBd .middle {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
+}
+
+.tuihuoTable .tableBd .add,
+.tuihuoTable .tableBd .less {
+    background: url("../images/jia.png") no-repeat scroll center center;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    text-align: center;
+    transition: all 1s ease-out 0s;
+    width: 12px;
+}
+
+.tuihuoTable .tableBd .less {
+    background: url("../images/jian.png") no-repeat scroll center center;
+}
+
+.tuihuoTable .tableBd .quantity_txt {
+    border: 1px solid #d1d1d1;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 10px;
+    text-align: center;
+    width: 50px;
+}
+
+.tuihuoTable .tableBd .btnDefault:hover {
+    color: #e14041;
+}
