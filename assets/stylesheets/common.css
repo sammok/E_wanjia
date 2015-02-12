@@ -596,7 +596,7 @@ input {
 .siteNav {
     display: inline-block;
     width: 100%;
-    padding-top: 8px;
+    padding-top: 6px;
     position: relative;
     z-index: 3;
 }
@@ -710,6 +710,7 @@ input {
 .headerLogo {
     width: 341px;
     height: 71px;
+    margin-top: 2px;
     background: url(../images/headerLogo.png) no-repeat 0 0;
     float: left;
 }
@@ -762,7 +763,7 @@ input {
 .headerBody.scroll .headerSearch .search_top {
     display:none;
 }
-.headerBody.scroll .headerBiaoyu {
+.headerBody.scroll .headerCart {
     display: none;
 }
 /*.headerScrollNav.scroll .bottom_box,*/
@@ -822,24 +823,20 @@ input {
     color: #e14041;
 }
 
-.headerBiaoyu {
+.headerCart {
     float: right;
-    margin: 17px 100px 0 0;
+    margin: 15px 65px 0 0;
 }
 
-.headerBiaoyu .ico {
-    background: url(../images/headerCar.png) no-repeat;
-    width: 58px;
-    height: 40px;
-    float: left;
-}
-
-.headerBiaoyu .title {
+.headerCart * { vertical-align: middle;}
+.headerCart span {
+    margin-left: 17px;
+    font-size: 14px;
     color: #666;
-    font-size: 12px;
-    line-height: 16px;
-    float: left;
-    margin: 4px 0 0 8px;
+}
+
+.headerCart span strong {
+    color: #e14041;
 }
 
 .headerBody.scroll {
@@ -874,7 +871,7 @@ input {
     display: none;
 }
 
-.headerBody.scroll .headerBiaoyu {
+.headerBody.scroll .headerCart {
     display: none;
 }
 
@@ -886,7 +883,7 @@ input {
 .manifesto {
     width: 1190px;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 58px;
     position: relative;
     left: 25px;
 }
@@ -919,15 +916,16 @@ input {
     width: 100%;
     display: inline-block;
     margin-top: 49px;
+    margin-left: 83px;
+    position: relative;
 }
 
 .web_map > li {
     float: left;
     font-size: 14px;
     line-height: 24px;
-    margin-left: 7%;
     text-align: left;
-    width: 13%;
+    width: 184px;
 }
 
 .web_map > li .title {
@@ -948,37 +946,36 @@ input {
     color: #f3484a;
 }
 
+.web_map .qr_code {
+    position: absolute;
+    top: -3px;
+    right: 106px;
+}
+
+.web_map .qr_code p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
 .web_map_My {
     width: 100%;
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 66px;
+    margin: 42px 0 80px 83px;
+    font-size: 14px;
 }
 
 .web_map_My a {
     color: #333;
-    cursor: pointer;
-    padding: 0 8px;
+    font-size: 16px;
 }
 
-.web_map_My a:hover {
-    text-decoration: underline;
-    color: #f3484a;
+.web_map_My .split {
+    margin: 0 14px;
 }
 
-.record {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    margin: 47px 0 20px;
+.web_map_My .footer_copyright {
+    margin-left: 53px;
     color: #848484;
-}
-
-.record p {
-    display: block;
-    margin: 5px 0 14px 0;
 }
 
 .sideGoodCategories {
