@@ -920,6 +920,42 @@ input {
 
 .manifesto span { color: #666; display: block; }
 
+.footer-biaoyu { margin: 66px 0 30px 0;}
+.footer-biaoyu li{
+    width: 238px;
+    height: 51px;
+    padding: 5px 0 0 0;
+    background: url("../images/footer-biaoyu-split.png") no-repeat right center;
+}
+.footer-biaoyu li.last { background: none;}
+.footer-biaoyu li img {
+    margin: 0 18px 0 45px;
+}
+
+.footer-biaoyu li span {
+    color: #333;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer-map {
+    padding: 35px 0 0 0;
+    margin: 0 45px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.footer-map dl{
+    width: 154px;
+    margin: 0 0 20px 30px;
+}
+.footer-map dt{ margin-bottom: 21px; font-size: 18px; color: #000;}
+.footer-map dd{
+    line-height: 24px;
+}
+.footer-map dd a {
+    color: #999;
+}
+.footer-qrcode { margin: -10px 0 26px 0;}
 .web_map {
     width: 100%;
     display: inline-block;
@@ -968,7 +1004,7 @@ input {
 
 .web_map_My {
     width: 100%;
-    margin: 42px 0 80px 83px;
+    margin: 37px 0 80px 83px;
     font-size: 14px;
 }
 
