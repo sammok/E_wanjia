@@ -539,6 +539,14 @@ input {
     background: url("../images/floatEntryIconsBg.png") no-repeat -62px -153px;
 }
 
+.floatEntry .entry05{
+    background: url("../images/floatEntryIconsBg.png") no-repeat 0 -204px;
+}
+
+.floatEntry .entry05:hover{
+    background: url("../images/floatEntryIconsBg.png") no-repeat -62px -204px;
+}
+
 .floatEntry .count {
     width: 28px;
     height: 28px;
