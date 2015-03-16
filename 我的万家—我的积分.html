@@ -2,13 +2,21 @@
 <html lang="ch">
 	<head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="assets/stylesheets/common.css" charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="assets/stylesheets/myWanjiaOrderdetails.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/common.css" rel="stylesheet" charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/myWanjiaJifen.css" rel="stylesheet" />
         <script type="text/javascript" src="assets/scripts/jquery-1.8.1.min.js"></script>
         <script type="text/javascript" src="assets/scripts/common.js"></script>
+        <script type="text/javascript" src="assets/scripts/myWanjiaJifen.js"></script>
     </head>
     <body>
-
+    <!-- side float nav  -->
+    <div class="navgt_right">
+        <a class="ico shopcat">&#x2741;</a>
+        <a class="ico star">&#x2742;</a>
+        <a class="ico time">&#x273C;</a>
+        <a class="ico go_top">&#x2743;</a>
+    </div>
+    <!-- end side float nav  -->
 
     <!-- header -->
     <div class="header">
@@ -1201,130 +1209,133 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <!-- Orderdetails -->
-            <div class="Orderdetails float_l">
+
                 <div class="crumb">
-                    <a href="/" target="_blank">首页</a><span class="arrow"></span><a href="" target="_blank">会员中心</a><span class="arrow"></span><a href="" target="_blank">我的订单</a><span class="arrow"></span><a href="" target="_blank" class="active">订单详情 7787232</a>
+                    <a href="/" target="_blank">首页</a><span class="arrow"></span><a href="" target="_blank">我的万家</a><span class="arrow"></span><a href="" target="_blank" class="active">我的订单</a>
                 </div>
-                <!-- Orderdetails-cont -->
-                <div class="Orderdetails-cont clearfix">
-                    <div class="title">订单跟踪</div>
-                        <div class="row OrderAddress"><!-- row -->
-                            <div class="ProgressBar mt30">
-                                <ul>
-                                    <li class="activeOne">
-                                        <span>1</span>
-                                        <p>提交订单</p>
-                                    </li>
-                                    <li class="activeTwo">
-                                        <span>2</span>
-                                        <p>商品出库</p>
-                                    </li>
-                                    <li>
-                                        <span>3</span>
-                                        <p>等待快递</p>
-                                    </li>
-                                    <li>
-                                        <span>4</span>
-                                        <p>已完成</p>
-                                    </li>
-                                </ul>
+
+                <div class="sidebarMain">
+                    <div class="sidebarMainHd">
+                        <h2><a href="">我的万家</a></h2>
+                    </div>
+                    <div class="sidebarMainBd">
+                        <h3>交易管理</h3>
+                        <ul>
+                            <li class="active"><a href="javascript:void(0);" target="_blank">我的订单</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">我的收藏</a></li>
+                        </ul>
+
+                        <h3>账户信息</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);" target="_blank">我的积分</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">我的优惠券</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">我的万家卡</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">门店会员卡</a></li>
+                        </ul>
+
+                        <h3>个人信息</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);" target="_blank">个人资料</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">安全中心</a></li>
+                            <li><a href="javascript:void(0);" target="_blank">地址管理</a></li>
+                        </ul>
+
+                        <h3>客户服务</h3>
+                        <ul>
+                            <li><a href="javascript:void(0);" target="_blank">退换货申请</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar -->
+
+            <!-- main -->
+            <div class="main float_r">
+                <!-- my jifen -->
+                <div class="panel myJifen">
+                    <div class="panelHd enableSelect">
+                        <h1 class="panelHdTitle">我的积分</h1>
+                    </div>
+                    <div class="panelBd">
+                        <!-- my jifen summary -->
+                        <div class="myJifenSummary enableSelect">
+                            <div class="myJifenSummaryCurrent">
+                                <span>当前可用</span><span class="textPrimary">228</span>
                             </div>
-
-                            <div class="addressIng mt15">
-                                <p>2014-12-25 08:00:42【上海松江公司】已收入</p>
-                                <p>2014-12-25 08:00:42【上海松江公司】的派件员【车高科技B线】正在派件</p>
-                                <p>2014-12-25 09:58:19已签收,签收人是已签收2014-12-25 09:58:19已签收,签收人是已签收</p>
+                            <div class="myJifenSummaryUseDate">
+                                <span>即将过期</span><span class="textIgnore">120</span><span class="date">2014-12-31过期</span>
                             </div>
-
-                    </div><!-- end row -->
-
-                </div><!-- end Orderdetails Cont -->
-
-                <!-- Orderdetails-cont -->
-                <div class="Orderdetails-cont clearfix mt20">
-                    <div class="title">订单概况</div>
-                    <div class="row"><!-- row -->
-                        <div class="addressData">
-                            <p>订单编号<span>:</span>7044455644</p>
-                            <p>订单编号<span>:</span>7044455644</p>
-                            <p>订单编号<span>:</span>7044455644</p>
-                            <p>订单编号<span>:</span>7044455644</p>
-                        </div>
-
-                    </div><!-- end row -->
-
-                </div><!-- end Orderdetails Cont -->
-
-                <!-- Orderdetails-cont -->
-                <div class="Orderdetails-cont clearfix mt20">
-                    <div class="title">商品清单</div>
-                    <div class="row"><!-- row -->
-                        <div class="productList mt25"><!-- product List -->
-                            <table class="productTable">
-                                <tr class="productTableHd">
-                                    <th width="10.26%">商品编号</th>
-                                    <th width="11.32%">商品图片</th>
-                                    <th width="31.59%">商品名称</th>
-                                    <th width="13.80%">价格</th>
-                                    <th width="15.66%">商品数量</th>
-                                    <th>操作</th>
-                                </tr>
-                                <tr>
-                                    <td>837733</td>
-                                    <td><span class="imgWrap"><img src="assets/img/v20.png"></span></td>
-                                    <td>智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</td>
-                                    <td class="money"><em>￥</em>139.00</td>
-                                    <td>2014-5-25</td>
-                                    <td>
-                                        <p><a href="#" class="Add-btn btnPrimary">再次购买</a></p>
-                                        <p><a href="#" class="out-btn">申请退换货</a></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>837733</td>
-                                    <td><span class="imgWrap"><img src="assets/img/v20.png"></span></td>
-                                    <td>智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</td>
-                                    <td class="money"><em>￥</em>139.00</td>
-                                    <td>2014-5-25</td>
-                                    <td>
-                                        <p><a href="#" class="Add-btn btnPrimary">再次购买</a></p>
-                                        <p><a href="#" class="out-btn">申请退换货</a></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>837733</td>
-                                    <td><span class="imgWrap"><img src="assets/img/v20.png"></span></td>
-                                    <td>智利车厘子1KG 新鲜进口水果 车厘子1KG 新鲜</td>
-                                    <td class="money"><em>￥</em>139.00</td>
-                                    <td>2014-5-25</td>
-                                    <td>
-                                        <p><a href="#" class="Add-btn btnPrimary">再次购买</a></p>
-                                        <p><a href="#" class="out-btn">申请退换货</a></p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="productList-ft">
-                                <dl>
-                                    <dt>商品金额：<em>￥</em>198.00元</dt>
-                                    <dd>优惠：<em>￥</em>198.00元 </dd>
-                                    <dd>使用积分：<em>￥</em>198.00元 </dd>
-                                    <dd>使用万家卡：<em>￥</em>198.00元 </dd>
-                                    <dd class="dd-ft">配送费用10元（总重在5kg以内）<a class="but">运费说明</a></dd>
-                                </dl>
-                            </div><!-- productList ft -->
-
-                            <div class="borbtom" style="padding-bottom: 47px"></div><!-- borderbottom -->
-
-                        </div><!-- product List -->
-                    </div><!-- end row -->
-
-                </div><!-- end Orderdetails Cont -->
+                        </div><!-- end my jifen summary -->
 
 
-            </div><!-- end Orderdetails -->
-        </div><!-- end main -->
+                        <!-- jifen list -->
+                        <table class="table myJifenListTable">
+                            <tr class="tableHd">
+                                <th width="200">日期</th>
+                                <th>
+                                    <div class="myJifenListJifenFilter">
+                                        积分变化
+                                        <div class="select enableSelect">
+                                            <div class="selectHd">
+                                                增加<span class="split">|</span>
+                                                <i class="arrow"></i>
+                                            </div>
+                                            <div class="selectBd">
+                                                <!-- 以下时间数值是我随意模拟的,具体值请找你们的策划 -->
+                                                <a href="javascript:void(0);">增加</a>
+                                                <a href="javascript:void(0);">减少</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th width="325">积分说明</th>
+                            </tr>
+                            <tr class="tableBd add">
+                                <td>
+                                    2014-12-12
+                                </td>
+                                <td class="score">
+                                    +21
+                                </td>
+                                <td>
+                                    <div class="myJifenListItemName">您的订单1042323251的消费积分</div>
+                                </td>
+                            </tr>
+                            <tr class="tableBd sub">
+                                <td>
+                                    2014-12-12
+                                </td>
+                                <td class="score">
+                                    +21
+                                </td>
+                                <td>
+                                    <div class="myJifenListItemName">您的订单1042323251的消费积分</div>
+                                </td>
+                            </tr>
+                        </table><!-- end jifen list -->
+
+                        <!-- pagination -->
+                        <div class="pagination">
+                            <p class="paginationTotal">
+                                共&nbsp;<span>984</span>&nbsp;件商品
+                            </p>
+                            <ul>
+                                <li><a href="">上一页</a></li>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href="">6</a></li>
+                                <li>...</li>
+                                <li><a href="">12</a></li>
+                                <li><a href="">下一页</a></li>
+                            </ul>
+                        </div><!-- end pagination -->
+                    </div>
+                </div><!-- end my jifen -->
+            </div><!-- end main -->
+        </div>
         <div class="clear"></div>
 
         <!-- footer -->
