@@ -90,6 +90,44 @@
 }
 
 /* tuihuo table */
+.tuihuoHead { padding-top: 8px; margin-bottom: 26px;}
+
+.tuihuoHead li {
+    margin-right: 1px;
+}
+
+.tuihuoHead li a {
+    display: block;
+    line-height: 26px;
+    padding: 0 20px;
+    color: #555;
+    font-size: 14px;
+    background: #f4f4f4;
+}
+
+.tuihuoHead li.active a,
+.tuihuoHead li:hover a{
+    color: #fff;
+    background: #e14041;
+}
+
+.tuihuoHead .queryWrap .text {
+    width: 230px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    margin: 1px 15px 0 0;
+    font-size: 14px;
+    color: #666;
+    background: #FFFFFF;
+    border: 1px solid #e8e8e8;
+}
+
+.tuihuoHead .queryWrap .btn {
+    height: 24px;
+    line-height: 24px;
+}
+
 .tuihuoTable {}
 .tuihuoTable .tableBd .item{
     width: 265px;

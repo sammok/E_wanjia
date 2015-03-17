@@ -7,6 +7,7 @@
 .myJifenSummary {
     color: #555;
     font-size: 14px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .myJifenSummary * {
@@ -47,6 +48,16 @@
     color: #9f9f9f;
 }
 
+
+.myJifenQuery {
+    margin: 30px 0 30px 10px;
+}
+
+.myJifenQuery * {
+    color: #555;
+    font-size: 14px;
+    vertical-align: middle;
+}
 /* my jifen list */
 .myJifenListJifenFilter {
 }
@@ -67,11 +78,6 @@
 
 .myJifenListSource {
     padding: 0 0 0 62px;
-    text-align: left;
-}
-
-.myJifenListItemName {
-    margin-left: 10px;
     text-align: left;
 }
 
