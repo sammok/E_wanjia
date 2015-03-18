@@ -21,7 +21,6 @@
 
 .kuajing-list .listWrap li {
     width: 286px;
-    height:350px;
     float:left;
     margin: 20px 10px 0 0;
     position:relative;
@@ -51,11 +50,12 @@
 .kuajing-list .listWrap li:hover {
 
 }
+.kuajing-list .listWrap li .hd {
+    background: #fff;
+    margin-bottom: 1px;
+}
 .kuajing-list .listWrap li .country {
-    position:absolute;
-    z-index:2;
-    left:20px;
-    top:20px;
+    padding: 12px 0 12px 13px;
 }
 .kuajing-list .listWrap li .country img {
     float:left;
@@ -69,28 +69,30 @@
 .kuajing-list .listWrap li .img_view {
     position:relative;
     width:286px;
-    height:230px;
-    line-height:230px;
+    height:286px;
+    line-height:286px;
     float:left;
     padding-bottom:6px;
     background:url(../images/index_baner1_line.png) repeat-x 0 bottom #fff;
     text-align:center;
 }
 .kuajing-list .listWrap li .img_view img {
-    vertical-align:middle;
+    display: block;
+    width: 286px;
+    height: 286px;
 }
 .kuajing-list .listWrap li .bottom {
     background-color: #fff;
     float: left;
-    height: 94px;
-    padding: 10px 20px;
-    width: 246px;
+    height: 75px;
+    padding: 10px 15px;
+    width: 256px;
     position:relative;
 }
 .kuajing-list .listWrap li .bottom .name {
     color: #333;
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     height: 32px;
     line-height: 19px;
     overflow: hidden;
@@ -105,44 +107,63 @@
 }
 .kuajing-list .listWrap li .bottom .price {
     float:left;
+    font-size: 23px;
 }
-.kuajing-list .listWrap li .bottom .stock {
-    float:left;
-    clear:both;
-    line-height: 18px;
+
+.kuajing-list .listWrap li .bottom .price strong {
+    font-size: 34px;
 }
-.kuajing-list .listWrap li .bottom .stock .title {
-    font-size:12px;
-    color:#666;
-    margin-right:5px;
-}
-.kuajing-list .listWrap li .bottom .stock .line {
-    width:50px;
-    height:7px;
-    display:inline-block;
-    background-color:#d9d9d9;
-    border-radius:7px;
-    overflow:hidden;
-}
-.kuajing-list .listWrap li .bottom .stock .line .now {
-    height:100%;
-    float:left;
-    background-color:#77b235;
-}
+
 .kuajing-list .listWrap li .bottom .buy {
     background-color:#e14041;
-    margin: 16px -3px 0 0;
-    height: 33px;
-    line-height:33px;
+    margin: 3px -3px 0 0;
+    height: 34px;
+    line-height:34px;
     text-align:center;
     color:#fff;
     border-bottom:1px solid #a42f30;
-    font-size:18px;
+    font-size:14px;
     float:right;
     cursor:pointer;
     transition:all 0.5s ease;
-    padding: 0 20px;
+    padding: 0 8px;
+    position: relative;
 }
 .kuajing-list .listWrap li .bottom .buy:hover {
     background-color:#fe7171;
+}
+
+
+.floatTips {
+    position: absolute;
+    top: -58px;
+    left: -100px;
+    z-index: 20;
+    min-width: 112px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px 0 40px;
+    font-size: 14px;
+    color: #3f403f;
+    box-shadow: 0 1px 4px #999;
+    background: #fff url("../images/icon-successSmall.png") no-repeat 14px 7px;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.floatTips i {
+    position: absolute;
+    bottom: -7px;
+    right: 20px;
+    width: 13px;
+    height: 8px;
+    background: url("../images/bg_arrow02.png") no-repeat;
+}
+
+.floatTips.active {
+    opacity: 0;
+    top: -68px;
 }
