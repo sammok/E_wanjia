@@ -216,3 +216,23 @@
 
 .Orderdetails-cont  .productTable .name { color: #555; font-size: 14px;}
 .Orderdetails-cont  .productTable .name:hover { color: #e14041;}
+
+/* return goods detail */
+.returnGoodsDetail {
+    width: 925px;
+}
+
+.returnGoodsDetail .ProgressBar {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.returnGoodsDetail .Orderdetails-cont .orderInfo {
+    margin-top: 24px;
+}
+
+.returnGoodsDetailTitle {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 20px 30px;
+}
