@@ -122,6 +122,14 @@ body {
 .sideGoodCategories .sideGoodCategoriesDetail{
 }
 
+.sideGoodCategories .sideGoodCategoriesHd {
+    display: none;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .list {
+    display: block!important;
+}
+
 .baner1,
 .baner2,
 .baner3,

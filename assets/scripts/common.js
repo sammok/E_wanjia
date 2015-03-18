@@ -1,79 +1,61 @@
 $(function () {
     /* sidebar */
     function sidebar(){
-        var sidebar = $('.sideGoodCategories'),
-            sidebarHd = sidebar.find('.sideGoodCategoriesHd'),
-            sidebarBd = sidebar.find('.sideGoodCategoriesBd'),
-            bdTimer = null,
-            menu = $('.sideGoodCategoriesMenu'),
-            detail = $('.sideGoodCategoriesDetail'),
-            menuItems = menu.find('li'),
-            detailItems = detail.find('.item'),
-            menuTimer = null,
-            detailTimer = null,
-            isSelected = false;
+        //  show nav item
+        var itemHideTimer = null;
 
-        sidebarHd.hover(function (){
-            sidebarBd.show();
-        }, function (){
-            bdTimer = setTimeout(function (){
-                sidebarBd.hide();
-            }, 200);
+        $('.sideGoodCategoriesMenu').mouseover(function (){
+            clearTimeout(itemHideTimer);
+            $(this).addClass('active')
+                .find('.list').show();
+        }).mouseout(function (){
+            clearTimeout(itemHideTimer);
+            hideNavItem();
         });
 
-        sidebarBd.mouseover(function (){
-            sidebarBd.show();
-            clearTimeout(bdTimer);
+        $('.sideGoodCategoriesMenu .list').mouseover(function (){
+            clearTimeout(itemHideTimer);
+        }).mouseout(function (){
+            clearTimeout(itemHideTimer);
+            hideNavItem();
         });
 
-        sidebarBd.mouseout(function (){
-            bdTimer = setTimeout(function (){
-                sidebarBd.hide();
-                detail.hide();
-                detailItems.hide();
-                $('.sideGoodCategoriesMenu .list li').removeClass('active');
-                clearTimeout(detailTimer);
-                isSelected = false;
-            }, 200);
+        //  show nav item detail
+        var hideTimer = null;
+
+        $('.sideGoodCategoriesMenu .list li').mouseover(function (){
+            clearTimeout(itemHideTimer);
+            clearTimeout(hideTimer);
+            $('.sideGoodCategoriesDetail .item').hide()
+                .eq($(this).index()).show();
+            $('.sideGoodCategoriesDetail').show();
+        }).mouseout(function (){
+            hideItemDetail();
+            hideNavItem();
         });
 
-        menuItems.mouseover(function (){
-            var that = $(this);
-
-            if (isSelected == false){
-                if (that.index() != -1) {
-                    clearTimeout(detailTimer);
-                    detail.show();
-
-                    menuItems.removeClass('active');
-                    that.addClass('active');
-
-                    detailItems.hide();
-                    detailItems.eq(that.index()).show();
-                    isSelected = true;
-                }
-            } else {
-                if (that.index() != -1) {
-                    clearTimeout(detailTimer);
-                    detail.show();
-
-                    detailTimer = setTimeout(function (){
-                        menuItems.removeClass('active');
-                        that.addClass('active');
-
-                        detailItems.hide();
-                        detailItems.eq(that.index()).show();
-                    }, 200)
-                }
-                isSelected = true;
-            }
-
+        $('.sideGoodCategoriesDetail .item').mouseover(function (){
+            clearTimeout(itemHideTimer);
+            clearTimeout(hideTimer);
+        }).mouseout(function (){
+            hideItemDetail();
+            hideNavItem();
         });
 
-        detailItems.mouseover(function (){
-            clearTimeout(detailTimer);
-        });
+        function hideNavItem (){
+            itemHideTimer = setTimeout(function (){
+                $('.sideGoodCategoriesMenu').removeClass('active')
+                    .find('.list').hide();
+            },100);
+        }
 
+        function hideItemDetail (){
+            hideTimer = setTimeout(function (){
+                $('.sideGoodCategoriesDetail').hide();
+                $('.sideGoodCategoriesDetail .item').hide()
+                    .eq($(this).index()).hide();
+            }, 100);
+        }
     }
 
     sidebar();

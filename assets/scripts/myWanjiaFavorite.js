@@ -19,4 +19,10 @@ $(function (){
             $('#myFavoriteSelectAll').attr('data-checked', false).removeClass('active');
         }
     });
+
+    //退换货切换
+    $('.tuihuoHead .tab li').click(function (){
+        $('.tuihuoTabBody .table').eq($(this).index()).removeClass('hide')
+            .siblings('.table').addClass('hide');
+    });
 });

@@ -96,17 +96,18 @@
     margin-right: 1px;
 }
 
-.tuihuoHead li a {
+.tuihuoHead li {
     display: block;
     line-height: 26px;
     padding: 0 20px;
     color: #555;
     font-size: 14px;
     background: #f4f4f4;
+    cursor: pointer;
 }
 
-.tuihuoHead li.active a,
-.tuihuoHead li:hover a{
+.tuihuoHead li.active,
+.tuihuoHead li:hover{
     color: #fff;
     background: #e14041;
 }
@@ -186,4 +187,15 @@
 
 .tuihuoTable .tableBd .btnDefault:hover {
     color: #e14041;
+}
+
+/* tuihuo jilu */
+.tuihuoJiluTable {
+}
+
+.tuihuoJiluTable .c_blue { color: #1e589c;}
+
+.tuihuoJiluTable .tableBd td{
+    padding: 0!important;
+    height: 52px!important;
 }

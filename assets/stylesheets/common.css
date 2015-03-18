@@ -588,8 +588,8 @@ input {
 }
 
 .header {
-    background: url(../images/headerBg.png) repeat-x;
-    height: 124px;
+    background: url(../images/headerBg_new.png) repeat-x;
+    height: 159px;
     box-shadow: 0 0 10px rgba(9, 2, 4, .12);
     position: relative;
     z-index: 100;
@@ -597,7 +597,7 @@ input {
 
 .header .center {
     position: relative;
-    height: 180px;
+    height: 159px;
     z-index: 1000;
 }
 
@@ -940,22 +940,34 @@ input {
 
 .footer-map {
     padding: 35px 0 0 0;
-    margin: 0 45px;
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
+    position: relative;
 }
 .footer-map dl{
     width: 154px;
-    margin: 0 0 20px 30px;
+    margin: 0 0 35px 30px;
 }
-.footer-map dt{ margin-bottom: 21px; font-size: 18px; color: #000;}
+.footer-map dt{ margin-bottom: 21px; font-size: 18px; font-weight: bolder; color: #000;}
 .footer-map dd{
     line-height: 24px;
 }
 .footer-map dd a {
-    color: #999;
+    color: #333;
+    font-size: 14px;
 }
-.footer-qrcode { margin: -10px 0 26px 0;}
+.footer-qrcode { position: absolute; }
+
+.footer-qrcode01 {
+    right: 172px;
+    top: 24px;
+}
+
+.footer-qrcode02 {
+    right: 14px;
+    top: 24px;
+}
+
 .web_map {
     width: 100%;
     display: inline-block;
@@ -1004,7 +1016,8 @@ input {
 
 .web_map_My {
     width: 100%;
-    margin: 37px 0 80px 83px;
+    padding: 37px 0 80px 0;
+    text-align: center;
     font-size: 14px;
 }
 
@@ -1093,7 +1106,7 @@ input {
 }
 
 .sideGoodCategoriesMenu .list {
-    display: inline-block;
+    display: none;
     width: 254px;
     position: relative;
     left: -4px;
@@ -1110,19 +1123,20 @@ input {
     font-size: 14px;
     white-space: nowrap;
     cursor: pointer;
+    position: relative;
 }
 
 .sideGoodCategoriesMenu .list li:hover,
 .sideGoodCategoriesMenu .list li.active {
     color: #fff;
-    background-color: #f3484a;
+    background-color: #d83a3b;
 }
 
 .sideGoodCategoriesMenu .list li .ico {
     color: #ccc;
     display: inline-block;
     font-size: 23px;
-    margin: 0 8px 0 15px;
+    margin: 0 8px 0 26px;
     text-align: center;
     width: 35px;
 }
@@ -1130,6 +1144,21 @@ input {
 .sideGoodCategoriesMenu .list li:hover .ico,
 .sideGoodCategoriesMenu .list li.active .ico {
     color: #fff;
+}
+
+.sideGoodCategoriesMenu .list li .trangle {
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 4px;
+    height: 7px;
+    background: url("../images/icon-categori-trangle.png") no-repeat;
+}
+
+.sideGoodCategoriesMenu .list li:hover .trangle,
+.sideGoodCategoriesMenu .list li.active .trangle {
+    display: block;
 }
 
 .sideGoodCategoriesMenu > .bottom {
@@ -1151,7 +1180,7 @@ input {
 
 .sideGoodCategoriesDetail {
     border-left: 5px solid #f3494b;
-    height: 100%;
+    height: 440px;
     line-height: 395px;
     left: 250px;
     position: absolute;
@@ -1230,6 +1259,7 @@ input {
 .sideGoodCategoriesDetail .list .itemGroup a:hover,
 .sideGoodCategoriesDetail .list .itemGroup a.active {
     color: #f3484a;
+    font-weight: bolder;
 }
 
 .sideGoodCategoriesDetail .recommend {
@@ -1329,6 +1359,103 @@ input {
 }
 
 
+/* index sideGoodCategories*/
+.sideGoodCategories {
+    position: relative;
+    z-index: 100;
+}
+
+
+.sideGoodCategories .sideGoodCategoriesMenu {
+    width: 170px;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .title{
+    height: 36px;
+    line-height: 36px;
+    margin: -37px 0 0 0;
+    padding: 0 0 0 30px;
+    color: #fff;
+    background: #e14041;
+    position: relative;
+    z-index: 100;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .title .ico {
+    color: #fff;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .list {
+    width: inherit;
+    left: 0;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .list li {
+    float: none;
+    width: auto;
+    margin-bottom: 0;
+    color: #000;
+    border-bottom: 1px solid #fcfafa;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu .list li:hover,
+.sideGoodCategories .sideGoodCategoriesMenu .list li.active {
+    color: #fff;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail {
+    left: 170px;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail {
+    margin-left: 0;
+}
+.sideGoodCategories .sideGoodCategoriesDetail .item,
+.sideGoodCategories .sideGoodCategoriesDetail .listWrap {
+    width: 615px;
+    border-right: none;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail .title {
+    width: 100px;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail .list {
+    margin-left: 0;
+}
+.sideGoodCategories .sideGoodCategoriesDetail .itemGroup {
+    width: 492px;
+}
+
+/* include index sideGoodCategories style */
+.sideGoodCategories {
+    height: 440px;
+    border: 0;
+}
+
+.sideGoodCategories .sideGoodCategoriesBd {
+    height: 100%;
+    display: block !important;
+}
+
+.sideGoodCategories .sideGoodCategoriesHd {
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu {
+    height: 0;
+}
+
+.sideGoodCategories .sideGoodCategoriesMenu.active {
+    height: 440px;
+}
+
+.sideGoodCategories .sideGoodCategoriesDetail{
+}
+
+.sideGoodCategories .sideGoodCategoriesHd {
+    display: none;
+}
+
 /* ---------------------------------------------------------------------------
  *      inner page Side bar
    --------------------------------------------------------------------------- */
@@ -1340,7 +1467,7 @@ input {
 .sidebar .sideGoodCategories {
     height: 36px;
     border-top: none;
-    background: #fff url("../images/sidebarGoodCategoryHd_bg.png") repeat-x;
+    /*background: #fff url("../images/sidebarGoodCategoryHd_bg.png") repeat-x;*/
 }
 
 .sidebar .sideGoodCategoriesHd {
@@ -1354,7 +1481,6 @@ input {
 .sidebar .sideGoodCategoriesBd {
     margin-left: 0;
     left: 0;
-    box-shadow: 3px 2px 2px #f1f1f1;
 }
 
 .sidebar .sideGoodCategoriesDetail {
@@ -2688,6 +2814,36 @@ input {
     top: -55px;
 }
 
+
+/* Add on by sam 03.17.2015 */
+/* header nav */
+.headerNav {
+    position: absolute;
+    left: 170px;
+    bottom: 8px;
+    overflow: hidden;
+}
+
+.headerNav ul { margin-left: -1px;}
+
+.headerNav li {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 42px;
+    border-left: 1px solid #b8b8b8;
+}
+
+.headerNav li a {
+    color: #555;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.headerNav li.active a,
+.headerNav li:hover a {
+    color: #e14041;
+}
 /* ---------------------------------------------------------------------------
  *      responsitory
    --------------------------------------------------------------------------- */
