@@ -74,18 +74,18 @@ body {
 
 .index_banner_group .banner_nav {
     position: absolute;
-    right: 50%;
+    left: 0;
+    right: 0;
     bottom: 16px;
-    margin-right: -570px;
     height: 10px;
+    text-align: center;
 }
 
 .index_banner_group .banner_nav > li {
+    display: inline-block;
     width: 8px;
     height: 8px;
     margin-left: 10px;
-    position: relative;
-    float: left;
     overflow: hidden;
     border: 2px solid #fff;
     border-radius: 83px;
