@@ -22,6 +22,9 @@ $(function (){
 
     //退换货切换
     $('.tuihuoHead .tab li').click(function (){
+        $(this).addClass('active')
+            .siblings('li').removeClass('active');
+
         $('.tuihuoTabBody .table').eq($(this).index()).removeClass('hide')
             .siblings('.table').addClass('hide');
     });
