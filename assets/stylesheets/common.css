@@ -1254,7 +1254,6 @@ input {
 .sideGoodCategoriesDetail .list .itemGroup a:hover,
 .sideGoodCategoriesDetail .list .itemGroup a.active {
     color: #f3484a;
-    font-weight: bolder;
 }
 
 .sideGoodCategoriesDetail .recommend {
