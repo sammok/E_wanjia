@@ -99,6 +99,27 @@ body {
     opacity: 1;
 }
 
+/* index banner recommend */
+.index_kv_recommend {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 200;
+}
+
+.index_kv_recommend_bd{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.index_kv_recommend_bd a {
+    cursor: pointer;
+}
+
+.index_kv_recommend_bd img {
+    display: block;
+}
 /*��ҳ�����õ�Ƭ��������*/
 
 .sideGoodCategories {

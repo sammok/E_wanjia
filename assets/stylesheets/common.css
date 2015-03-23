@@ -945,8 +945,8 @@ input {
     position: relative;
 }
 .footer-map dl{
-    width: 154px;
-    margin: 0 0 35px 30px;
+    width: 148px;
+    margin: 0 0 15px 30px;
 }
 .footer-map dt{ margin-bottom: 21px; font-size: 18px; font-weight: bolder; color: #000;}
 .footer-map dd{
@@ -956,14 +956,8 @@ input {
     color: #333;
     font-size: 14px;
 }
-.footer-qrcode { position: absolute; }
-
-.footer-qrcode01 {
-    right: 172px;
-    top: 24px;
-}
-
-.footer-qrcode02 {
+.footer-qrcode {
+    position: absolute;
     right: 14px;
     top: 24px;
 }
@@ -1179,18 +1173,19 @@ input {
 }
 
 .sideGoodCategoriesDetail {
-    border-left: 5px solid #f3494b;
-    height: 440px;
+    border-left: 2px solid #f3494b;
+    height: 477px;
     line-height: 395px;
     left: 250px;
     position: absolute;
+    top: -37px;
     display: none;
     background-color: #fff;
 }
 
 .sideGoodCategoriesDetail .item {
     width: 934px;
-    min-height: 440px;
+    min-height: 477px;
     float: left;
     display: none;
     position: absolute;
@@ -1417,7 +1412,7 @@ input {
 }
 
 .sideGoodCategories .sideGoodCategoriesDetail .title {
-    width: 100px;
+    width: 85px;
 }
 
 .sideGoodCategories .sideGoodCategoriesDetail .list {
